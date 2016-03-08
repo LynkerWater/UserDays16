@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userGroups xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/userGroups.xsd">
+<!-- Purpose: specifies user groups OC-users-->
+
+<userGroup id="APRFC_Hydro">
+	<user id="bcb"/>
+	<user id="benjamin.balk"/>
+	<user id="cvb"/>
+	<user id="dps"/>
+	<user id="jep"/>
+	<user id="jhc"/>
+	<user id="robin"/>
+	<user id="sdl"/>
+	<user id="fews"/>
+	<user id="oper"/>
+	<user id="lemans"/>
+	<user id="Lemans"/>
+	<user id="ted"/>
+	<user id="pweil"/>
+</userGroup>
+<userGroup id="APRFC_HAS">
+	<user id="acl"/>
+	<user id="eth"/>
+	<user id="kmayer"/>
+</userGroup>
+<userGroup id="USACE">
+	<user id="usace"/>
+</userGroup>
+<userGroup id="WFO_HFO">
+	<user id="hfo"/>
+</userGroup>
+<userGroup id="TEST">
+	<user id="bcb"/>
+	<!--<user id="benjamin.balk"/>-->
+</userGroup>
+
+</userGroups>

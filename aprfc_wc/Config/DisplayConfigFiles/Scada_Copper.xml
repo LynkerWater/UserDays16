@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scadaDisplay xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/scadaDisplay.xsd">
+	<displayName>Scada Display Copper Basin</displayName>
+	<showTimeNavigatorToolbar>
+		<timeNavigatorRelativePeriod unit="hour" start="-48" end="0"/>
+		<timeNavigatorTimeStep unit="hour" multiplier="6"/>
+		<movieFrameDurationMillis>200</movieFrameDurationMillis>
+	</showTimeNavigatorToolbar>
+	<dateFormat id="DF1">
+		<timeZone>
+			<timeZoneName>GMT</timeZoneName>
+		</timeZone>
+		<dateTimePattern>MM-dd-yyyy HH:mm</dateTimePattern>
+	</dateFormat>
+	<numberFormat id="NF1">
+		<pattern>{0,number,##0.00}</pattern>
+	</numberFormat>
+	<variable>
+		<variableId>Observed_Data</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportIHFSDB</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>STG</parameterId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>STGE_Data</variableId>
+		<timeSeriesSet>
+			<moduleInstanceSetId>QIN</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>STGE</parameterId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Simulated_Data</variableId>
+		<timeSeriesSet>
+			<moduleInstanceSetId>QIN</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>SSTG</parameterId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Difference</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>SSTG_PreProcessing_Diff_STGE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>STG</parameterId>
+			<qualifierId>abs_value</qualifierId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+			<!--<multiplier>0.3048</multiplier>-->
+		</timeSeriesSet>
+	</variable>
+
+	<scadaPanel id="layer1" name="Copper Basin Rivers">
+		<svgFile>Copper.svg</svgFile>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GAKA2_dot</svgObjectId>
+			<leftSingleClickAction>
+				<openDisplay>
+					<timeSeriesDisplay>
+						<title>Gakona River</title>
+						<variable>
+							<variableId>Simulated_Data</variableId>
+							<locationId>GAKA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>STGE_Data</variableId>
+							<locationId>GAKA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>Observed_Data</variableId>
+							<locationId>GAKA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+					</timeSeriesDisplay>
+				</openDisplay>
+			</leftSingleClickAction>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Difference</variableId>
+					<locationId>GAKA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GAKA2_obs_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>GAKA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GAKA2</svgObjectId>
+			
+			<replaceTags>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>GAKA2</locationId>
+				</variable>
+			</replaceTags>
+			</textComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GAKA2_fcst_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GAKA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GAKA2_SSTG</svgObjectId>
+
+			<toolTip>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GAKA2</locationId>
+				</variable>
+				<toolTipText>%LASTVALUE(NF1)%</toolTipText>
+			</toolTip>
+			<replaceTags>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GAKA2</locationId>
+				</variable>
+			</replaceTags>
+			
+		</textComponentBehaviourDefinition>
+		
+		
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GPOA2_dot</svgObjectId>
+			<leftSingleClickAction>
+				<openDisplay>
+					<timeSeriesDisplay>
+						<title>Gulkana River at Paxson Lake</title>
+						<variable>
+							<variableId>Simulated_Data</variableId>
+							<locationId>GPOA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>STGE_Data</variableId>
+							<locationId>GPOA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>Observed_Data</variableId>
+							<locationId>GPOA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+					</timeSeriesDisplay>
+				</openDisplay>
+			</leftSingleClickAction>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Difference</variableId>
+					<locationId>GPOA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GPOA2_obs_box</svgObjectId>
+			<!--<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>STGE_Data</variableId>
+					<locationId>GPOA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>-->
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GPOA2</svgObjectId>
+			
+			<replaceTags>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>GPOA2</locationId>
+				</variable>
+			</replaceTags>
+			</textComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GPOA2_fcst_box</svgObjectId>
+			<!--<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GPOA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>-->
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GPOA2_SSTG</svgObjectId>
+
+			<toolTip>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GPOA2</locationId>
+				</variable>
+				<toolTipText>%LASTVALUE(NF1)%</toolTipText>
+			</toolTip>
+			<replaceTags>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GPOA2</locationId>
+				</variable>
+			</replaceTags>
+			
+		</textComponentBehaviourDefinition>
+		
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GRSA2_dot</svgObjectId>
+			<leftSingleClickAction>
+				<openDisplay>
+					<timeSeriesDisplay>
+						<title>Gulkana River at Sourdough</title>
+						<variable>
+							<variableId>Simulated_Data</variableId>
+							<locationId>GRSA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>STGE_Data</variableId>
+							<locationId>GRSA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>Observed_Data</variableId>
+							<locationId>GRSA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+					</timeSeriesDisplay>
+				</openDisplay>
+			</leftSingleClickAction>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Difference</variableId>
+					<locationId>GRSA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GRSA2_obs_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>GRSA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GRSA2</svgObjectId>
+			
+			<replaceTags>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>GRSA2</locationId>
+				</variable>
+			</replaceTags>
+			</textComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GRSA2_fcst_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GRSA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GRSA2_SSTG</svgObjectId>
+
+			<toolTip>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GRSA2</locationId>
+				</variable>
+				<toolTipText>%LASTVALUE(NF1)%</toolTipText>
+			</toolTip>
+			<replaceTags>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GRSA2</locationId>
+				</variable>
+			</replaceTags>
+			
+		</textComponentBehaviourDefinition>
+		
+
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GULA2_dot</svgObjectId>
+			<leftSingleClickAction>
+				<openDisplay>
+					<timeSeriesDisplay>
+						<title>Gulkana River nr Gakona</title>
+						<variable>
+							<variableId>Simulated_Data</variableId>
+							<locationId>GULA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>STGE_Data</variableId>
+							<locationId>GULA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>Observed_Data</variableId>
+							<locationId>GULA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+					</timeSeriesDisplay>
+				</openDisplay>
+			</leftSingleClickAction>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Difference</variableId>
+					<locationId>GULA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GULA2_obs_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>GULA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GULA2</svgObjectId>
+			
+			<replaceTags>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>GULA2</locationId>
+				</variable>
+			</replaceTags>
+			</textComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>GULA2_fcst_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GULA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>GULA2_SSTG</svgObjectId>
+
+			<toolTip>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GULA2</locationId>
+				</variable>
+				<toolTipText>%LASTVALUE(NF1)%</toolTipText>
+			</toolTip>
+			<replaceTags>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>GULA2</locationId>
+				</variable>
+			</replaceTags>
+			
+		</textComponentBehaviourDefinition>
+		
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>TAZA2_dot</svgObjectId>
+			<leftSingleClickAction>
+				<openDisplay>
+					<timeSeriesDisplay>
+						<title>Tazlina River</title>
+						<variable>
+							<variableId>Simulated_Data</variableId>
+							<locationId>TAZA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>STGE_Data</variableId>
+							<locationId>TAZA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>Observed_Data</variableId>
+							<locationId>TAZA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+					</timeSeriesDisplay>
+				</openDisplay>
+			</leftSingleClickAction>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Difference</variableId>
+					<locationId>TAZA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>TAZA2_obs_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>TAZA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>TAZA2</svgObjectId>
+			
+			<replaceTags>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>TAZA2</locationId>
+				</variable>
+			</replaceTags>
+			</textComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>TAZA2_fcst_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>TAZA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>TAZA2_SSTG</svgObjectId>
+
+			<toolTip>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>TAZA2</locationId>
+				</variable>
+				<toolTipText>%LASTVALUE(NF1)%</toolTipText>
+			</toolTip>
+			<replaceTags>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>TAZA2</locationId>
+				</variable>
+			</replaceTags>
+			
+		</textComponentBehaviourDefinition>
+		
+		
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>KLUA2_dot</svgObjectId>
+			<leftSingleClickAction>
+				<openDisplay>
+					<timeSeriesDisplay>
+						<title>Klutina River</title>
+						<variable>
+							<variableId>Simulated_Data</variableId>
+							<locationId>KLUA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>STGE_Data</variableId>
+							<locationId>KLUA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>Observed_Data</variableId>
+							<locationId>KLUA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+					</timeSeriesDisplay>
+				</openDisplay>
+			</leftSingleClickAction>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Difference</variableId>
+					<locationId>KLUA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>KLUA2_obs_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>KLUA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>KLUA2</svgObjectId>
+			
+			<replaceTags>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>KLUA2</locationId>
+				</variable>
+			</replaceTags>
+			</textComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>KLUA2_fcst_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>KLUA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>KLUA2_SSTG</svgObjectId>
+
+			<toolTip>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>KLUA2</locationId>
+				</variable>
+				<toolTipText>%LASTVALUE(NF1)%</toolTipText>
+			</toolTip>
+			<replaceTags>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>KLUA2</locationId>
+				</variable>
+			</replaceTags>
+			
+		</textComponentBehaviourDefinition>
+		
+		
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>TONA2_dot</svgObjectId>
+			<leftSingleClickAction>
+				<openDisplay>
+					<timeSeriesDisplay>
+						<title>Tonsina River</title>
+						<variable>
+							<variableId>Simulated_Data</variableId>
+							<locationId>TONA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>STGE_Data</variableId>
+							<locationId>TONA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+						<variable>
+							<variableId>Observed_Data</variableId>
+							<locationId>TONA2</locationId>
+							<overrulingRelativeViewPeriod unit="hour" start="-120" end="120"/>
+						</variable>
+					</timeSeriesDisplay>
+				</openDisplay>
+			</leftSingleClickAction>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Difference</variableId>
+					<locationId>TONA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>TONA2_obs_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>TONA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>TONA2</svgObjectId>
+			
+			<replaceTags>
+				<variable>
+					<!--<variableId>Observed_Data</variableId>-->
+					<variableId>STGE_Data</variableId>
+					<locationId>TONA2</locationId>
+				</variable>
+			</replaceTags>
+			</textComponentBehaviourDefinition>
+		<shapeComponentBehaviourDefinition>
+			<svgObjectId>TONA2_fcst_box</svgObjectId>
+			<useThresholdWarningLevelColors>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>TONA2</locationId>
+				</variable>
+				<thresholdReference>relative_view_period</thresholdReference>
+				<colorType>fill</colorType>
+			</useThresholdWarningLevelColors>
+		</shapeComponentBehaviourDefinition>
+		<textComponentBehaviourDefinition>
+			<svgObjectId>TONA2_SSTG</svgObjectId>
+
+			<toolTip>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>TONA2</locationId>
+				</variable>
+				<toolTipText>%LASTVALUE(NF1)%</toolTipText>
+			</toolTip>
+			<replaceTags>
+				<variable>
+					<variableId>Simulated_Data</variableId>
+					<locationId>TONA2</locationId>
+				</variable>
+			</replaceTags>
+			
+		</textComponentBehaviourDefinition>
+		
+		</scadaPanel>
+</scadaDisplay>

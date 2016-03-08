@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesImportRun xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesImportRun.xsd">
+	<import>
+		<general>
+			<importType>SHEF</importType>
+			<folder>$IMPORT_FOLDER_SHEF$</folder>
+			<idMapId>IdImportSHEF</idMapId>
+			<unitConversionsId>ImportSHEF</unitConversionsId>
+			<missingValue>-999.0</missingValue>
+			<importTimeZone>
+				<timeZoneOffset>+00:00</timeZoneOffset>
+			</importTimeZone>
+		</general>
+		<startTimeShift>
+			<locationSetId>Catchments</locationSetId>
+			<parameterId>FMAT</parameterId>
+			<relativePeriod unit="hour" start="-6" end="0"/>
+		</startTimeShift>
+		<startTimeShift>
+			<locationSetId>Catchments</locationSetId>
+			<parameterId>FMAP</parameterId>
+			<relativePeriod unit="hour" start="-6" end="0"/>
+		</startTimeShift>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+                        <expiryTime unit="day" multiplier="180"/>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+                        <expiryTime unit="day" multiplier="180"/>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAT</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+                        <expiryTime unit="day" multiplier="2"/>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAP</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+                        <expiryTime unit="day" multiplier="2"/>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>STID</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>QINE</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>STGE-1</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>OFS-STGE</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE-AVE</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="12"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE-OFS</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="12"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE-AVE6</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE_CLM_GDAS_AVE</parameterId>
+			<locationSetId>Catchments_SWE</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep monthDays="--02-01 --03-01 --04-01 --05-01"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE_NOAH32_GDAS_AVE</parameterId>
+			<locationSetId>Catchments_SWE</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep monthDays="--02-01 --03-01 --04-01 --05-01"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE_CLM_GDAS_MAX</parameterId>
+			<locationSetId>Catchments_SWE</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep monthDays="--02-01 --03-01 --04-01 --05-01"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE_NOAH32_GDAS_MAX</parameterId>
+			<locationSetId>Catchments_SWE</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep monthDays="--02-01 --03-01 --04-01 --05-01"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE_CLM_GDAS_MIN</parameterId>
+			<locationSetId>Catchments_SWE</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep monthDays="--02-01 --03-01 --04-01 --05-01"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SWE_NOAH32_GDAS_MIN</parameterId>
+			<locationSetId>Catchments_SWE</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep monthDays="--02-01 --03-01 --04-01 --05-01"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SNWE</parameterId>
+			<locationSetId>snowcourses</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SNWE-PON</parameterId>
+			<locationSetId>snowcourses</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Qmax</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Qmin</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Qmean</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q05</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q10</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q25</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q50</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q75</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q90</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q95</parameterId>
+			<locationSetId>Gages</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="nonequidistant"/>
+			<!--<cycle unit="year" multiplier="1"></cycle>-->
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>QIN_HIST</parameterId>
+			<locationSetId>Gages_Kauai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SQIN</parameterId>
+			<locationSetId>Gages_Kauai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SQIN_R</parameterId>
+			<locationSetId>Gages_Kauai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Gages_Kauai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAP</parameterId>
+			<locationSetId>Gages_Kauai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<externUnit unit="DEGF" parameterId="MAT"/>
+		<externUnit unit="DEGF" parameterId="FMAT"/>
+		<externUnit unit="IN" parameterId="MAP"/>
+		<externUnit unit="IN" parameterId="FMAP"/>
+		<externUnit unit="CFS" parameterId="QINE"/>
+		<externUnit unit="CMS" parameterId="QIN_HIST"/>
+		<externUnit unit="CMS" parameterId="SQIN"/>
+		<externUnit unit="FT" parameterId="STID"/>
+		<externUnit unit="FT" parameterId="STGE-1"/>
+		<externUnit unit="FT" parameterId="OFS-STGE"/>
+		<externUnit unit="IN" parameterId="SWE-AVE"/>
+		<externUnit unit="IN" parameterId="SWE-OFS"/>
+		<externUnit unit="IN" parameterId="SWE-AVE6"/>
+		<externUnit unit="IN" parameterId="SWE_CLM_GDAS_AVE"/>
+		<externUnit unit="IN" parameterId="SWE_NOAH32_GDAS_AVE"/>
+		<externUnit unit="IN" parameterId="SWE_CLM_GDAS_MAX"/>
+		<externUnit unit="IN" parameterId="SWE_NOAH32_GDAS_MAX"/>
+		<externUnit unit="IN" parameterId="SWE_CLM_GDAS_MIN"/>
+		<externUnit unit="IN" parameterId="SWE_NOAH32_GDAS_MIN"/>
+		<externUnit unit="IN" parameterId="SNWE"/>
+		<externUnit unit="PCTD" parameterId="SNWE-PON"/>
+		<externUnit unit="KCFS" parameterId="Q10"/>
+		<externUnit unit="KCFS" parameterId="Q50"/>
+		<externUnit unit="KCFS" parameterId="Q90"/>
+	</import>
+	<import>
+		<general>
+			<importType>SHEF</importType>
+			<folder>$IMPORT_FOLDER_SHEF_CALB$</folder>
+			<idMapId>IdImportSHEF_CALB</idMapId>
+			<unitConversionsId>ImportSHEF</unitConversionsId>
+			<missingValue>-999.0</missingValue>
+			<importTimeZone>
+				<timeZoneOffset>+00:00</timeZoneOffset>
+			</importTimeZone>
+		</general>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SQIN_CALB</parameterId>
+			<locationSetId>Gages_Kauai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<externUnit unit="CMS" parameterId="SQIN_CALB"/>
+	</import>
+</timeSeriesImportRun>

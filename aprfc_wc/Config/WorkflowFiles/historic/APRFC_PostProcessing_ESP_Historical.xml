@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://chps1/schemas/workflow.xsd" version="1.1">	
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Southeast_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Tanana_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Yuk_Can_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Fortym_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Koyukuk_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Matsu_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+    	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Copper_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+  	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Anch_PostProcessing_ESP_Historical</workflowId>
+    	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Kenai_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>S_West_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+	<activity>
+		<runIndependent>false</runIndependent>
+		<workflowId>Bradley_PostProcessing_ESP_Historical</workflowId>
+	</activity>
+</workflow>

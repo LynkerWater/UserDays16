@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesImportRun xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesImportRun.xsd">
+	<import>
+		<general>
+			<importType>grib</importType>
+			<folder>$IMPORT_FOLDER_GRIB1$/qpe/mpe/qpe06</folder>
+ 			<idMapId>IdImportGRIB1_Estimate</idMapId>
+			<unitConversionsId>ImportGrib</unitConversionsId>
+			<importTimeZone>
+				<timeZoneOffset>+00:00</timeZoneOffset>
+			</importTimeZone>
+			<gridStartPoint>SW</gridStartPoint>
+		</general>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>6</synchLevel>
+<!--			<expiryTime unit="day" multiplier="21"/>-->
+			<expiryTime unit="day" multiplier="180"/>
+		</timeSeriesSet>
+	</import>
+	<import>
+		<general>
+			<importType>grib</importType>
+			<folder>$IMPORT_FOLDER_GRIB1$/qpe/mpe/qpe24</folder>
+ 			<idMapId>IdImportGRIB1_Estimate</idMapId>
+			<unitConversionsId>ImportGrib</unitConversionsId>
+			<importTimeZone>
+				<timeZoneOffset>+00:00</timeZoneOffset>
+			</importTimeZone>
+			<gridStartPoint>SW</gridStartPoint>
+		</general>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE24</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>6</synchLevel>
+			<expiryTime unit="day" multiplier="40"/>
+		</timeSeriesSet>
+	</import>
+	<import>
+		<general>
+			<importType>grib</importType>
+			<folder>$IMPORT_FOLDER_GRIB1$/qpe/mpe/qpe01</folder>
+ 			<idMapId>IdImportGRIB1_Estimate</idMapId>
+			<unitConversionsId>ImportGrib</unitConversionsId>
+			<importTimeZone>
+				<timeZoneOffset>+00:00</timeZoneOffset>
+			</importTimeZone>
+			<gridStartPoint>SW</gridStartPoint>
+		</general>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE01</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>6</synchLevel>
+<!--			<expiryTime unit="day" multiplier="21"/>-->
+			<expiryTime unit="day" multiplier="180"/>
+		</timeSeriesSet>
+	</import>
+	<import>
+		<general>
+			<importType>grib</importType>
+			<folder>$IMPORT_FOLDER_GRIB1$/qpe/rdhm/qpe01</folder>
+ 			<idMapId>IdImportGRIB1_Kauai</idMapId>
+			<unitConversionsId>ImportGrib</unitConversionsId>
+			<importTimeZone>
+				<timeZoneOffset>+00:00</timeZoneOffset>
+			</importTimeZone>
+<!--			<gridStartPoint>SW</gridStartPoint>-->
+		</general>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE01</parameterId>
+			<locationId>HRAP_QTR_KAUAI</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>6</synchLevel>
+			<expiryTime unit="day" multiplier="21"/>
+		</timeSeriesSet>
+	</import>
+	<import>
+		<general>
+			<importType>grib</importType>
+			<folder>$IMPORT_FOLDER_GRIB1$/qpe/mpe/qpe01_hfo</folder>
+ 			<idMapId>IdImportGRIB1_HFO</idMapId>
+			<unitConversionsId>ImportGrib</unitConversionsId>
+			<importTimeZone>
+				<timeZoneOffset>+00:00</timeZoneOffset>
+			</importTimeZone>
+			<gridStartPoint>SW</gridStartPoint>
+		</general>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE01</parameterId>
+			<locationId>HRAP_HFO</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>6</synchLevel>
+			<expiryTime unit="day" multiplier="21"/>
+		</timeSeriesSet>
+	</import>		
+</timeSeriesImportRun>

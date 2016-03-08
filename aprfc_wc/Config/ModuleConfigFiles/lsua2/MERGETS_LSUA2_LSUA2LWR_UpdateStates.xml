@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<variable>
+		<variableId>LSUA2LWR_MAP_DQC_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Matsu_MergeMAP_UpdateStates</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>LSUA2LWR_MAP_OFS_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>LSUA2LWR_MAP_MERGE_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MERGETS_LSUA2_LSUA2LWR_UpdateStates</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>LSUA2LWR_MAT_RTMA_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Matsu_MergeMAT_UpdateStates</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>LSUA2LWR_MAT_MPE_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MATX_PreProcessing_QTE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>LSUA2LWR_MAT_OFS_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>LSUA2LWR_MAT_MERGE1_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MERGETS_LSUA2_LSUA2LWR_UpdateStates</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>LSUA2LWR_MAT_MERGE2_6</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MERGETS_LSUA2_LSUA2LWR_UpdateStates</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationId>LSUA2LWR</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<transformation id="MAP_DQC_Primary">
+	<periodTransformation>
+		<period>
+			<season>
+				<startMonthDay>--04-30</startMonthDay>
+				<endMonthDay>--11-01</endMonthDay>
+			</season>
+		</period>
+	<merge>
+		<simple>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAP_DQC_6</variableId>
+			</inputVariable>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAP_OFS_6</variableId>
+			</inputVariable>
+			<moduleParameterFile>MERGETS_LSUA2_MAP_UpdateStates</moduleParameterFile>
+			<outputVariable>
+				<variableId>LSUA2LWR_MAP_MERGE_6</variableId>
+			</outputVariable>
+		</simple>
+	</merge>
+	</periodTransformation>
+	</transformation>
+	<transformation id="MAP_OFS_Primary">
+	<periodTransformation>
+		<period>
+			<season>
+				<startMonthDay>--11-01</startMonthDay>
+				<endMonthDay>--04-30</endMonthDay>
+			</season>
+		</period>
+	<merge>
+		<simple>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAP_OFS_6</variableId>
+			</inputVariable>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAP_DQC_6</variableId>
+			</inputVariable>
+			<moduleParameterFile>MERGETS_LSUA2_MAP_UpdateStates</moduleParameterFile>
+			<outputVariable>
+				<variableId>LSUA2LWR_MAP_MERGE_6</variableId>
+			</outputVariable>
+		</simple>
+	</merge>
+	</periodTransformation>
+	</transformation>
+	<transformation id="MAT_RTMA_to_MPE">
+	<merge>
+		<simple>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAT_RTMA_6</variableId>
+			</inputVariable>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAT_MPE_6</variableId>
+			</inputVariable>
+			<moduleParameterFile>SwitchTS_LSUA2_MAT_to_MPE_UpdateStates</moduleParameterFile>
+			<outputVariable>
+				<variableId>LSUA2LWR_MAT_MERGE1_6</variableId>
+			</outputVariable>
+		</simple>
+	</merge>
+	</transformation>
+	<transformation id="MAT_MERGE1_to_OFS">
+	<merge>
+		<simple>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAT_MERGE1_6</variableId>
+			</inputVariable>
+			<inputVariable>
+				<variableId>LSUA2LWR_MAT_OFS_6</variableId>
+			</inputVariable>
+			<moduleParameterFile>SwitchTS_LSUA2_MAT_to_OFS_UpdateStates</moduleParameterFile>
+			<outputVariable>
+				<variableId>LSUA2LWR_MAT_MERGE2_6</variableId>
+			</outputVariable>
+		</simple>
+	</merge>
+	</transformation>
+</transformationModule>

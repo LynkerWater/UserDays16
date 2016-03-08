@@ -1,0 +1,137 @@
+<?xml version="1.0" standalone="yes"?>
+
+<mydoggy version="1.4.2" contentManagerEnabled="true">
+    <toolWindows>
+        <toolWindow id="Logs" available="true" visible="true" active="false" autoHide="false" anchor="BOTTOM" anchorIndex="0" type="DOCKED" aggregateMode="false" maximized="false" index="0" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="135" minimumDockLength="100" popupMenuEnabled="true" animating="true" previewEnabled="false" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" autoHide="false"/>
+                <sliding transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+                <floating modal="false" transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="true" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="Data Viewer" available="true" visible="false" active="false" autoHide="false" anchor="LEFT" anchorIndex="2" type="DOCKED" aggregateMode="false" maximized="false" index="6" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="180" minimumDockLength="100" popupMenuEnabled="true" animating="true" previewEnabled="false" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" autoHide="false"/>
+                <sliding transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+                <floating modal="false" transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="BulletinBoardPanelPlus" available="true" visible="false" active="false" autoHide="false" anchor="BOTTOM" anchorIndex="2" type="DOCKED" aggregateMode="false" maximized="false" index="2" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="224" minimumDockLength="100" popupMenuEnabled="true" animating="true" previewEnabled="false" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" autoHide="false"/>
+                <sliding transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+                <floating modal="false" transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="ThumbnailsDialog" available="true" visible="false" active="false" autoHide="false" anchor="RIGHT" anchorIndex="0" type="DOCKED" aggregateMode="false" maximized="false" index="4" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="200" minimumDockLength="100" popupMenuEnabled="true" animating="true" previewEnabled="true" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" autoHide="false"/>
+                <sliding transparentMode="true" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="true" autoHide="true"/>
+                <floating modal="false" transparentMode="true" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="true" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="true" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="true" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="SegmentSelectionDialog" available="true" visible="false" active="false" autoHide="false" anchor="LEFT" anchorIndex="1" type="DOCKED" aggregateMode="false" maximized="false" index="5" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="180" minimumDockLength="100" popupMenuEnabled="true" animating="true" previewEnabled="false" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" autoHide="false"/>
+                <sliding transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+                <floating modal="false" transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="ForecasterAidSelectionPanel" available="true" visible="false" active="false" autoHide="false" anchor="RIGHT" anchorIndex="1" type="DOCKED" aggregateMode="false" maximized="false" index="7" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="180" minimumDockLength="180" popupMenuEnabled="true" animating="false" previewEnabled="false" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" autoHide="false"/>
+                <sliding transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+                <floating modal="false" transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="SegmentSelectionLoggerPanel" available="true" visible="false" active="false" autoHide="false" anchor="BOTTOM" anchorIndex="1" type="DOCKED" aggregateMode="false" maximized="false" index="8" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="180" minimumDockLength="180" popupMenuEnabled="true" animating="false" previewEnabled="false" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" autoHide="false"/>
+                <sliding transparentMode="false" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+                <floating modal="false" transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="false" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="false" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="WaterCoachDisplay" available="true" visible="true" active="true" autoHide="false" anchor="LEFT" anchorIndex="0" type="DOCKED" aggregateMode="false" maximized="false" index="-1" representativeAnchorButtonVisible="true" flashing="false">
+            <descriptors>
+                <docked dockLength="200" minimumDockLength="100" popupMenuEnabled="true" animating="true" previewEnabled="true" previewDelay="1000" previewTransparentRatio="0.65" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" autoHide="false"/>
+                <sliding transparentMode="true" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="true" autoHide="true"/>
+                <floating modal="false" transparentMode="true" transparentDelay="1500" transparentRatio="0.7" enabled="true" animating="true" idVisibleOnTitleBar="true" autoHide="false" addToTaskBar="true"/>
+                <floatingLive transparentMode="true" transparentDelay="1000" transparentRatio="0.5" enabled="true" animating="true" idVisibleOnTitleBar="true" autoHide="false"/>
+            </descriptors>
+        </toolWindow>
+        <toolWindow active="false" aggregateMode="false" anchor="BOTTOM" anchorIndex="2" autoHide="false" available="true" flashing="false" id="BulletinBoardPanel" index="2" maximized="false" representativeAnchorButtonVisible="true" type="DOCKED" visible="false">
+            <descriptors>
+                <docked animating="true" autoHide="false" dockLength="224" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" minimumDockLength="100" popupMenuEnabled="true" previewDelay="1000" previewEnabled="false" previewTransparentRatio="0.65"></docked>
+                <sliding animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" transparentDelay="1000" transparentMode="false" transparentRatio="0.5"></sliding>
+                <floating addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floating>
+                <floatingLive animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" transparentDelay="1000" transparentMode="false" transparentRatio="0.5"></floatingLive>
+            </descriptors>
+        </toolWindow>
+        <toolWindow active="false" aggregateMode="false" anchor="RIGHT" anchorIndex="4" autoHide="false" available="true" flashing="false" id="ForecasterAidDocumentPanel" index="4" maximized="false" representativeAnchorButtonVisible="true" type="DOCKED" visible="false">
+            <descriptors>
+                <docked animating="false" autoHide="false" dockLength="180" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" minimumDockLength="180" popupMenuEnabled="true" previewDelay="1000" previewEnabled="false" previewTransparentRatio="0.65"></docked>
+                <sliding animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" transparentDelay="1000" transparentMode="false" transparentRatio="0.5"></sliding>
+                <floating addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floating>
+                <floatingLive addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floatingLive>
+            </descriptors>
+        </toolWindow>
+        <toolWindow active="false" aggregateMode="false" anchor="BOTTOM" anchorIndex="1" autoHide="false" available="true" flashing="false" id="ForecasterNotesPanel" index="1" maximized="false" representativeAnchorButtonVisible="true" type="DOCKED" visible="false">
+            <descriptors>
+                <docked animating="true" autoHide="false" dockLength="224" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" minimumDockLength="100" popupMenuEnabled="true" previewDelay="1000" previewEnabled="false" previewTransparentRatio="0.65"></docked>
+                <sliding animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" transparentDelay="1000" transparentMode="false" transparentRatio="0.5"></sliding>
+                <floating addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floating>
+                <floatingLive animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" transparentDelay="1000" transparentMode="false" transparentRatio="0.5"></floatingLive>
+            </descriptors>
+        </toolWindow>
+        <toolWindow active="false" aggregateMode="false" anchor="RIGHT" anchorIndex="9" autoHide="false" available="true" flashing="false" id="TimeSeriesButtonsPanel" index="9" maximized="false" representativeAnchorButtonVisible="true" type="DOCKED" visible="false">
+            <descriptors>
+                <docked animating="false" autoHide="false" dockLength="180" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" minimumDockLength="180" popupMenuEnabled="true" previewDelay="1000" previewEnabled="false" previewTransparentRatio="0.65"></docked>
+                <sliding animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" transparentDelay="1000" transparentMode="false" transparentRatio="0.5"></sliding>
+                <floating addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floating>
+                <floatingLive addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floatingLive>
+            </descriptors>
+        </toolWindow>
+        <toolWindow active="false" aggregateMode="false" anchor="RIGHT" anchorIndex="3" autoHide="false" available="true" flashing="false" id="ShortcutsThumbnailsDialog" index="3" maximized="false" representativeAnchorButtonVisible="true" type="DOCKED" visible="false">
+            <descriptors>
+                <docked animating="false" autoHide="false" dockLength="180" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="false" minimumDockLength="180" popupMenuEnabled="true" previewDelay="1000" previewEnabled="false" previewTransparentRatio="0.65"></docked>
+                <sliding animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" transparentDelay="1000" transparentMode="false" transparentRatio="0.5"></sliding>
+                <floating addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floating>
+                <floatingLive addToTaskBar="true" animating="true" autoHide="false" enabled="true" idVisibleOnTitleBar="false" modal="false" transparentDelay="1500" transparentMode="false" transparentRatio="0.7"></floatingLive>
+            </descriptors>
+        </toolWindow>
+    </toolWindows>
+    <toolWindowManagerDescriptor numberingEnabled="true" previewEnabled="false" showUnavailableTools="false">
+        <pushAway pushAwayMode="VERTICAL">
+            <mode type="MOST_RECENT">
+                <anchor type="TOP"/>
+                <anchor type="BOTTOM"/>
+                <anchor type="RIGHT"/>
+                <anchor type="LEFT"/>
+            </mode>
+        </pushAway>
+    </toolWindowManagerDescriptor>
+    <contentManagerUI>
+        <TabbedContentManagerUI closeable="true" detachable="true" minimizable="false" showAlwaysTab="true" tabLayout="SCROLL" tabPlacement="BOTTOM"/>
+    </contentManagerUI>
+    <contentManager>
+        <contents>
+            <content id="Map" detached="false" enabled="true" selected="true" maximized="false" minimized="false" flashing="false" closeable="false" detachable="true" minimizable="false" transparentMode="false" transparentDelay="0" transparentRatio="0.7" addToTaskBarWhenDetached="true"></content>
+            <content id="PlotsTimeSeriesDialog" detached="false" enabled="true" selected="false" maximized="false" minimized="false" flashing="false" closeable="false" detachable="true" minimizable="false" transparentMode="false" transparentDelay="0" transparentRatio="0.7" addToTaskBarWhenDetached="true"></content>
+            <content id="TopologyPanel" detached="false" enabled="true" selected="false" maximized="false" minimized="false" flashing="false" closeable="true" detachable="true" minimizable="false" transparentMode="false" transparentDelay="0" transparentRatio="0.7" addToTaskBarWhenDetached="true"></content>
+            <content id="ModifiersPanel" detached="false" enabled="true" selected="false" maximized="false" minimized="false" flashing="false" closeable="true" detachable="true" minimizable="false" transparentMode="false" transparentDelay="0" transparentRatio="0.7" addToTaskBarWhenDetached="true"></content>
+            <content addToTaskBarWhenDetached="true" closeable="false" detachable="true" detached="false" enabled="true" flashing="false" id="DataEditorTimeSeriesDialog" maximized="false" minimizable="false" minimized="false" selected="false" transparentDelay="0" transparentMode="false" transparentRatio="0.7"></content>
+        </contents>
+    </contentManager>
+    <mainFrame>
+        <detachedBounds x="-8" y="-8" width="1936" height="1056"/>
+        <extendedState state="6"/>
+    </mainFrame>
+</mydoggy>
+

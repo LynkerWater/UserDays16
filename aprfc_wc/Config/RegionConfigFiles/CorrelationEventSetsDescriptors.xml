@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<correlationEventSetsDescriptors xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/correlationEventSetsDescriptors.xsd">
+
+	<correlationEventSetsDescriptor id="GulkanaEvents">
+	</correlationEventSetsDescriptor>
+	<correlationEventSetsDescriptor id="WillowEvents">
+	</correlationEventSetsDescriptor>
+	<correlationEventSetsDescriptor id="Willow2Events">
+	</correlationEventSetsDescriptor>
+	<correlationEventSetsDescriptor id="Willow3Events">
+	</correlationEventSetsDescriptor>
+	
+</correlationEventSetsDescriptors>

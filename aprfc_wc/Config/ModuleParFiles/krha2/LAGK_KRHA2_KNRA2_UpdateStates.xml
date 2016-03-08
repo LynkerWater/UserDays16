@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>KNRA2    SQIN  6 KNRA2RTD SQIN  6     5     5 ENGL 0.00       0.0
+          18.000           0.000          18.000       36560.000 X
+          36.000       45700.000          35.000       63980.000 X
+          24.000       91400.000
+          12.000           0.000          12.000       36560.000 X
+          24.000       45700.000          23.000       63980.000 X
+          12.000       91400.000
+           8
+         155.786           6.000         154.803          12.000 X
+         153.826          18.000           0.000           0.000 X
+           0.000           0.000           0.000           0.000 X
+           0.000           0.000           0.000           0.000
+         156.775         158.785        1905.377
+</stringValue>
+    </parameter>
+    <parameter id="QT_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="155.786"/>
+        <row A="6.0"/>
+        <row A="154.803"/>
+        <row A="12.0"/>
+        <row A="153.826"/>
+        <row A="18.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+      </table>
+    </parameter>
+    <parameter id="PAIR_QT_LAG_CARRYOVER">
+      <intValue>8</intValue>
+    </parameter>
+    <parameter id="CURRENT_OUTFLOW">
+      <dblValue>158.785</dblValue>
+    </parameter>
+    <parameter id="CURRENT_STORAGE">
+      <dblValue>1905.377</dblValue>
+    </parameter>
+    <parameter id="JK">
+      <intValue>5</intValue>
+    </parameter>
+    <parameter id="DTA">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="CURRENT_LAGGED_INFLOW">
+      <dblValue>156.775</dblValue>
+    </parameter>
+    <parameter id="DTB">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="QBNTL">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="METENG">
+      <stringValue>ENGL</stringValue>
+    </parameter>
+    <parameter id="TSIDA">
+      <stringValue>KNRA2</stringValue>
+    </parameter>
+    <parameter id="ITB">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="ITA">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="TLRC">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="TSIDB">
+      <stringValue>KNRA2RTD</stringValue>
+    </parameter>
+    <parameter id="LAGQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="18.0"/>
+        <row A="0.0"/>
+        <row A="18.0"/>
+        <row A="36560.0"/>
+        <row A="36.0"/>
+        <row A="45700.0"/>
+        <row A="35.0"/>
+        <row A="63980.0"/>
+        <row A="24.0"/>
+        <row A="91400.0"/>
+      </table>
+    </parameter>
+    <parameter id="KQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="12.0"/>
+        <row A="0.0"/>
+        <row A="12.0"/>
+        <row A="36560.0"/>
+        <row A="24.0"/>
+        <row A="45700.0"/>
+        <row A="23.0"/>
+        <row A="63980.0"/>
+        <row A="12.0"/>
+        <row A="91400.0"/>
+      </table>
+    </parameter>
+    <parameter id="JLAG">
+      <intValue>5</intValue>
+    </parameter>
+  </group>
+</parameters>

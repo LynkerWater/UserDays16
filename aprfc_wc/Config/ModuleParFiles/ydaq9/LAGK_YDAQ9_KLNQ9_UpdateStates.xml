@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>KLNQ9    QINE  6 KLNQ9RTD SQIN  6     0     0 ENGL 0.00       0.0
+           0.000
+           3.000
+           1
+        1528.273        1523.728        4571.081
+</stringValue>
+    </parameter>
+    <parameter id="PAIR_QT_LAG_CARRYOVER">
+      <intValue>1</intValue>
+    </parameter>
+    <parameter id="CURRENT_OUTFLOW">
+      <dblValue>1523.728</dblValue>
+    </parameter>
+    <parameter id="CURRENT_STORAGE">
+      <dblValue>4571.081</dblValue>
+    </parameter>
+    <parameter id="SETLAG">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="JK">
+      <intValue>0</intValue>
+    </parameter>
+    <parameter id="DTA">
+      <stringValue>QINE</stringValue>
+    </parameter>
+    <parameter id="CURRENT_LAGGED_INFLOW">
+      <dblValue>1528.273</dblValue>
+    </parameter>
+    <parameter id="DTB">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="SETK">
+      <dblValue>3.0</dblValue>
+    </parameter>
+    <parameter id="QBNTL">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="METENG">
+      <stringValue>ENGL</stringValue>
+    </parameter>
+    <parameter id="TSIDA">
+      <stringValue>KLNQ9</stringValue>
+    </parameter>
+    <parameter id="ITB">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="ITA">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="TLRC">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="TSIDB">
+      <stringValue>KLNQ9RTD</stringValue>
+    </parameter>
+    <parameter id="LAGQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="0.0"/>
+      </table>
+    </parameter>
+    <parameter id="KQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="3.0"/>
+      </table>
+    </parameter>
+    <parameter id="JLAG">
+      <intValue>0</intValue>
+    </parameter>
+  </group>
+</parameters>

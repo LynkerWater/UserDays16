@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<correlationEventSets xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/correlationEventSets.xsd">
+	<correlationEventSet>
+		<locationId>GRSA2</locationId>
+		<parameterId>QIN</parameterId>
+		<event eventId="GRSA2_1973-05-16" value="8840" date="1973-05-16" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1974-05-25" value="6750" date="1974-05-25" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1975-06-04" value="8110" date="1975-06-04" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1976-05-27" value="3850" date="1976-05-27" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1977-06-02" value="9170" date="1977-06-02" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1978-05-09" value="7970" date="1978-05-09" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1989-05-04" value="11500" date="1989-05-04" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1990-09-12" value="12700" date="1990-09-12" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1991-05-24" value="6710" date="1991-05-24" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1992-06-03" value="9420" date="1992-06-03" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1993-05-04" value="6170" date="1993-05-04" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1997-06-10" value="7470" date="1997-06-10" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1998-08-10" value="3130" date="1998-08-10" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_1999-05-17" value="5340" date="1999-05-17" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2000-06-08" value="4890" date="2000-06-08" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2001-05-25" value="5090" date="2001-05-25" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2002-08-22" value="7380" date="2002-08-22" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2002-10-03" value="4290" date="2002-10-03" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2004-05-10" value="7600" date="2004-05-10" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2006-10-10" value="15300" date="2006-10-10" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2008-05-05" value="7000" date="2008-05-05" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2009-05-05" value="12000" date="2009-05-05" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2010-07-25" value="4480" date="2010-07-25" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2011-05-23" value="4920" date="2011-05-23" time="00:00:00" tag="dummy time"/>
+		<event eventId="GRSA2_2012-06-14" value="8130" date="2012-06-14" time="00:00:00" tag="dummy time"/>
+	</correlationEventSet>
+	<correlationEventSet>
+		<locationId>GULA2</locationId>
+		<parameterId>QIN</parameterId>
+		<event eventId="GULA2_1982-05-12" value="21900" date="1982-05-12" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1982-05-27" value="6340" date="1982-05-27" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1983-08-27" value="11275" date="1983-08-27" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1984-06-18" value="11275" date="1984-06-18" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1985-06-18" value="14425" date="1985-06-18" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1987-07-16" value="3700" date="1987-07-16" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1988-06-02" value="12500" date="1988-06-02" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1989-05-04" value="14700" date="1989-05-04" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1990-09-13" value="12157" date="1990-09-13" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1991-05-09" value="10295" date="1991-05-09" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1992-05-12" value="9070" date="1992-05-12" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1992-06-03" value="7845" date="1992-06-03" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1993-05-13" value="8041" date="1993-05-13" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1994-04-29" value="5584" date="1994-04-29" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1995-05-04" value="6268" date="1995-05-04" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1996-05-12" value="9070" date="1996-05-12" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1997-06-02" value="7420" date="1997-06-02" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1998-08-11" value="2620" date="1998-08-11" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_1999-05-18" value="4468" date="1999-05-18" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2001-05-25" value="4684" date="2001-05-25" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2002-08-23" value="6628" date="2002-08-22" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2003-05-02" value="4504" date="2003-05-02" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2004-05-10" value="7240" date="2004-05-10" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2005-04-30" value="7240" date="2005-04-30" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2006-08-24" value="9070" date="2006-08-24" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2007-05-04" value="17175" date="2007-05-04" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2008-07-09" value="4000" date="2008-07-09" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2009-05-05" value="14040" date="2009-05-05" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2010-07-25" value="3720" date="2010-07-25" time="00:00:00" tag="dummy time"/>
+		<event eventId="GULA2_2011-05-06" value="11226" date="2011-05-06" time="00:00:00" tag="dummy time"/>
+	</correlationEventSet>
+	<comment>Data through 9/2012</comment>
+</correlationEventSets>

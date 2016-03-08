@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!--<variable>
+		<variableId>stg_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportIHFSDB</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>STG</parameterId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>sstg_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceSetId>QIN</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>SSTG</parameterId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>stge_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceSetId>QIN</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>STGE</parameterId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!--<variable>
+		<variableId>sstg-stge_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>SSTG_PreProcessing_Diff_STGE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SSTG-STGE</parameterId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>diff_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>SSTG_PreProcessing_Diff_STGE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>STG</parameterId>
+			<qualifierId>difference</qualifierId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>temporary</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Absolute_Value</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>SSTG_PreProcessing_Diff_STGE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>STG</parameterId>
+			<qualifierId>abs_value</qualifierId>
+			<locationSetId>Gages_Copper</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+
+	<transformation id="SSTG-STGE">
+		<user>
+			<simple>
+				<expression>+(sstg_scalar)-(stge_scalar)</expression>
+				<outputVariable>
+					<!--<variableId>sstg-stge_scalar</variableId>-->
+					<variableId>diff_scalar</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+	<!--<transformation id="STG-SSTG">
+		<user>
+			<simple>
+				<expression>+(stg_scalar)-(sstg_scalar)</expression>
+				<outputVariable>
+					<variableId>diff_scalar</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>-->
+	<transformation id="Absolute_Value">
+		<user>
+			<simple>
+				<expression>max(diff_scalar,-1*diff_scalar)</expression>
+				<outputVariable>
+					<variableId>Absolute_Value</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+</transformationModule>

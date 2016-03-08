@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!-- statisticsChildrenLocations -->
+	<variable>
+		<variableId>MAP</variableId>
+		<timeSeriesSet>
+			<moduleInstanceSetId>MAP</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+    <variable>
+		<variableId>MAT</variableId>
+		<timeSeriesSet>
+			<moduleInstanceSetId>MAT</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_mean</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>StatisticsChildrenLocations</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<qualifierId>parent_mean</qualifierId>
+			<locationSetId>Basins_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_mean</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>StatisticsChildrenLocations</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<qualifierId>parent_mean</qualifierId>
+			<locationSetId>Basins_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_max</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>StatisticsChildrenLocations</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<qualifierId>parent_max</qualifierId>
+			<locationSetId>Basins_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_min</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>StatisticsChildrenLocations</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<qualifierId>parent_min</qualifierId>
+			<locationSetId>Basins_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- transformation statisticsChildrenLocations -->
+	<transformation id="MAP_mean">
+		<statisticsChildrenLocations>
+			<mean>
+				<inputVariable>
+					<variableId>MAP</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_mean</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsChildrenLocations>
+	</transformation>
+	<transformation id="MAT_mean">
+		<statisticsChildrenLocations>
+			<mean>
+				<inputVariable>
+					<variableId>MAT</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_mean</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsChildrenLocations>
+	</transformation>
+	<transformation id="MAT_max">
+		<statisticsChildrenLocations>
+			<max>
+				<inputVariable>
+					<variableId>MAT</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_max</variableId>
+				</outputVariable>
+			</max>
+		</statisticsChildrenLocations>
+	</transformation>
+	<transformation id="MAT_min">
+		<statisticsChildrenLocations>
+			<min>
+				<inputVariable>
+					<variableId>MAT</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_min</variableId>
+				</outputVariable>
+			</min>
+		</statisticsChildrenLocations>
+	</transformation>
+	
+</transformationModule>

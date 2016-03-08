@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<correlationDisplay version="1.1" xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/correlationDisplay.xsd">
+	<inputTimeSerieInfo>
+		<!--<moduleInstanceId>STAGEQ_WILA2_WILA2OB6_Forecast</moduleInstanceId>-->
+		<parameterId>QIN</parameterId>
+	</inputTimeSerieInfo>
+	<eventSetsDescriptorId>Willow3Events</eventSetsDescriptorId>
+	<travelTimesDescriptorId>Willow3Times</travelTimesDescriptorId>
+	<eventSelectionType>traveltime</eventSelectionType>
+	<outputTimeSerieInfo>
+		<!--<moduleInstanceId>ADJUSTQ_WILA2_WILA2ADJ_Forecast</moduleInstanceId>-->
+		<parameterId>QINE</parameterId>
+	</outputTimeSerieInfo>
+	<correlationDisplayOptions>
+		<scatterplotOptions>
+			<preferredColor>red</preferredColor>
+			<markerStyle>circle</markerStyle>
+			<markerSize>8</markerSize>
+		</scatterplotOptions>
+		<equationOptions>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+		</equationOptions>
+	</correlationDisplayOptions>
+</correlationDisplay>

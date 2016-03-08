@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!-- gage temps -->
+	<!--<variable>
+		<variableId>TA03</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportIHFSDB</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>TA03</parameterId>
+			<locationSetId>Gages_Precip_AK</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="3"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>			
+		</timeSeriesSet>
+	</variable>-->	
+	<!--<variable>
+		<variableId>Cumulative_Precip_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>PSUM</parameterId>
+			<locationSetId>Gages_Precip_AK</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Precip_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>PSUM_Month</parameterId>
+			<locationSetId>Gages_Precip_AK</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	
+	<!-- catchment temps -->
+	<variable>
+		<variableId>MATX_observed</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MATX_PreProcessing_QTE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_MPE_observed</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MATX_PreProcessing_QTE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_observed</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MATX_PreProcessing_QTE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_MPE</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MATX_PreProcessing_QTE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX_MPE</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_COMP</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MATX_PreProcessing_QTE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_COMP</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_max_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<qualifierId>max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_min_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<qualifierId>min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_day_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_day_12Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="12Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_day_18Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="18Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_day_00Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="00Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_max_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX</parameterId>
+			<qualifierId>max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_min_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX</parameterId>
+			<qualifierId>min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_day_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_day_12Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="12Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_day_18Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="18Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_day_00Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="00Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_MPE_max_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<qualifierId>max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_MPE_min_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<qualifierId>min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_MPE_day_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_MPE_day_12Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="12Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_MPE_day_18Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="18Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_MPE_day_00Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_MPE</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="00Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_max_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX</parameterId>
+			<qualifierId>max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_min_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX</parameterId>
+			<qualifierId>min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_day_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_MPE_max_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX_MPE</parameterId>
+			<qualifierId>max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_MPE_min_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX_MPE</parameterId>
+			<qualifierId>min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_MPE_day_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX_MPE</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_COMP_max_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_COMP</parameterId>
+			<qualifierId>max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_COMP_min_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_COMP</parameterId>
+			<qualifierId>min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_COMP_day_6Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_COMP</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="6Z"/>
+			<relativeViewPeriod unit="day" start="-143" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX</parameterId>
+			<qualifierId>month</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_MPE_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX_MPE</parameterId>
+			<qualifierId>month</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_COMP_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_COMP</parameterId>
+			<qualifierId>month</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_Month_max</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX</parameterId>
+			<qualifierId>month_max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_MPE_Month_max</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX_MPE</parameterId>
+			<qualifierId>month_max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_COMP_Month_max</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_COMP</parameterId>
+			<qualifierId>month_max</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_Month_min</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX</parameterId>
+			<qualifierId>month_min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT-MATX_MPE_Month_min</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT-MATX_MPE</parameterId>
+			<qualifierId>month_min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MATX_COMP_Month_min</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Temperature_Comparisons</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MATX_COMP</parameterId>
+			<qualifierId>month_min</qualifierId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- grid temps -->
+	<!--<variable>
+		<variableId>QPE06</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>			
+		</timeSeriesSet>
+	</variable>	
+	<variable>
+		<variableId>Cumulative_Grid_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-143" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM_Month</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-180" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_7day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>7day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-7" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_14day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>14day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-14" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	
+	<!-- gage transformations -->
+	<!--<transformation id="PSUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>PP06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Precip_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="PSUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>PP06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Precip_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>-->
+	
+	<!-- catchment transformations -->
+	<transformation id="MAT_max_6Z">
+		<statisticsSerial>
+			<max>
+				<inputVariable>
+					<variableId>MAT_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_max_6Z</variableId>
+				</outputVariable>
+			</max>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MAT_min_6Z">
+		<statisticsSerial>
+			<min>
+				<inputVariable>
+					<variableId>MAT_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_min_6Z</variableId>
+				</outputVariable>
+			</min>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MAT_day_6Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MAT_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_day_6Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MAT_day_12Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MAT_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_day_12Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MAT_day_18Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MAT_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_day_18Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MAT_day_00Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MAT_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_day_00Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_max_6Z">
+		<statisticsSerial>
+			<max>
+				<inputVariable>
+					<variableId>MATX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_max_6Z</variableId>
+				</outputVariable>
+			</max>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MATX_min_6Z">
+		<statisticsSerial>
+			<min>
+				<inputVariable>
+					<variableId>MATX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_min_6Z</variableId>
+				</outputVariable>
+			</min>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MATX_day_6Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_day_6Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_day_12Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_day_12Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_day_18Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_day_18Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_day_00Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_day_00Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_MPE_max_6Z">
+		<statisticsSerial>
+			<max>
+				<inputVariable>
+					<variableId>MATX_MPE_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_MPE_max_6Z</variableId>
+				</outputVariable>
+			</max>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MATX_MPE_min_6Z">
+		<statisticsSerial>
+			<min>
+				<inputVariable>
+					<variableId>MATX_MPE_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_MPE_min_6Z</variableId>
+				</outputVariable>
+			</min>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MATX_MPE_day_6Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_MPE_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_MPE_day_6Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_MPE_day_12Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_MPE_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_MPE_day_12Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_MPE_day_18Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_MPE_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_MPE_day_18Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_MPE_day_00Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_MPE_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_MPE_day_00Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MAT-MATX_max_6Z">
+		<statisticsSerial>
+			<max>
+				<inputVariable>
+					<variableId>MAT-MATX</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_max_6Z</variableId>
+				</outputVariable>
+			</max>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MAT-MATX_min_6Z">
+		<statisticsSerial>
+			<min>
+				<inputVariable>
+					<variableId>MAT-MATX</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_min_6Z</variableId>
+				</outputVariable>
+			</min>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MAT-MATX_day_6Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MAT-MATX</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_day_6Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MAT-MATX_MPE_max_6Z">
+		<statisticsSerial>
+			<max>
+				<inputVariable>
+					<variableId>MAT-MATX_MPE</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_MPE_max_6Z</variableId>
+				</outputVariable>
+			</max>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MAT-MATX_MPE_min_6Z">
+		<statisticsSerial>
+			<min>
+				<inputVariable>
+					<variableId>MAT-MATX_MPE</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_MPE_min_6Z</variableId>
+				</outputVariable>
+			</min>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MAT-MATX_MPE_day_6Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MAT-MATX_MPE</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_MPE_day_6Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MATX_COMP_max_6Z">
+		<statisticsSerial>
+			<max>
+				<inputVariable>
+					<variableId>MATX_COMP</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_COMP_max_6Z</variableId>
+				</outputVariable>
+			</max>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MATX_COMP_min_6Z">
+		<statisticsSerial>
+			<min>
+				<inputVariable>
+					<variableId>MATX_COMP</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_COMP_min_6Z</variableId>
+				</outputVariable>
+			</min>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MATX_COMP_day_6Z">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>MATX_COMP</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_COMP_day_6Z</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="MAT-MATX_Month">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MAT-MATX_day_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_Month</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAT-MATX_MPE_Month">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MAT-MATX_MPE_day_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_MPE_Month</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MATX_COMP_Month">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MATX_COMP_day_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_COMP_Month</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAT-MATX_Month_max">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MAT-MATX_max_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_Month_max</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAT-MATX_MPE_Month_max">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MAT-MATX_MPE_max_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_MPE_Month_max</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MATX_COMP_Month_max">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MATX_COMP_max_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_COMP_Month_max</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAT-MATX_Month_min">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MAT-MATX_min_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_Month_min</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAT-MATX_MPE_Month_min">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MAT-MATX_MPE_min_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT-MATX_MPE_Month_min</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MATX_COMP_Month_min">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MATX_COMP_min_6Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MATX_COMP_Month_min</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	
+	<!-- grid transformations -->
+	<!--<transformation id="QPE_SUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="QPE_SUM_7day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_7day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_14day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_14day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>-->
+	
+</transformationModule>

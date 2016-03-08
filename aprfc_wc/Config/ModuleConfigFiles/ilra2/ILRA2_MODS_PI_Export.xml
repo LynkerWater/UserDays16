@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesExportRun xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesExportRun.xsd">
+	<export>
+		<general>
+			<exportType>PI</exportType>
+			<folder>$EXPORT_FOLDER$/MODS</folder>
+			<exportFileName>
+				<name>_MODS_ILRA2.</name>
+				<prefix>
+					<timeZeroFormattingString>yyyyMMddHH</timeZeroFormattingString>
+				</prefix>
+				<suffix>
+					<currentTimeFormattingString>yyyyMMddHHmm</currentTimeFormattingString>
+				</suffix>
+			</exportFileName>
+			<unitConversionsId>exportEnglishUnits</unitConversionsId>
+			<exportMissingValue>-999</exportMissingValue>
+			<omitMissingValues>true</omitMissingValues>
+		</general>
+					<!--<timeSeriesSet>
+						<moduleInstanceSetId>MAP</moduleInstanceSetId>
+						<valueType>scalar</valueType>
+						<parameterId>MAP</parameterId>
+						<locationId>ILRA2UPR</locationId> 
+						<timeSeriesType>simulated forecasting</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="day" start="-10"  end="7"/>
+						<readWriteMode>read only</readWriteMode>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceSetId>MAP</moduleInstanceSetId>
+						<valueType>scalar</valueType>
+						<parameterId>MAP</parameterId>
+						<locationId>ILRA2LWR</locationId> 
+						<timeSeriesType>simulated forecasting</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="day" start="-10"  end="7"/>
+						<readWriteMode>read only</readWriteMode>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceSetId>MAT</moduleInstanceSetId>
+						<valueType>scalar</valueType>
+						<parameterId>MAT</parameterId>
+						<locationId>ILRA2UPR</locationId> 
+						<timeSeriesType>simulated forecasting</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="day" start="-10"  end="7"/>
+						<readWriteMode>read only</readWriteMode>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceSetId>MAT</moduleInstanceSetId>
+						<valueType>scalar</valueType>
+						<parameterId>MAT</parameterId>
+						<locationId>ILRA2LWR</locationId> 
+						<timeSeriesType>simulated forecasting</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="day" start="-10"  end="7"/>
+						<readWriteMode>read only</readWriteMode>
+					</timeSeriesSet>-->
+					<timeSeriesSet>
+						<moduleInstanceId>ExportMODS</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>RAINSNOW</parameterId>
+						<locationId>ILRA2UPR</locationId>
+						<timeSeriesType>external historical</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="hour" end="0" endOverrulable="true"/>
+						<readWriteMode>read only</readWriteMode>
+						<ensembleId>main</ensembleId>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceId>ExportMODS</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>RAINSNOW</parameterId>
+						<locationId>ILRA2LWR</locationId>
+						<timeSeriesType>external historical</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="hour" end="0" endOverrulable="true"/>
+						<readWriteMode>read only</readWriteMode>
+						<ensembleId>main</ensembleId>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceId>ExportMODS</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>MFC</parameterId>
+						<locationId>ILRA2UPR</locationId>
+						<timeSeriesType>external historical</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="hour" end="0" endOverrulable="true"/>
+						<readWriteMode>read only</readWriteMode>
+						<ensembleId>main</ensembleId>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceId>ExportMODS</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>MFC</parameterId>
+						<locationId>ILRA2LWR</locationId>
+						<timeSeriesType>external historical</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="hour" end="0" endOverrulable="true"/>
+						<readWriteMode>read only</readWriteMode>
+						<ensembleId>main</ensembleId>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceId>ExportMODS</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>UADJ</parameterId>
+						<locationId>ILRA2UPR</locationId>
+						<timeSeriesType>external historical</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="hour" end="0" endOverrulable="true"/>
+						<readWriteMode>read only</readWriteMode>
+						<ensembleId>main</ensembleId>
+					</timeSeriesSet>
+					<timeSeriesSet>
+						<moduleInstanceId>ExportMODS</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>UADJ</parameterId>
+						<locationId>ILRA2LWR</locationId>
+						<timeSeriesType>external historical</timeSeriesType>
+						<timeStep unit="hour" multiplier="6"/>
+						<relativeViewPeriod unit="hour" end="0" endOverrulable="true"/>
+						<readWriteMode>read only</readWriteMode>
+						<ensembleId>main</ensembleId>
+					</timeSeriesSet>
+	</export>
+</timeSeriesExportRun>

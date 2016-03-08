@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by ICT (Stichting Deltares) -->
+<dictionary xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/watercoachschemas/version1.0/dictionary_config.xsd">
+	<entry>
+		<word>Spatial Display</word>
+		<definition>Display to show grids and other spatial data</definition>
+	</entry>
+	<entry>
+		<word>Forecastgroup</word>
+		<definition>Watershed consisting of sub catchments aka segments</definition>
+	</entry>
+	<entry>
+		<word>Segments</word>
+		<definition>(sub) catchments containing lumped snow and rainfall-runoff and routing models</definition>
+	</entry>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</dictionary>

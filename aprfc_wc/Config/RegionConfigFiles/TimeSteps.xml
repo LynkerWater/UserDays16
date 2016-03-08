@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSteps xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSteps.xsd">
+	<timeStep id="6Z" times="06:00"/>
+	<timeStep id="12Z" times="12:00"/>
+	<timeStep id="18Z" times="18:00"/>
+	<timeStep id="00Z" times="00:00"/>
+	<timeStep id="2Z" times="02:00"/>
+	<timeStep id="8Z" times="08:00"/>
+	<timeStep id="14Z" times="14:00"/>
+	<timeStep id="20Z" times="20:00"/>
+	
+	<timeStep id="monthly" monthDays="--01-01 --02-01 --03-01 --04-01 --05-01 --06-01 --07-01 --08-01 --09-01 --10-01 --11-01 --12-01" timeZone="GMT-8"/>
+	<timeStep id="monthly_6hr" monthDays="--01-01 --02-01 --03-01 --04-01 --05-01 --06-01 --07-01 --08-01 --09-01 --10-01 --11-01 --12-01" timeZone="GMT-6"/>
+	<timeStep id="monthly_0hr" monthDays="--01-01 --02-01 --03-01 --04-01 --05-01 --06-01 --07-01 --08-01 --09-01 --10-01 --11-01 --12-01"/>
+	
+	
+
+</timeSteps>

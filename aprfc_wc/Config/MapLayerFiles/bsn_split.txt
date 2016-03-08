@@ -1,0 +1,253 @@
+"FID_","GRIDCODE","hb5id","DESCRIP","UNIQUE_ID","BasinSplit","Area_Mi2"
+,1.000000,"YWRQ9","Yukon River above White River","YWRQ9UPR",3000,25543.240000
+,0.000000,"YWRQ9","Yukon River above White River","YWRQ9LWR",3000,12813.640000
+,1.000000,"YDAQ9","Yukon River at Dawson","YDAQ9UPR",3000,7918.680000
+,0.000000,"YDAQ9","Yukon River at Dawson","YDAQ9LWR",3000,8652.800000
+,0.000000,"WHRQ9","White River near Beaver Cr.","WHRQ9NGL",-999,1626.580000
+,0.000000,"WHRQ9","White River near Beaver Cr.","WHRQ9GL",-999,861.230000
+,1.000000,"SRMQ9","Stewart River at Yukon Mouth","SRMQ9UPR",3000,3267.780000
+,0.000000,"SRMQ9","Stewart River at Yukon Mouth","SRMQ9LWR",3000,4639.190000
+,1.000000,"SRFQ9","Stewart River near Mayo","SRFQ9UPR",3000,8654.750000
+,0.000000,"SRFQ9","Stewart River near Mayo","SRFQ9LWR",3000,3153.900000
+,1.000000,"PRXQ9","Pelly River at Pelly Crossing","PRXQ9UPR",3000,13921.000000
+,0.000000,"PRXQ9","Pelly River at Pelly Crossing","PRXQ9LWR",3000,5173.680000
+,1.000000,"NIRQ9","Nisling River blw Onion Cr.","NIRQ9UPR",3000,2429.000000
+,0.000000,"NIRQ9","Nisling River blw Onion Cr.","NIRQ9LWR",3000,435.400000
+,1.000000,"KLNQ9","Klondike River abv Bonanza R.","KLNQ9UPR",3000,1718.070000
+,0.000000,"KLNQ9","Klondike River abv Bonanza R.","KLNQ9LWR",3000,1331.660000
+,1.000000,"FMWA2","West Fork at Taylor Hwy","FMWA2UPR",3000,87.180000
+,0.000000,"FMWA2","West Fork at Taylor Hwy","FMWA2LWR",3000,532.000000
+,1.000000,"FMSA2","South Fork at Taylor Hwy","FMSA2UPR",3000,212.950000
+,0.000000,"FMSA2","South Fork at Taylor Hwy","FMSA2LWR",3000,742.350000
+,1.000000,"FMRA2","Fortymile Riverat Taylor Hwy","FMRA2UPR",3000,1445.760000
+,0.000000,"FMRA2","Fortymile Riverat Taylor Hwy","FMRA2LWR",3000,976.250000
+,1.000000,"FMMA2","Mosquito Fork at Taylor Hwy","FMMA2UPR",3000,462.690000
+,0.000000,"FMMA2","Mosquito Fork at Taylor Hwy","FMMA2LWR",3000,645.830000
+,1.000000,"FMKA2","Walker Fork at Taylor Hwy","FMKA2UPR",3000,212.200000
+,0.000000,"FMKA2","Walker Fork at Taylor Hwy","FMKA2LWR",3000,177.480000
+,1.000000,"UCHA2","Chena River near Two Rivers","UCHA2UPR",2000,543.580000
+,0.000000,"UCHA2","Chena River near Two Rivers","UCHA2LWR",2000,393.570000
+,0.000000,"TAFA2","Tanana River at Fairbanks","TAFA2LWR",3000,2480.840000
+,1.000000,"TAFA2","Tanana River at Fairbanks","TAFA2UPR",3000,760.390000
+,0.000000,"TAFA2","Tanana River at Fairbanks","TAFA2GL",-999,191.960000
+,0.000000,"TKGA2","Tok River near Tok","TKGA2LWR",4000,514.120000
+,1.000000,"TKGA2","Tok River near Tok","TKGA2UPR",4000,418.760000
+,0.000000,"TSGA2","Tanana River at Tanacross","TSGA2LOC",-999,354.830000
+,0.000000,"TTNA2","Tanana River at Tetlin","TLNA2LOC",-999,1261.440000
+,0.000000,"SALA2","Salcha River near Salchaket","SALA2LWR",2000,733.420000
+,1.000000,"SALA2","Salcha River near Salchaket","SALA2UPR",2000,1481.610000
+,0.000000,"NEBA2","Nebesna R. near Northway","NEBA2LWR",4000,777.730000
+,1.000000,"NEBA2","Nebesna R. near Northway","NEBA2UG",7000,398.750000
+,0.000000,"NEBA2","Nebesna R. near Northway","NEBA2LG",7000,181.470000
+,1.000000,"NEBA2","Nebesna R. near Northway","NEBA2UPR",4000,1009.710000
+,1.000000,"MHSA2","Tanana River at Manley Hot Spr","MHSA2UPR",3000,1124.740000
+,1.000000,"MHSA2","Tanana River at Manley Hot Spr","MHSA2UG",7000,185.770000
+,0.000000,"MHSA2","Tanana River at Manley Hot Spr","MHSA2LWR",3000,12542.730000
+,0.000000,"MHSA2","Tanana River at Manley Hot Spr","MHSA2LG",7000,374.770000
+,0.000000,"MCDA2","Chena River at Moose Cr. Dam","MCDA2LOC",-999,108.940000
+,1.000000,"HNRA2","Nenana River at Healy","HNRA2UPR",3000,1174.040000
+,0.000000,"HNRA2","Nenana River at Healy","HNRA2LWR",3000,600.190000
+,0.000000,"HNRA2","Nenana River at Healy","HNRA2GL",-999,126.930000
+,1.000000,"GBDA2","Goodpastor R. near Big Delta","GBDA2UPR",3000,388.570000
+,0.000000,"GBDA2","Goodpastor R. near Big Delta","GBDA2LWR",3000,297.500000
+,1.000000,"ENNA2","Tanana River at Nenana","ENNA2UPR",3000,742.870000
+,0.000000,"ENNA2","Tanana River at Nenana","ENNA2LWR",3000,2804.940000
+,1.000000,"DBRA2","Delta Rvier at Black Rapids","DBRA2UPR",3000,577.850000
+,0.000000,"DBRA2","Delta Rvier at Black Rapids","DBRA2LWR",3000,116.800000
+,0.000000,"DBRA2","Delta Rvier at Black Rapids","DBRA2GL",-999,306.010000
+,1.000000,"CRSA2","Chatanika River at Steese Hwy","CRSA2UPR",2000,209.960000
+,0.000000,"CRSA2","Chatanika River at Steese Hwy","CRSA2LWR",2000,160.160000
+,1.000000,"CRNA2","Chisana River at Northway","CRNA2UPR",4000,658.270000
+,1.000000,"CRNA2","Chisana River at Northway","CRNA2UG",7000,134.060000
+,0.000000,"CRNA2","Chisana River at Northway","CRNA2LWR",4000,2297.680000
+,0.000000,"CRNA2","Chisana River at Northway","CRNA2LG",7000,43.270000
+,1.000000,"CRHA2","Chena Rvier at Hunts Creek","CRHA2UPR",2000,59.790000
+,0.000000,"CRHA2","Chena Rvier at Hunts Creek","CRHA2LWR",2000,348.710000
+,1.000000,"CHLA2","Little Chena R. near Fairbanks","CHLA2UPR",2000,81.210000
+,0.000000,"CHLA2","Little Chena R. near Fairbanks","CHLA2LWR",2000,294.420000
+,0.000000,"CHFA2","Chena River at Fairbanks","CHFA2LOC",-999,314.710000
+,0.000000,"CHAA2","Chatanika River at Elliot Hwy","CHAA2LOC",-999,164.120000
+,1.000000,"BGDA2","Tanana River at Big Delta","BGDA2UPR",3000,1434.610000
+,0.000000,"BGDA2","Tanana River at Big Delta","BGDA2LWR",3000,3255.970000
+,0.000000,"BGDA2","Tanana River at Big Delta","BGDA2GL",-999,257.690000
+,1.000000,"TYAA2","Tiaya River near Haines","TYAA2UPR",3000,37.370000
+,1.000000,"TYAA2","Tiaya River near Haines","TYAA2UG",4000,58.790000
+,0.000000,"TYAA2","Tiaya River near Haines","TYAA2LWR",3000,35.670000
+,0.000000,"TYAA2","Tiaya River near Haines","TYAA2LG",4000,52.510000
+,1.000000,"TKUA2","Taku River near Juneau","TKUA2UPR",4000,2365.650000
+,0.000000,"TKUA2","Taku River near Juneau","TKUA2LWR",4000,3682.060000
+,0.000000,"TKUA2","Taku River near Juneau","TKUA2GL",-999,493.330000
+,1.000000,"TATQ9","Tatshenshini River","TATQ9UPR",3000,551.340000
+,0.000000,"TATQ9","Tatshenshini River","TATQ9LWR",3000,132.840000
+,1.000000,"STTQ2","Stikine River at Telegraph Cr.","STTQ2UPR",4000,1838.160000
+,0.000000,"STTQ2","Stikine River at Telegraph Cr.","STTQ2LWR",4000,2118.300000
+,1.000000,"STKA2","Stikine River near Wrangell","STKA2UPR",4000,162.570000
+,0.000000,"STKA2","Stikine River near Wrangell","STKA2LWR",4000,1153.980000
+,0.000000,"STKA2","Stikine River near Wrangell","STKA2GL",-999,873.030000
+,1.000000,"SRYA2","Situk River near Yakutat","SRYA2UPR",670,1.160000
+,0.000000,"SRYA2","Situk River near Yakutat","SRYA2LWR",670,28.060000
+,1.000000,"SKGA2","Skagway River near Skagway","SKGA2UPR",3000,139.030000
+,0.000000,"SKGA2","Skagway River near Skagway","SKGA2LWR",3000,40.540000
+,1.000000,"SGCA2","Stikine River at Grand Canyon","SGCA2UPR",4000,5726.090000
+,0.000000,"SGCA2","Stikine River at Grand Canyon","SGCA2LWR",4000,1532.470000
+,1.000000,"SBFA2","Stikine River abv Butterfly Cr","SBFA2UPR",4000,935.970000
+,0.000000,"SBFA2","Stikine River abv Butterfly Cr","SBFA2LWR",4000,1251.610000
+,0.000000,"SBFA2","Stikine River abv Butterfly Cr","SBRA2GL",-999,644.060000
+,1.000000,"MNDA2","Mendenall River near Auke Bay","MNDA2UG",4000,30.240000
+,0.000000,"MNDA2","Mendenall River near Auke Bay","MNDA2LWR",-999,13.860000
+,0.000000,"MNDA2","Mendenall River near Auke Bay","MNDA2LG",4000,40.120000
+,1.000000,"MCAA2","Montana Cr. near Auke Bay","MCAA2UPR",1800,4.530000
+,0.000000,"MCAA2","Montana Cr. near Auke Bay","MCAA2LWR",1800,9.540000
+,1.000000,"ISKQ2","Iskut River blw Johnson River","ISKQ2UPR",4000,1418.650000
+,0.000000,"ISKQ2","Iskut River blw Johnson River","ISKQ2LWR",4000,1484.030000
+,0.000000,"ISKQ2","Iskut River blw Johnson River","ISKA2GL",-999,637.800000
+,1.000000,"DEZQ9","Dezadeash River at Haines Jct","DEZQ9UPR",3000,2602.450000
+,0.000000,"DEZQ9","Dezadeash River at Haines Jct","DEZQ9LWR",3000,643.260000
+,1.000000,"ALKA2","Alsek River near Yakutat","ALKA2UPR",3000,1188.510000
+,1.000000,"ALKA2","Alsek River near Yakutat","ALKA2UG",4000,1012.790000
+,0.000000,"ALKA2","Alsek River near Yakutat","ALKA2LWR",3000,1049.930000
+,0.000000,"ALKA2","Alsek River near Yakutat","ALKA2LG",4000,497.350000
+,1.000000,"NSHA2","Nushagak River at Ekwok","NSHA2UPR",1000,1035.710000
+,0.000000,"NSHA2","Nushagak River at Ekwok","NSHA2LWR",1000,5316.400000
+,1.000000,"NRDA2","Nuyakuk River near Dillingham","NRDA2UPR",2000,172.190000
+,0.000000,"NRDA2","Nuyakuk River near Dillingham","NRDA2LWR",2000,1057.510000
+,1.000000,"MULA2","Mulchatna R. Marabour Landing","MULA2UPR",3000,258.870000
+,0.000000,"MULA2","Mulchatna R. Marabour Landing","MULA2LWR",3000,1667.670000
+,1.000000,"ILRA2","Iliamna River near Pedro Bay","ILRA2UPR",2000,60.660000
+,0.000000,"ILRA2","Iliamna River near Pedro Bay","ILRA2LWR",2000,71.950000
+,1.000000,"SGRA2","Sag River near Pump stn 3","SGRA2UPR",3000,1153.280000
+,0.000000,"SGRA2","Sag River near Pump stn 3","SGRA2LWR",3000,615.840000
+,1.000000,"KUPA2","Kuparuk River near Deadhorse","KUPA2UPR",1000,859.630000
+,0.000000,"KUPA2","Kuparuk River near Deadhorse","KUPA2LWR",1000,2416.710000
+,2.000000,"CRUA2","Colville River at Umiat","CRUA2UPR",3000,2298.420000
+,1.000000,"CRUA2","Colville River at Umiat","CRUA2MID",1000,9557.540000
+,0.000000,"CRUA2","Colville River at Umiat","CRUA2LWR",1000,1895.600000
+,1.000000,"YSSA2","Yentna River at Susitna Stn","YSSA2UPR",3000,195.540000
+,2.000000,"YSSA2","Yentna River at Susitna Stn","YSSA2UG",4000,192.390000
+,0.000000,"YSSA2","Yentna River at Susitna Stn","YSSA2LWR",3000,1189.850000
+,1.000000,"YSSA2","Yentna River at Susitna Stn","YSSA2LG",4000,56.860000
+,1.000000,"YLKA2","Yentna River at Lake Creek","YLKA2UPR",3000,599.300000
+,1.000000,"YLKA2","Yentna River at Lake Creek","YLKA2UG",4000,264.540000
+,0.000000,"YLKA2","Yentna River at Lake Creek","YLKA2LWR",3000,1392.080000
+,0.000000,"YLKA2","Yentna River at Lake Creek","YLKA2LG",4000,150.800000
+,1.000000,"WLWA2","Willow Creek near Willow","WLWA2UPR",3000,77.620000
+,0.000000,"WLWA2","Willow Creek near Willow","WLWA2LWR",3000,78.980000
+,0.000000,"WILA2","Willow Creek at Parks Hwy","WILA2LOC",-999,81.430000
+,1.000000,"TRTA2","Talkeena River","TRTA2UPR",3000,1104.200000
+,0.000000,"TRTA2","Talkeena River","TRTA2LWR",3000,781.580000
+,0.000000,"TRTA2","Talkeena River","TRTA2GL",-999,110.820000
+,0.000000,"SUNA2","Susitna R. at Sunshine","SUNA2LOC",-999,422.200000
+,1.000000,"SUDA2","Susitna River near Denali","SUDA2UPR",4000,242.510000
+,1.000000,"SUDA2","Susitna River near Denali","SUDA2UG",5700,148.780000
+,0.000000,"SUDA2","Susitna River near Denali","SUDA2LWR",4000,383.710000
+,0.000000,"SUDA2","Susitna River near Denali","SUDA2LG",5700,156.210000
+,1.000000,"SUCA2","Susitna River near Cantwell","SUCA2UPR",3000,1590.370000
+,0.000000,"SUCA2","Susitna River near Cantwell","SUCA2LWR",3000,1293.920000
+,1.000000,"SKWA2","Skwentna River at Skwentna","SKWA2UPR",3000,882.810000
+,1.000000,"SKWA2","Skwentna River at Skwentna","SKWA2UG",4000,161.090000
+,0.000000,"SKWA2","Skwentna River at Skwentna","SKWA2LWR",3000,1231.690000
+,0.000000,"SKWA2","Skwentna River at Skwentna","SKWA2LG",4000,75.800000
+,1.000000,"MONA2","Montana Cr. near Talkeetna","MONA2UPR",3000,25.570000
+,0.000000,"MONA2","Montana Cr. near Talkeetna","MONA2LWR",3000,142.250000
+,1.000000,"MACAC","Maclaren River at Denali Hwy","MACA2UPR",4100,118.630000
+,1.000000,"MACA2","Maclaren River at Denali Hwy","MACA2UG",5700,26.360000
+,0.000000,"MACA2","Maclaren River at Denali Hwy","MACA2LWR",4100,147.380000
+,0.000000,"MACA2","Maclaren River at Denali Hwy","MAGA2LG",5700,22.840000
+,1.000000,"LSUA2","Little Susitna R. near Palmer","LSUA2UPR",3000,43.770000
+,0.000000,"LSUA2","Little Susitna R. near Palmer","LSUA2LWR",3000,16.790000
+,0.000000,"LSUA2","Little Susitna R. near Palmer","LSUA2GL",-999,0.470000
+,1.000000,"LSHA2","Little Susitna R. near Houston","LSHA2UPR",2000,18.440000
+,0.000000,"LSHA2","Little Susitna R. near Houston","LSHA2LWR",2000,90.460000
+,1.000000,"GCSA2","Susitna River at Gold Creek","GCSA2UPR",3000,1278.200000
+,0.000000,"GCSA2","Susitna River at Gold Creek","GCSA2LWR",3000,743.370000
+,1.000000,"CLTA2","Chulitna River at Parks Hwy","CLTA2UPR",3000,1052.690000
+,0.000000,"CLTA2","Chulitna River at Parks Hwy","CLTA2LWR",3000,973.400000
+,0.000000,"CLTA2","Chulitna River at Parks Hwy","CLTA2GL",-999,501.520000
+,1.000000,"SLAA2","Slate Creek near Coldfoot","SLAA2UPR",2100,49.580000
+,0.000000,"SLAA2","Slate Creek near Coldfoot","SLAA2LWR",2100,33.940000
+,1.000000,"SFKA2","South Fork Koyukuk","SFKA2UPR",2100,555.590000
+,0.000000,"SFKA2","South Fork Koyukuk","SFKA2LWR",2100,1284.350000
+,1.000000,"MFKA2","Middle Fork Koyukuk River","MFKA2UPR",2100,1008.240000
+,0.000000,"MFKA2","Middle Fork Koyukuk River","MFKA2LWR",2100,166.000000
+,0.000000,"KRHA2","Koyukuk River at Hughes","KRHA2LOC",-999,1173.480000
+,1.000000,"KNRA2","Kanuti River near Hughes","KNRA2UPR",2100,383.170000
+,0.000000,"KNRA2","Kanuti River near Hughes","KNRA2LWR",2100,2969.220000
+,1.000000,"KNFA2","North Fork Koyukuk nr Bettles","KNFA2UPR",2100,1346.680000
+,0.000000,"KNFA2","North Fork Koyukuk nr Bettles","KNFA2LWR",2100,478.620000
+,1.000000,"JONA2","John River near Bettles","JONA2UPR",2100,1958.410000
+,0.000000,"JONA2","John River near Bettles","JONA2LWR",2100,759.610000
+,1.000000,"JIRA2","Jim River South Fork Koyukuk","JIRA2UPR",2100,196.920000
+,0.000000,"JIRA2","Jim River South Fork Koyukuk","JIRA2LWR",2100,255.470000
+,1.000000,"BTTA2","Koyukuk River at Bettles","BTTA2UPR",2100,492.970000
+,0.000000,"BTTA2","Koyukuk River at Bettles","BTTA2UPR",2100,653.690000
+,1.000000,"ALAA2","Alatna river near Allakaket","ALAA2UPR",2100,1759.820000
+,0.000000,"ALAA2","Alatna river near Allakaket","ALAA2LWR",2100,1751.280000
+,0.000000,"ALLA2","Koyukuk River at Allakaket","ALLA2LOC",-999,1140.070000
+,1.000000,"TONA2","Tonsina River at Tonsina","TONA2UPR",3000,251.890000
+,0.000000,"TONA2","Tonsina River at Tonsina","TONA2LWR",3000,137.580000
+,0.000000,"TONA2","Tonsina River at Tonsina","TONA2GL",0,29.170000
+,1.000000,"TAZA2","Tazlina River at Rich. Hwy","TAZA2UPR",3000,898.800000
+,1.000000,"TAZA2","Tazlina River at Rich. Hwy","TAZA2UG",5000,165.020000
+,0.000000,"TAZA2","Tazlina River at Rich. Hwy","TAZA2LWR",3000,1417.490000
+,0.000000,"TAZA2","Tazlina River at Rich. Hwy","TAZA2LG",5000,148.750000
+,1.000000,"KLUA2","Klutina River at Copper Center","KLUA2UPR",3000,420.760000
+,0.000000,"KLUA2","Klutina River at Copper Center","KLUA2LWR",3000,405.410000
+,0.000000,"KLUA2","Klutina River at Copper Center","KLUA2GL",3000,78.930000
+,0.000000,"GULA2","Gulkana R at Rich. Hwy","GULA2LOC",-999,162.540000
+,1.000000,"GRSA2","Gulkana River at Sourdough","GRSA2UPR",3000,355.340000
+,0.000000,"GRSA2","Gulkana River at Sourdough","GRSA2LWR",3000,1216.320000
+,1.000000,"GPOA2","Gulkana River at Paxson Lake","GPOA2UPR",3000,134.370000
+,0.000000,"GPOA2","Gulkana River at Paxson Lake","GPOA2LWR",3000,41.570000
+,1.000000,"GAKA2","Gakona River at Rich. Hwy","GAKA2UPR",3000,210.640000
+,0.000000,"GAKA2","Gakona River at Rich. Hwy","GAKA2LWR",3000,355.860000
+,0.000000,"GAKA2","Gakona River at Rich. Hwy","GAKA2GL",-999,48.990000
+,1.000000,"TRPA2","Twentymile River near Portage","TRPA2UPR",1500,70.950000
+,0.000000,"TRPA2","Twentymile River near Portage","TRPA2LWR",1500,42.270000
+,0.000000,"TRPA2","Twentymile River near Portage","TRPA2GL",-999,25.030000
+,1.000000,"SHIA2","Ship Creek near Anchorage","SHIA2UPR",3000,41.870000
+,0.000000,"SHIA2","Ship Creek near Anchorage","SHIA2LWR",3000,47.960000
+,1.000000,"ERBA2","Eagle River at Glenn Hwy","ERBA2UPR",3000,102.680000
+,0.000000,"ERBA2","Eagle River at Glenn Hwy","ERBA2LWR",3000,80.440000
+,0.000000,"ERBA2","Eagle River at Glenn Hwy","ERBA2GL",-999,20.210000
+,2.000000,"FUNA2","Funny R.","FUNUPR",2500,7.730000
+,1.000000,"FUNA2","Funny R.","FUNLWR",2500,122.300000
+,0.000000,"MOOA2","Moose River","MOOSE",-999,219.860000
+,0.000000,"SXRA2","Kenai R. at Soldotna","SXRA2LOC",-999,169.280000
+,4.000000,"MPTA2","Trail R. at Lawing","MPTA2GL",1500,17.310000
+,2.000000,"MPTA2","Trail R. at Lawing","MPTA2UPR",1500,113.470000
+,1.000000,"MPTA2","Trail R. at Lawing","MPTA2LWR",1500,53.270000
+,4.000000,"SNOA2","Snow R. near Seward","SNOA2GL",1500,44.510000
+,2.000000,"SNOA2","Snow R. near Seward","SNOA2UPR",1500,71.110000
+,1.000000,"SNOA2","Snow R. near Seward","SNOA2LWR",1500,35.300000
+,4.000000,"RESA2","Resurrection River","RESA2GL",1500,2.830000
+,2.000000,"RESA2","Resurrection River","RESA2UPR",1500,71.730000
+,1.000000,"RESA2","Resurrection River","RESA2LWR",1500,30.300000
+,2.000000,"SIXA2","Sixmile River","SIXA2UPR",1500,183.050000
+,1.000000,"SIXA2","Sixmile River","SIXA2LWR",1500,48.580000
+,2.000000,"KIYA2","Killey River","KIYA2UPR",2500,85.080000
+,1.000000,"KIYA2","Killey River","KIYA2LWR",2500,87.940000
+,4.000000,"KIYA2","Killey River","KIYA2GL",2500,26.610000
+,1.000000,"SKIA2","Skilak River abv Skilak Lake","SKIA2NG",4000,82.520000
+,3.000000,"SKIA2","Skilak River abv Skilak Lake","SKIA2LG",4000,57.160000
+,4.000000,"SKIA2","Skilak River abv Skilak Lake","SKIA2UG",4000,29.620000
+,0.000000,"KRKA2","Kenai R. blw Kenai Keys","KRKA2LOC",-999,26.910000
+,2.000000,"CTSA2","Cooper L. to Skilak Lk","CTSA2UPR",2000,107.650000
+,1.000000,"CTSA2","Cooper L. to Skilak Lk","CTSA2LWR",2000,120.520000
+,2.000000,"SKLA2","Kenai River blw Skilak Lake","SKLA2UPR",2000,18.050000
+,1.000000,"SKLA2","Kenai River blw Skilak Lake","SKLA2LWR",2000,144.720000
+,2.000000,"COOA2","Kenai River at Cooper Landing","COOA2UPR",1500,199.640000
+,1.000000,"COOA2","Kenai River at Cooper Landing","COOA2LWR",1500,111.010000
+,2.000000,"APBA2","Anchor River near Anchor Point","APBA2UPR",1000,19.700000
+,1.000000,"APBA2","Anchor River near Anchor Point","APBA2LWR",1000,62.780000
+,2.000000,"APTA2","Anchor River at Sterling Hwy","APTA2UPR",1000,83.760000
+,1.000000,"APTA2","Anchor River at Sterling Hwy","APTA2LWR",1000,46.630000
+,2.000000,"NINA2","Ninilchik River at Ninilchik","NINA2UPR",1000,29.080000
+,1.000000,"NINA2","Ninilchik River at Ninilchik","NINA2LWR",1000,101.660000
+,1.000000,"CSRA2","South Fork Campbell Creek","CSRA2UPR",2900,12.470000
+,0.000000,"CSRA2","South Fork Campbell Creek","CSRA2LWR",2900,16.950000
+,0.000000,"CHRA2","Chester Cr. at Arctic Blvd","CHRA2LOC",-999,27.350000
+,1.000000,"ALSQ9","Alsek River abv Bates River","ALSQ9UPR",3000,1254.600000
+,0.000000,"ALSQ9","Alsek River abv Bates River","ALSQ9LWR",3000,494.680000
+,27.000000,"ALSQ9","Alsek River abv Bates River","ALSQ9GL",-999,1356.180000
+,0.000000,"PHLA2","Phelan C at Rich. Hwy","PHLA2NG",-999,0.640000
+,27.000000,"PHLA2","Phalen Creek near Paxson","PHLA2GL",-999,11.320000

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">	
+	<variable>
+		<variableId>MAP_cardfiles</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportDataCard</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_ofs</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-365" startOverrulable="true" end="0"/>
+			<!--<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="0"/>-->
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP</variableId>
+		<timeSeriesSet>
+			<moduleInstanceSetId>MAP</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="-240" startOverrulable="true" end="240" endOverrulable="false"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!-- daily sum -->
+	<variable>
+		<variableId>Sum_Precip_00Z</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<qualifierId>00Z</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-90" startOverrulable="true" end="8"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Sum_Precip_00Z_ofs</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<qualifierId>00Z_ofs</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-90" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!-- 30day, 90day, 365day precip accumulations -->
+	<!--<variable>
+		<variableId>MAP_SUM_365day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<qualifierId>365day</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-365" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>MAP_SUM_90day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<qualifierId>90day</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-90" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_SUM_30day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<qualifierId>30day</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-30" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!--<variable>
+		<variableId>MAP_SUM_365day_ofs</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<qualifierId>365day_ofs</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-365" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>MAP_SUM_90day_ofs</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<qualifierId>90day_ofs</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-90" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_SUM_30day_ofs</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<qualifierId>30day_ofs</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-30" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_zero_tmp</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>temporary</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-365" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_SUM_zero</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<qualifierId>zero</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-365" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!-- historical daily sums -->
+	<variable>
+		<variableId>MAP_Day_MY</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-730" end="365" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!--<variable>
+		<variableId>MAP_Day_MY_trimmed</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<qualifierId>trimmed</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-365" end="365"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>MAP_Day_MY_4X</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<qualifierId>4X</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-730" end="365" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_Day_MY_4X_trimmed</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<qualifierId>trimmed</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-365" end="365"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>HIST_MAP_SUM_365day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>HIST_MAP_SUM</parameterId>
+			<qualifierId>365day</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-365" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>HIST_MAP_SUM_90day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>HIST_MAP_SUM</parameterId>
+			<qualifierId>90day</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-90" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>HIST_MAP_SUM_30day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAP_Climatology</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>HIST_MAP_SUM</parameterId>
+			<qualifierId>30day</qualifierId>
+			<locationSetId>Catchments_Copper</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="day"/>
+			<relativeViewPeriod unit="day" start="-30" end="8"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- catchment transformations -->
+	<transformation id="Sum_Precip_00Z">
+		<aggregation>
+			<accumulative>
+				<inputVariable>
+					<variableId>MAP</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Sum_Precip_00Z</variableId>
+				</outputVariable>
+			</accumulative>
+		</aggregation>
+	</transformation>
+	<transformation id="Sum_Precip_00Z_ofs">
+		<aggregation>
+			<accumulative>
+				<inputVariable>
+					<variableId>MAP_ofs</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Sum_Precip_00Z_ofs</variableId>
+				</outputVariable>
+			</accumulative>
+		</aggregation>
+	</transformation>
+	<!--<transformation id="MAP_SUM_365day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>Sum_Precip_00Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_SUM_365day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>-->
+	<transformation id="MAP_SUM_90day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>Sum_Precip_00Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_SUM_90day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="MAP_SUM_30day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>Sum_Precip_00Z</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_SUM_30day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<!--<transformation id="MAP_SUM_365day_ofs">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>Sum_Precip_00Z_ofs</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_SUM_365day_ofs</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>-->
+	<transformation id="MAP_SUM_90day_ofs">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>Sum_Precip_00Z_ofs</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_SUM_90day_ofs</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="MAP_SUM_30day_ofs">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>Sum_Precip_00Z_ofs</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_SUM_30day_ofs</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="MAP_SUM_zero">
+		<interpolationSerial>
+			<default>
+				<inputVariable>
+					<variableId>MAP_zero_tmp</variableId>
+				</inputVariable>
+				<defaultValue>0.00</defaultValue>
+				<outputVariable>
+					<variableId>MAP_SUM_zero</variableId>
+				</outputVariable>
+			</default>
+		</interpolationSerial>
+	</transformation>
+	<!-- historical catchment transformations -->
+	<transformation id="MAP_Day_MY">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>MAP_cardfiles</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAP_Day_MY</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>
+	<!--<transformation id="MAP_Day_MY_trimmed">
+		<user>
+			<simple>
+				<expression>MAP_Day_MY</expression>
+				<outputVariable>
+					<variableId>MAP_Day_MY_trimmed</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>-->
+	<transformation id="MAP_Day_MY_4X">
+		<user>
+			<simple>
+				<expression>+4*(MAP_Day_MY)</expression>
+				<outputVariable>
+					<variableId>MAP_Day_MY_4X</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+	<transformation id="MAP_Day_MY_4X_trimmed">
+		<user>
+			<simple>
+				<expression>MAP_Day_MY_4X</expression>
+				<outputVariable>
+					<variableId>MAP_Day_MY_4X_trimmed</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+	
+	<transformation id="HIST_MAP_SUM_365day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>MAP_Day_MY_4X_trimmed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>HIST_MAP_SUM_365day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="HIST_MAP_SUM_90day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>MAP_Day_MY_4X_trimmed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>HIST_MAP_SUM_90day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="HIST_MAP_SUM_30day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>MAP_Day_MY_4X_trimmed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>HIST_MAP_SUM_30day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	
+	
+</transformationModule>

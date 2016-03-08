@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by WL | Delft Hydraulics (WL | Delft Hydraulics) -->
+<fewsPiServiceConfig xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/fewsPiServiceConfig.xsd">
+    <general>
+        <exportIdMap>IdExportPiService</exportIdMap>
+    </general>
+    <timeSeries>
+        <id>selectedTimeSeries</id>
+        <selectedTimeSeries></selectedTimeSeries>
+    </timeSeries>
+    <timeSeries>
+        <id>selectedSegmentTimeSeries</id>
+        <selectedSegmentTimeSeries></selectedSegmentTimeSeries>
+    </timeSeries>
+
+    <!--  Returns the observed streamflow -->
+    <timeSeries>
+        <id>QIN</id>
+        <timeSeriesSet>
+            <moduleInstanceSetId>QIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>QIN</parameterId>
+            <locationSetId>ImportIHFSDB</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6" />
+            <readWriteMode>read only</readWriteMode> 
+            <ensembleId>QPF</ensembleId>                      
+        </timeSeriesSet>
+    </timeSeries>
+
+    <!--  Returns the observed river stage -->
+    <timeSeries>
+        <id>STG</id>
+        <timeSeriesSet>                        
+            <moduleInstanceId>ImportIHFSDB</moduleInstanceId>
+            <valueType>scalar</valueType>
+            <parameterId>STG</parameterId>
+            <locationSetId>ImportIHFSDB</locationSetId>
+            <timeSeriesType>external historical</timeSeriesType>
+            <timeStep unit="hour" multiplier="6" />
+            <readWriteMode>read only</readWriteMode>                        
+        </timeSeriesSet>
+    </timeSeries>
+
+    <!--  Returns the deterministic forecast streamflow -->
+    <timeSeries>
+        <id>QINE</id>
+        <timeSeriesSet>
+            <moduleInstanceSetId>QINE</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>QINE</parameterId>
+            <locationSetId>ImportIHFSDB</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6" />
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>QPF</ensembleId>
+        </timeSeriesSet>
+    </timeSeries>
+
+    <!--  Returns the deterministic forecast river stage -->
+    <timeSeries>
+        <id>SSTG</id>
+        <timeSeriesSet>
+            <moduleInstanceSetId>QIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>SSTG</parameterId>
+            <locationSetId>ImportIHFSDB</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6" />
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>QPF</ensembleId>
+        </timeSeriesSet>
+    </timeSeries>
+
+    <!--  Returns the standard ESP streamflow forecasts -->
+    <timeSeries>
+        <id>QINE ESP</id>
+        <timeSeriesSet>
+<!--            <moduleInstanceSetId>QINE</moduleInstanceSetId>-->
+            <moduleInstanceSetId>SQIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+<!--            <parameterId>QINE</parameterId>-->
+            <parameterId>SQIN</parameterId>
+            <locationSetId>ESPADP_Southeast</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>ESP</ensembleId>
+<!--            <ensembleMemberIndexRange start="1970" />-->
+	    <ensembleMemberIndexRange start='1970' end='1998'/>
+        </timeSeriesSet>
+        <timeSeriesSet>
+            <moduleInstanceSetId>SQIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>SQIN</parameterId>
+            <locationSetId>ESPADP_Fortym</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>ESP</ensembleId>
+	    <ensembleMemberIndexRange start='1978' end='2005'/>
+        </timeSeriesSet>
+    </timeSeries>
+
+    <!--  Returns the standard ESP river stage forecasts -->
+    <timeSeries>
+        <id>SSTG ESP</id>
+        <timeSeriesSet>
+            <moduleInstanceSetId>QIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>SSTG</parameterId>
+            <locationSetId>ESPADP_Southeast</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>ESP</ensembleId>
+<!--            <ensembleMemberIndexRange start="1970" />-->
+	    <ensembleMemberIndexRange start='1970' end='1998'/>
+        </timeSeriesSet>
+        <timeSeriesSet>
+            <moduleInstanceSetId>QIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>SSTG</parameterId>
+            <locationSetId>ESPADP_Fortym</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>ESP</ensembleId>
+	    <ensembleMemberIndexRange start='1978' end='2005'/>
+        </timeSeriesSet>
+    </timeSeries>
+    
+    <!--  Returns the historical ESP streamflow forecasts -->
+    <timeSeries>
+        <id>QINE HS</id>
+        <timeSeriesSet>
+<!--            <moduleInstanceSetId>QINE</moduleInstanceSetId>-->
+            <moduleInstanceSetId>SQIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+<!--            <parameterId>QINE</parameterId>-->
+            <parameterId>SQIN</parameterId>
+            <locationSetId>ESPADP_Southeast</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>HS</ensembleId>
+            <ensembleMemberIndexRange start="1971" />
+        </timeSeriesSet>
+    </timeSeries>
+    
+    <!--  Returns the historical ESP stage forecasts -->
+    <timeSeries>
+        <id>SSTG HS</id>
+        <timeSeriesSet>
+            <moduleInstanceSetId>QIN</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>SSTG</parameterId>
+            <locationSetId>ESPADP_Southeast</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>HS</ensembleId>
+            <ensembleMemberIndexRange start="1971" />
+        </timeSeriesSet>
+    </timeSeries>
+
+    <!--  Returns the precipitation ensembles used to generate the standard ESP forecasts -->
+    <timeSeries>
+        <id>MAP ESP</id>
+        <timeSeriesSet>
+            <moduleInstanceSetId>MAP</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>MAP</parameterId>
+            <locationSetId>Catchments</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>ESP</ensembleId>
+            <ensembleMemberIndexRange start="1970" />
+        </timeSeriesSet>
+    </timeSeries>
+
+    <!--  Returns the temperature ensembles used to generate the standard ESP forecasts -->
+    <timeSeries>
+        <id>MAT ESP</id>
+        <timeSeriesSet>
+            <moduleInstanceSetId>MAT</moduleInstanceSetId>
+            <valueType>scalar</valueType>
+            <parameterId>MAT</parameterId>
+            <locationSetId>Catchments</locationSetId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="hour" multiplier="6"/>
+            <readWriteMode>read only</readWriteMode>
+            <ensembleId>ESP</ensembleId>
+            <ensembleMemberIndexRange start="1970" />
+        </timeSeriesSet>
+    </timeSeries>
+
+</fewsPiServiceConfig>

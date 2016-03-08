@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd"
+	version="1.0">
+	<variable>
+		<variableId>MAPX_forecast</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>0</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+    <variable>
+		<variableId>fmapx_basin_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_basin</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>0</ensembleMemberIndex>
+		</timeSeriesSet>
+    </variable>
+	<variable>
+		<variableId>GFSX_forecast</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPFensemble</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<qualifierId>GFSX</qualifierId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_GFSX_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>1</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+    <variable>
+		<variableId>gfsx_basin_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPFensemble</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<qualifierId>GFSX</qualifierId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_GFSX_basin</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>1</ensembleMemberIndex>
+		</timeSeriesSet>
+    </variable>
+	<variable>
+		<variableId>NAMX_forecast</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPFensemble</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<qualifierId>NAMX</qualifierId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_NAMX_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>2</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+    <variable>
+		<variableId>namx_basin_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPFensemble</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<qualifierId>NAMX</qualifierId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_NAMX_basin</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>2</ensembleMemberIndex>
+		</timeSeriesSet>
+    </variable>
+	<variable>
+		<variableId>ECMX_forecast</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPFensemble</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<qualifierId>ECMX</qualifierId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_ECMX_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>3</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+    <variable>
+		<variableId>ecmx_basin_scalar</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>FMAPX_PreProcessing_QPFensemble</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<qualifierId>ECMX</qualifierId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>FMAPX_ECMX_basin</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>3</ensembleMemberIndex>
+		</timeSeriesSet>
+    </variable>
+
+<!--	<variable>
+		<variableId>FMAPX_GFSX_high_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>4</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+	<variable>
+		<variableId>FMAPX_NAMX_high_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>5</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+	<variable>
+		<variableId>FMAPX_ECMX_high_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>6</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+
+	<variable>
+		<variableId>FMAPX_GFSX_low_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>7</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+	<variable>
+		<variableId>FMAPX_NAMX_low_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>8</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>
+	<variable>
+		<variableId>FMAPX_ECMX_low_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QPF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMAPX</parameterId>
+			<locationSetId>Catchments</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>9</ensembleMemberIndex>
+		</timeSeriesSet>
+    	</variable>-->
+
+	<transformation id="SampleFMAPX">
+		<user>
+			<simple>
+				<expression>MAPX_forecast</expression>
+				<outputVariable>
+					<variableId>FMAPX_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="SampleFMAPX_GFS">
+		<user>
+			<simple>
+				<expression>GFSX_forecast</expression>
+				<outputVariable>
+					<variableId>FMAPX_GFSX_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="SampleFMAPX_NAM">
+		<user>
+			<simple>
+				<expression>NAMX_forecast</expression>
+				<outputVariable>
+					<variableId>FMAPX_NAMX_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="SampleFMAPX_ECM">
+		<user>
+			<simple>
+				<expression>ECMX_forecast</expression>
+				<outputVariable>
+					<variableId>FMAPX_ECMX_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	
+	<transformation id="BasinFMAPX">
+		<user>
+			<simple>
+				<expression>fmapx_basin_scalar</expression>
+				<outputVariable>
+					<variableId>FMAPX_basin</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="BasinFMAPX_GFS">
+		<user>
+			<simple>
+				<expression>gfsx_basin_scalar</expression>
+				<outputVariable>
+					<variableId>FMAPX_GFSX_basin</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="BasinFMAPX_NAM">
+		<user>
+			<simple>
+				<expression>namx_basin_scalar</expression>
+				<outputVariable>
+					<variableId>FMAPX_NAMX_basin</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="BasinFMAPX_ECM">
+		<user>
+			<simple>
+				<expression>ecmx_basin_scalar</expression>
+				<outputVariable>
+					<variableId>FMAPX_ECMX_basin</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+
+<!--	<transformation id="SampleFMAPX_GFS_high">
+		<user>
+			<simple>
+				<expression>+1.50*(FMAPX_GFSX_sample)</expression>
+				<outputVariable>
+					<variableId>FMAPX_GFSX_high_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="SampleFMAPX_NAM_high">
+		<user>
+			<simple>
+				<expression>+1.50*(FMAPX_NAMX_sample)</expression>
+				<outputVariable>
+					<variableId>FMAPX_NAMX_high_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="SampleFMAPX_ECM_high">
+		<user>
+			<simple>
+				<expression>+1.50*(FMAPX_ECMX_sample)</expression>
+				<outputVariable>
+					<variableId>FMAPX_ECMX_high_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+
+	<transformation id="SampleFMAPX_GFS_low">
+		<user>
+			<simple>
+				<expression>+0.50*(FMAPX_GFSX_sample)</expression>
+				<outputVariable>
+					<variableId>FMAPX_GFSX_low_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="SampleFMAPX_NAM_low">
+		<user>
+			<simple>
+				<expression>+0.50*(FMAPX_NAMX_sample)</expression>
+				<outputVariable>
+					<variableId>FMAPX_NAMX_low_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>
+	<transformation id="SampleFMAPX_ECM_low">
+		<user>
+			<simple>
+				<expression>+0.50*(FMAPX_ECMX_sample)</expression>
+				<outputVariable>
+					<variableId>FMAPX_ECMX_low_sample</variableId>
+				</outputVariable>
+			</simple>
+		</user>	
+	</transformation>-->
+</transformationModule>

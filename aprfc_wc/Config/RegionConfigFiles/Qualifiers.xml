@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qualifiers xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/qualifiers.xsd">
+	<allowReferencingUndefinedQualifiers>true</allowReferencingUndefinedQualifiers>
+	<qualifier id="FX" name="Forecast Data"> </qualifier>
+	<qualifier id="err" name="Error"> </qualifier>
+	<qualifier id="err_persist" name="Error decay"> </qualifier>
+	<qualifier id="err_zero" name="Error Zero"> </qualifier>
+	<qualifier id="err_corr" name="Error Correction"> </qualifier>
+	<qualifier id="DS" name="DS Resv"> </qualifier>
+	<qualifier id="RRS" name="RRS"> </qualifier>
+	<qualifier id="OL" name="OL"> </qualifier>
+	<qualifier id="CD" name="CD"> </qualifier>
+	<qualifier id="CE" name="CE"> </qualifier>
+	<qualifier id="RFIN" name="RFIN"> </qualifier>
+	<qualifier id="RANGE" name="RANGE"> </qualifier>
+	<qualifier id="EBTID1" name="EBTID1"> </qualifier>
+	<qualifier id="EBTID2" name="EBTID2"> </qualifier>
+	<qualifier id="EBTID3" name="EBTID3"> </qualifier>
+	<qualifier id="EBTID4" name="EBTID4"> </qualifier>
+	<qualifier id="SBALR1" name="SBALR1"> </qualifier>
+	<qualifier id="SBALR2" name="SBALR2"> </qualifier>
+	<qualifier id="SBALR3" name="SBALR3"> </qualifier>
+	<qualifier id="SBALR4" name="SBALR4"> </qualifier>
+	<qualifier id="0" name="0"> </qualifier>
+	<qualifier id="1" name="1"> </qualifier>
+	<qualifier id="2" name="2"> </qualifier>
+	<qualifier id="3" name="3"> </qualifier>
+	<qualifier id="4" name="4"> </qualifier>
+	<qualifier id="5" name="5"> </qualifier>
+   	<qualifier id="GFSX" name="GFSQPF ensemble"> </qualifier>
+    <qualifier id="NAMX" name="NAMQPF ensemble"> </qualifier>
+    <qualifier id="ECMX" name="ECMQPF ensemble"> </qualifier>
+   	<qualifier id="GFSX_T" name="GFST ensemble"> </qualifier>
+    <qualifier id="NAMX_T" name="NAMT ensemble"> </qualifier>
+    <qualifier id="ECMX_T" name="ECMT ensemble"> </qualifier>
+   	<qualifier id="GFSX_T_shifted" name="GFST shifted"> </qualifier>
+    <qualifier id="NAMX_T_shifted" name="NAMT shifted"> </qualifier>
+    <qualifier id="ECMX_T_shifted" name="ECMT shifted"> </qualifier>
+    <qualifier id="observed" name="observed"> </qualifier>
+    <qualifier id="forecast" name="forecast"> </qualifier>
+    <qualifier id="above_threshold" name="above_threshold"> </qualifier>
+    <qualifier id="peaks" name="peaks"> </qualifier>
+    <qualifier id="shifted" name="shifted"> </qualifier>
+    <qualifier id="7day" name="7day"> </qualifier>
+	<qualifier id="14day" name="14day"> </qualifier>
+	<qualifier id="30day" name="30day"> </qualifier>
+	<qualifier id="30day_ofs" name="30day_ofs"> </qualifier>
+	<qualifier id="60day" name="60day"> </qualifier>
+	<qualifier id="90day" name="90day"> </qualifier>
+	<qualifier id="90day_ofs" name="90day_ofs"> </qualifier>
+	<qualifier id="120day" name="120day"> </qualifier>
+	<qualifier id="365day" name="365day"> </qualifier>
+	<qualifier id="365day_ofs" name="365day_ofs"> </qualifier>
+	<qualifier id="max" name="max"> </qualifier>
+	<qualifier id="min" name="min"> </qualifier>
+	<qualifier id="ave_max" name="ave_max"> </qualifier>
+	<qualifier id="ave_min" name="ave_min"> </qualifier>
+	<qualifier id="month" name="month"> </qualifier>
+	<qualifier id="month_max" name="month_max"> </qualifier>
+	<qualifier id="month_min" name="month_min"> </qualifier>
+	<qualifier id="difference" name="difference"> </qualifier>
+	<qualifier id="abs_value" name="abs_value"> </qualifier>
+	<qualifier id="trimmed" name="trimmed"> </qualifier>
+	<qualifier id="max_trimmed" name="max_trimmed"> </qualifier>
+	<qualifier id="min_trimmed" name="min_trimmed"> </qualifier>
+	<qualifier id="ave_max_trimmed" name="ave_max_trimmed"> </qualifier>
+	<qualifier id="ave_min_trimmed" name="ave_min_trimmed"> </qualifier>
+	<qualifier id="4X" name="4X"> </qualifier>
+	<qualifier id="sum_trimmed" name="sum_trimmed"> </qualifier>
+	<qualifier id="00Z" name="00Z"> </qualifier>
+	<qualifier id="00Z_ofs" name="00Z_ofs"> </qualifier>
+	<qualifier id="zero" name="zero"> </qualifier>
+	<qualifier id="ens_mean" name="ens_mean"> </qualifier>
+	<qualifier id="summary_mean" name="summary_mean"> </qualifier>
+	<qualifier id="summary_max" name="summary_max"> </qualifier>
+	<qualifier id="summary_min" name="summary_min"> </qualifier>
+	<qualifier id="parent_mean" name="parent_mean"> </qualifier>
+	<qualifier id="parent_max" name="parent_max"> </qualifier>
+	<qualifier id="parent_min" name="parent_min"> </qualifier>
+        <!--snow update system-->
+        <qualifier id="diff" name="Difference"/>
+        <qualifier id="ndiff" name="Normalized difference"/>
+        <qualifier id="pca" name="pca"/>
+        <qualifier id="current" name="current"/>
+        <qualifier id="hist" name="historic"/>
+        <qualifier id="rmse" name="RMS Error"/>
+    	<qualifier id="sim" name="simulated"> </qualifier>
+
+</qualifiers>

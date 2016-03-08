@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!-- statisticsEnsembles -->
+	<variable>
+		<variableId>FMATX_QTF_sample</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>APRFC_QTF_PreProcessing_Forecast</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMATX</parameterId>
+			<!--<locationSetId>QPFensemble_mean</locationSetId>-->
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+			<ensembleId>QTF</ensembleId>
+		</timeSeriesSet>
+    </variable>
+    <variable>
+		<variableId>FMATX_mean</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>StatisticsEnsembles_QTF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>FMATX</parameterId>
+			<qualifierId>ens_mean</qualifierId>
+			<!--<locationSetId>QPFensemble_mean</locationSetId>-->
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+    </variable>
+	<variable>
+		<variableId>QINE_QTFensemble</variableId>
+    	<timeSeriesSet>
+			<moduleInstanceSetId>QINE</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>QINE</parameterId>
+			<!--<locationSetId>QPFensemble_mean</locationSetId>-->
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+			<ensembleId>QTF</ensembleId>
+		</timeSeriesSet>
+	</variable>
+    <variable>
+		<variableId>QINE_mean</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>StatisticsEnsembles_QTF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>QINE</parameterId>
+			<qualifierId>ens_mean</qualifierId>
+			<!--<locationSetId>QPFensemble_mean</locationSetId>-->
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+    </variable>
+    <variable>
+		<variableId>SQIN_QTFensemble</variableId>
+    	<timeSeriesSet>
+			<moduleInstanceSetId>SQIN</moduleInstanceSetId>
+			<valueType>scalar</valueType>
+			<parameterId>SQIN</parameterId>
+			<!--<locationSetId>QPFensemble_mean</locationSetId>-->
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+			<ensembleId>QTF</ensembleId>
+		</timeSeriesSet>
+	</variable>
+    <variable>
+		<variableId>SQIN_mean</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>StatisticsEnsembles_QTF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>SQIN</parameterId>
+			<qualifierId>ens_mean</qualifierId>
+			<!--<locationSetId>QPFensemble_mean</locationSetId>-->
+			<locationSetId>Basins</locationSetId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+    </variable>
+	
+	<!-- transformation statisticsEnsemble -->
+	<transformation id="FMATX_mean">
+		<statisticsEnsemble>
+			<mean>
+				<inputVariable>
+					<variableId>FMATX_QTF_sample</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>FMATX_mean</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsEnsemble>
+	</transformation>
+	<transformation id="QINE_mean">
+		<statisticsEnsemble>
+			<mean>
+				<inputVariable>
+					<variableId>QINE_QTFensemble</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>QINE_mean</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsEnsemble>
+	</transformation>
+	<transformation id="SQIN_mean">
+		<statisticsEnsemble>
+			<mean>
+				<inputVariable>
+					<variableId>SQIN_QTFensemble</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>SQIN_mean</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsEnsemble>
+	</transformation>
+	
+</transformationModule>

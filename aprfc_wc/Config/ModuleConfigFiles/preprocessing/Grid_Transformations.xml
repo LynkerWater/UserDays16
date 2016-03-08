@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!-- grid import -->
+	<variable>
+		<variableId>qpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>gfsqpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>GFSQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>namqpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>NAMQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>ecmqpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>ECMQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+		
+	<!-- grid differencing -->	
+	<variable>
+		<variableId>NAM-HAS</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Grid_Transformations</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>NAM-HAS</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>GFS-HAS</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Grid_Transformations</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>GFS-HAS</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>ECM-HAS</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Grid_Transformations</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>ECM-HAS</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	
+	
+	<!-- grid transformations -->
+	<transformation id="NAM-HAS">
+		<user>
+			<simple>
+				<expression>+(namqpf_grid)-(qpf_grid)</expression>
+				<outputVariable>
+					<variableId>NAM-HAS</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+	<transformation id="GFS-HAS">
+		<user>
+			<simple>
+				<expression>+(gfsqpf_grid)-(qpf_grid)</expression>
+				<outputVariable>
+					<variableId>GFS-HAS</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+	<transformation id="ECM-HAS">
+		<user>
+			<simple>
+				<expression>+(ecmqpf_grid)-(qpf_grid)</expression>
+				<outputVariable>
+					<variableId>ECM-HAS</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+	
+	
+</transformationModule>

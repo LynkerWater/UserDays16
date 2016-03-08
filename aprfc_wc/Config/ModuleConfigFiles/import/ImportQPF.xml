@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesImportRun xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesImportRun.xsd">
+        <import>
+                <general>
+                        <importType>grib</importType>
+                        <folder>$IMPORT_FOLDER_GRIB1$/qpf/has/qpf06</folder>
+                        <idMapId>IdImportGRIB1_Forecast</idMapId>
+                        <unitConversionsId>ImportGRIB</unitConversionsId>
+                        <importTimeZone>
+                                <timeZoneOffset>+00:00</timeZoneOffset>
+                        </importTimeZone>
+                        <gridStartPoint>SW</gridStartPoint>
+                </general>
+                <timeSeriesSet>
+                        <moduleInstanceId>ImportQPF</moduleInstanceId>
+                        <valueType>grid</valueType>
+                        <parameterId>QPF</parameterId>
+                        <locationId>HAS</locationId>
+                        <timeSeriesType>external forecasting</timeSeriesType>
+                        <timeStep unit="hour" multiplier="6"/>
+                        <readWriteMode>add originals</readWriteMode>
+                        <synchLevel>6</synchLevel>
+                        <expiryTime unit="day" multiplier="2"/>
+                </timeSeriesSet>
+        </import>
+
+        <import>
+                <general>
+                        <importType>grib</importType>
+                        <folder>$IMPORT_FOLDER_GRIB1$/qpf/gfs/qpf06</folder>
+                        <idMapId>IdImportGRIB1_Forecast</idMapId>
+                        <unitConversionsId>ImportGRIB</unitConversionsId>
+                        <importTimeZone>
+                                <timeZoneOffset>+00:00</timeZoneOffset>
+                        </importTimeZone>
+                        <gridStartPoint>SW</gridStartPoint>
+                </general>
+                <timeSeriesSet>
+                        <moduleInstanceId>ImportQPF</moduleInstanceId>
+                        <valueType>grid</valueType>
+                        <parameterId>GFSQPF</parameterId>
+                        <locationId>HAS</locationId>
+                        <timeSeriesType>external forecasting</timeSeriesType>
+                        <timeStep unit="hour" multiplier="6"/>
+                        <readWriteMode>add originals</readWriteMode>
+                        <synchLevel>6</synchLevel>
+                        <expiryTime unit="day" multiplier="2"/>
+                </timeSeriesSet>
+        </import>
+        <import>
+                <general>
+                        <importType>grib</importType>
+                        <folder>$IMPORT_FOLDER_GRIB1$/qpf/nam/qpf06</folder>
+                        <idMapId>IdImportGRIB1_Forecast</idMapId>
+                        <unitConversionsId>ImportGRIB</unitConversionsId>
+                        <importTimeZone>
+                                <timeZoneOffset>+00:00</timeZoneOffset>
+                        </importTimeZone>
+                        <gridStartPoint>SW</gridStartPoint>
+                </general>
+                <timeSeriesSet>
+                        <moduleInstanceId>ImportQPF</moduleInstanceId>
+                        <valueType>grid</valueType>
+                        <parameterId>NAMQPF</parameterId>
+                        <locationId>HAS</locationId>
+                        <timeSeriesType>external forecasting</timeSeriesType>
+                        <timeStep unit="hour" multiplier="6"/>
+                        <readWriteMode>add originals</readWriteMode>
+                        <synchLevel>6</synchLevel>
+                        <expiryTime unit="day" multiplier="2"/>
+                </timeSeriesSet>
+        </import>
+        <import>
+                <general>
+                        <importType>grib</importType>
+                        <folder>$IMPORT_FOLDER_GRIB1$/qpf/ecmwf/qpf06</folder>
+                        <idMapId>IdImportGRIB1_Forecast</idMapId>
+                        <unitConversionsId>ImportGRIB</unitConversionsId>
+                        <importTimeZone>
+                                <timeZoneOffset>+00:00</timeZoneOffset>
+                        </importTimeZone>
+                        <gridStartPoint>SW</gridStartPoint>
+                </general>
+                <timeSeriesSet>
+                        <moduleInstanceId>ImportQPF</moduleInstanceId>
+                        <valueType>grid</valueType>
+                        <parameterId>ECMQPF</parameterId>
+                        <locationId>HAS</locationId>
+                        <timeSeriesType>external forecasting</timeSeriesType>
+                        <timeStep unit="hour" multiplier="6"/>
+                        <readWriteMode>add originals</readWriteMode>
+                        <synchLevel>6</synchLevel>
+                        <expiryTime unit="day" multiplier="2"/>
+                </timeSeriesSet>
+        </import>
+
+        <import>
+                <general>
+                        <importType>grib2</importType>
+                        <folder>$IMPORT_FOLDER_GRIB2$/qpf/ndfd_hfo/qpf06</folder>
+                        <idMapId>IdImportGRIB2_Hawaii_NDFD</idMapId>
+                        <unitConversionsId>ImportGRIB</unitConversionsId>
+                        <importTimeZone>
+                                <timeZoneOffset>+00:00</timeZoneOffset>
+                        </importTimeZone>
+                        <gridStartPoint>SW</gridStartPoint>
+                </general>
+                <timeSeriesSet>
+                        <moduleInstanceId>ImportQPF</moduleInstanceId>
+                        <valueType>grid</valueType>
+                        <parameterId>QPF</parameterId>
+                        <locationId>NDFD_HFO</locationId>
+                        <timeSeriesType>external forecasting</timeSeriesType>
+                        <timeStep unit="hour" multiplier="6"/>
+                        <readWriteMode>add originals</readWriteMode>
+                        <synchLevel>6</synchLevel>
+                        <expiryTime unit="day" multiplier="2"/>
+                </timeSeriesSet>
+        </import>
+
+</timeSeriesImportRun>

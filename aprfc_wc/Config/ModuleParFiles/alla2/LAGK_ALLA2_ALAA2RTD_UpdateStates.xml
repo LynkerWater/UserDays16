@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>ALAA2    SQIN  6 ALAA2RTD SQIN  6     6     0 ENGL 0.00       0.0
+           0.000           0.000          12.000       20000.002 X
+          24.000       50000.000          36.000       70000.000 X
+          36.000       85000.000          24.000      100000.000
+          12.000
+           8
+         268.191           0.161           0.000           0.000 X
+           0.000           0.000           0.000           0.000 X
+           0.000           0.000           0.000           0.000 X
+           0.000           0.000           0.000           0.000
+         268.237         271.677        3260.047
+</stringValue>
+    </parameter>
+    <parameter id="QT_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="268.191"/>
+        <row A="0.161"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+      </table>
+    </parameter>
+    <parameter id="PAIR_QT_LAG_CARRYOVER">
+      <intValue>8</intValue>
+    </parameter>
+    <parameter id="CURRENT_OUTFLOW">
+      <dblValue>271.677</dblValue>
+    </parameter>
+    <parameter id="CURRENT_STORAGE">
+      <dblValue>3260.047</dblValue>
+    </parameter>
+    <parameter id="JK">
+      <intValue>0</intValue>
+    </parameter>
+    <parameter id="DTA">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="CURRENT_LAGGED_INFLOW">
+      <dblValue>268.237</dblValue>
+    </parameter>
+    <parameter id="DTB">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="SETK">
+      <dblValue>12.0</dblValue>
+    </parameter>
+    <parameter id="QBNTL">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="METENG">
+      <stringValue>ENGL</stringValue>
+    </parameter>
+    <parameter id="TSIDA">
+      <stringValue>ALAA2</stringValue>
+    </parameter>
+    <parameter id="ITB">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="ITA">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="TLRC">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="TSIDB">
+      <stringValue>ALAA2RTD</stringValue>
+    </parameter>
+    <parameter id="LAGQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="12.0"/>
+        <row A="20000.002"/>
+        <row A="24.0"/>
+        <row A="50000.0"/>
+        <row A="36.0"/>
+        <row A="70000.0"/>
+        <row A="36.0"/>
+        <row A="85000.0"/>
+        <row A="24.0"/>
+        <row A="100000.0"/>
+      </table>
+    </parameter>
+    <parameter id="KQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="12.0"/>
+      </table>
+    </parameter>
+    <parameter id="JLAG">
+      <intValue>6</intValue>
+    </parameter>
+  </group>
+</parameters>

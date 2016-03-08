@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>PRBQ9    QINE  6 PRBQ9RTD SQIN  6     0     0 ENGL 0.00       0.0
+           9.000
+          12.000
+           3
+      279103.938           3.000      275131.000           9.000 X
+           0.000           0.000
+      280207.531      267261.563     3207067.000
+</stringValue>
+    </parameter>
+    <parameter id="QT_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="279103.938"/>
+        <row A="3.0"/>
+        <row A="275131.0"/>
+        <row A="9.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+      </table>
+    </parameter>
+    <parameter id="PAIR_QT_LAG_CARRYOVER">
+      <intValue>3</intValue>
+    </parameter>
+    <parameter id="CURRENT_OUTFLOW">
+      <dblValue>267261.563</dblValue>
+    </parameter>
+    <parameter id="CURRENT_STORAGE">
+      <dblValue>3207067.0</dblValue>
+    </parameter>
+    <parameter id="SETLAG">
+      <dblValue>9.0</dblValue>
+    </parameter>
+    <parameter id="JK">
+      <intValue>0</intValue>
+    </parameter>
+    <parameter id="DTA">
+      <stringValue>QINE</stringValue>
+    </parameter>
+    <parameter id="CURRENT_LAGGED_INFLOW">
+      <dblValue>280207.531</dblValue>
+    </parameter>
+    <parameter id="DTB">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="SETK">
+      <dblValue>12.0</dblValue>
+    </parameter>
+    <parameter id="QBNTL">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="METENG">
+      <stringValue>ENGL</stringValue>
+    </parameter>
+    <parameter id="TSIDA">
+      <stringValue>PRBQ9</stringValue>
+    </parameter>
+    <parameter id="ITB">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="ITA">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="TLRC">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="TSIDB">
+      <stringValue>PRBQ9RTD</stringValue>
+    </parameter>
+    <parameter id="LAGQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="9.0"/>
+      </table>
+    </parameter>
+    <parameter id="KQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="12.0"/>
+      </table>
+    </parameter>
+    <parameter id="JLAG">
+      <intValue>0</intValue>
+    </parameter>
+  </group>
+</parameters>

@@ -1,0 +1,20 @@
+$ cat .gitignore
+
+*.fdb
+*.pdf
+*.tar
+*.gz
+*.cbin
+*.spp
+log.txt
+bin/*
+jre/*
+user_settings.ini
+aprfc_wc/Models/*
+aprfc_wc/localDataStore/*
+aprfc_wc/Export/*
+aprfc_wc/DumpFiles/*
+aprfc_wc/E19/*
+aprfc_wc/Reports/*
+aprfc_wc/running
+aprfc_wc/ScenarioScriptDatabase/aprfc_wc/Sep_2012/localDataStore/*

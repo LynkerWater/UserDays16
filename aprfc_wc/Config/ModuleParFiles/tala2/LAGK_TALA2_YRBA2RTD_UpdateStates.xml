@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>YRBA2    QINE  6 YRBA2RTD SQIN  6     3     3 ENGL 0.00       0.0
+          18.000      200000.000          12.000      499999.969 X
+          12.000      700000.000
+          18.000      200000.000          12.000      499999.969 X
+          20.000      700000.000
+           5
+       73220.008           6.000       74580.008          12.000 X
+       72900.000          18.000           0.000           0.000 X
+           0.000           0.000
+       61760.020       66873.383     1203694.125
+</stringValue>
+    </parameter>
+    <parameter id="QT_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="73220.008"/>
+        <row A="6.0"/>
+        <row A="74580.008"/>
+        <row A="12.0"/>
+        <row A="72900.0"/>
+        <row A="18.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+        <row A="0.0"/>
+      </table>
+    </parameter>
+    <parameter id="PAIR_QT_LAG_CARRYOVER">
+      <intValue>5</intValue>
+    </parameter>
+    <parameter id="CURRENT_OUTFLOW">
+      <dblValue>66873.383</dblValue>
+    </parameter>
+    <parameter id="CURRENT_STORAGE">
+      <dblValue>1203694.125</dblValue>
+    </parameter>
+    <parameter id="JK">
+      <intValue>3</intValue>
+    </parameter>
+    <parameter id="DTA">
+      <stringValue>QINE</stringValue>
+    </parameter>
+    <parameter id="CURRENT_LAGGED_INFLOW">
+      <dblValue>61760.02</dblValue>
+    </parameter>
+    <parameter id="DTB">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="QBNTL">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="METENG">
+      <stringValue>ENGL</stringValue>
+    </parameter>
+    <parameter id="TSIDA">
+      <stringValue>YRBA2</stringValue>
+    </parameter>
+    <parameter id="ITB">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="ITA">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="TLRC">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="TSIDB">
+      <stringValue>YRBA2RTD</stringValue>
+    </parameter>
+    <parameter id="LAGQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="18.0"/>
+        <row A="200000.0"/>
+        <row A="12.0"/>
+        <row A="499999.969"/>
+        <row A="12.0"/>
+        <row A="700000.0"/>
+      </table>
+    </parameter>
+    <parameter id="KQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="18.0"/>
+        <row A="200000.0"/>
+        <row A="12.0"/>
+        <row A="499999.969"/>
+        <row A="20.0"/>
+        <row A="700000.0"/>
+      </table>
+    </parameter>
+    <parameter id="JLAG">
+      <intValue>3</intValue>
+    </parameter>
+  </group>
+</parameters>

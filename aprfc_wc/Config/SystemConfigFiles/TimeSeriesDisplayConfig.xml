@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesDisplay xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesDisplay.xsd" version="1.0">
+	<defaultViewPeriod unit="hour" start="-240" end="240"/>
+	<scrollerDefaultViewPeriod unit="day" start="-50" end="10"/>
+	<thresholdDisplayConfig>
+		<thresholdDisplayOptions id="MIDLEVEL">
+			<color>white</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="BF">
+			<color>goldenrod</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="ACTION">
+			<color>goldenrod</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="FS">
+			<color>orange</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="MOD">
+			<color>red</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="MAJOR">
+			<color>magenta</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="2YR">
+			<color>goldenrod</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="10YR">
+			<color>orange</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="25YR">
+			<color>red</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="50YR">
+			<color>magenta</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+		<thresholdDisplayOptions id="100YR">
+			<color>black</color>
+			<lineStyle>dashed</lineStyle>
+		</thresholdDisplayOptions>
+
+	</thresholdDisplayConfig>
+	<timeMarkersDisplayConfig>
+		<timeMarkerDisplayOptions marker="systemTime">
+			<color>green</color>
+			<lineStyle>solid</lineStyle>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="timeZero">
+			<color>gray</color>
+			<lineStyle>dotted</lineStyle>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="displayTime">
+			<color>red</color>
+			<lineStyle>solid</lineStyle>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="threshold">
+			<color>orange</color>
+			<lineStyle>dashed</lineStyle>
+		</timeMarkerDisplayOptions>
+	</timeMarkersDisplayConfig>
+	<parametersDisplayConfig>
+		<parameterDisplayOptions id="STG">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SSTG">
+			<preferredColor>purple3</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="STGE">
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SSTG-STGE">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="FBEL">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="QIN">
+			<preferredColor>black</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="QIN_HIST">
+			<preferredColor>black</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="QINE">
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SQIN">
+			<preferredColor>purple3</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SQIN_R">
+			<preferredColor>aquamarine</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SQIN_CALB">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SQIN-QINE">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>3</markerSize>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SQIN">
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>0</ensembleMemberIndex>
+			<preferredColor>alice blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SQIN">
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>1</ensembleMemberIndex>
+			<preferredColor>azure2</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SQIN">
+			<ensembleId>QPF</ensembleId>
+			<ensembleMemberIndex>3</ensembleMemberIndex>
+			<preferredColor>orange1</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="RQIN">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="RQOT">
+			<preferredColor>black</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="PPVR">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="PP01">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="PP06">
+			<preferredColor>purple</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="PP24">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="PSUM">
+			<preferredColor>sea green4</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="PSUM_Month">
+			<preferredColor>dodger blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="HIST_MAP_SUM">
+			<preferredColor>navy</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPX_SUM">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAP_SUM">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAP-MAPX_SUM">
+			<preferredColor>light blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPX-MAP_SUM">
+			<preferredColor>green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPX_SUM_Month">
+			<preferredColor>dodger blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAP_SUM_Month">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAP-MAPX_SUM_Month">
+			<preferredColor>light blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPX-MAP_SUM_Month">
+			<preferredColor>green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="PTPX">
+			<preferredColor>blue violet</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPX_R01">
+			<preferredColor>maroon</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>3</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPX_R06">
+			<preferredColor>gold</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPX">
+			<preferredColor>blue violet</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="FMAPX">
+			<preferredColor>green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="GFSX">
+			<preferredColor>sky blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="NAMX">
+			<preferredColor>dark green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="ECMX">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="GFSX_T">
+			<preferredColor>sky blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="NAMX_T">
+			<preferredColor>dark green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="ECMX_T">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="TAMX">
+			<preferredColor>orange red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="TAMN">
+			<preferredColor>cadet blue4</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPG">
+			<preferredColor>blue violet</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="RAIM">
+			<preferredColor>green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAP">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAP-MAPX">
+			<preferredColor>light blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="FMAP">
+			<preferredColor>red</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="QPE">
+			<preferredColor>blue violet</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="QPF">
+			<preferredColor>green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="MAPE">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="ZELF">
+			<preferredColor>orange red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+			<precision>2</precision>
+			<scaleUnit>250</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="ZELV">
+			<preferredColor>green</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>6</markerSize>
+			<precision>2</precision>
+			<scaleUnit>250</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SWE">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid;thick</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>10</max>
+			<precision>2</precision>
+			<scaleUnit>1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SNSG">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid;thick</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>10</max>
+			<precision>2</precision>
+			<scaleUnit>1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SASC">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid;thick</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>1</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SWE">
+			<qualifierId>pca</qualifierId>
+			<preferredColor>green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>0.5</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+			<inverted>false</inverted>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SWE">
+			<qualifierId>rmse</qualifierId>
+			<preferredColor>red</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>0.5</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+			<inverted>false</inverted>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="nSWE">
+			<qualifierId>diff</qualifierId>
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>0.5</max>
+			<precision>2</precision>
+			<scaleUnit>0.1</scaleUnit>
+			<inverted>false</inverted>
+		</parameterDisplayOptions>
+	</parametersDisplayConfig>
+	<sampleFunctions>
+		<dayMonthSampleFunction/>
+	</sampleFunctions>
+	<statisticalFunctions>
+		<statisticalFunction function="principalcomponentanalysis">
+			<observedParameterId>SNWE</observedParameterId>
+			<simulatedParameterId>SWE</simulatedParameterId>
+		</statisticalFunction>
+		<statisticalFunction function="historicalAnalysis">
+			<historicalPeriods>
+				<historicalPeriod>
+					<startForwardLookingPeriod>--10-01</startForwardLookingPeriod>
+					<season startMonthDay="--10-01" endMonthDay="--09-30" label="Water Year"/>
+				</historicalPeriod>
+				<historicalPeriod>
+					<startForwardLookingPeriod>--10-01</startForwardLookingPeriod>
+					<season startMonthDay="--01-01" endMonthDay="--07-31" label="Jan-Jul"/>
+				</historicalPeriod>
+			</historicalPeriods>
+		</statisticalFunction>
+		<statisticalFunction function="movingAverage">
+			<movingAccumulationTimeSpan unit="day" multiplier="3"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="7"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="14"></movingAccumulationTimeSpan>
+		</statisticalFunction>
+		<statisticalFunction function="centralMovingAverage">
+			<movingAccumulationTimeSpan unit="day" multiplier="3"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="7"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="14"></movingAccumulationTimeSpan>
+		</statisticalFunction>
+		<statisticalFunction function="accumulationAggregation">
+			<movingAccumulationTimeSpan unit="day" multiplier="3"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="7"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="14"></movingAccumulationTimeSpan>
+		</statisticalFunction>
+		<statisticalFunction function="accumulationInterval">
+			<movingAccumulationTimeSpan unit="day" multiplier="3"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="7"></movingAccumulationTimeSpan>
+			<movingAccumulationTimeSpan unit="day" multiplier="14"></movingAccumulationTimeSpan>
+		</statisticalFunction>
+		<statisticalFunction function="cumulative"></statisticalFunction>
+		<statisticalFunction function="differences"></statisticalFunction>
+		<statisticalFunction function="doubleMassCurve"></statisticalFunction>
+		<statisticalFunction function="durationExceedence"></statisticalFunction>
+		<!--<statisticalFunction function="ensemblePercentileExceedence"/>-->
+		<statisticalFunction function="frequencyDistribution">
+			<samples amount="10"></samples>
+			<samples amount="20"></samples>
+		</statisticalFunction>
+		<statisticalFunction function="gaussianCurve">
+			<samples amount="10"></samples>
+		</statisticalFunction>
+		<statisticalFunction function="showPeaksAbove">
+			<observedParameterId>TAMX</observedParameterId>
+		</statisticalFunction>
+		<statisticalFunction function="showLowsBelow">
+			<observedParameterId>TAMN</observedParameterId>
+		</statisticalFunction>
+		<statisticalFunction function="scatterPlot"></statisticalFunction>
+		<statisticalFunction function="boxPlot"></statisticalFunction>
+	</statisticalFunctions>
+	<descriptiveFunctionGroups>
+		<descriptiveFunctionGroup name="Statistics">
+			<descriptiveFunction function="mean" ignoreMissings="true"/>
+			<descriptiveFunction function="max" ignoreMissings="true"/>
+			<descriptiveFunction function="min" ignoreMissings="true"/>
+			<descriptiveFunction function="sum" ignoreMissings="true"/>
+			<descriptiveFunction function="standardDeviation" ignoreMissings="true"/>
+			<descriptiveFunction function="percentileExceedence" ignoreMissings="true"><value>5</value></descriptiveFunction>
+			<descriptiveFunction function="percentileExceedence" ignoreMissings="true"><value>25</value></descriptiveFunction>
+			<descriptiveFunction function="percentileExceedence" ignoreMissings="true"><value>50</value></descriptiveFunction>
+			<descriptiveFunction function="percentileExceedence" ignoreMissings="true"><value>75</value></descriptiveFunction>
+			<descriptiveFunction function="percentileExceedence" ignoreMissings="true"><value>95</value></descriptiveFunction>
+		</descriptiveFunctionGroup>
+	</descriptiveFunctionGroups>
+	<tickUnitsConfig>
+		<dateTickMarkPosition>
+			<dateTickUnit>hour</dateTickUnit>
+			<tickMarkPosition>12</tickMarkPosition>
+		</dateTickMarkPosition>
+	</tickUnitsConfig>
+</timeSeriesDisplay>

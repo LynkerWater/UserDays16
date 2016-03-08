@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<travelTimes xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/travelTimes.xsd">
+	<travelTime>
+		<downstreamLocation id="GULA2" name="GULA2 : Gulkana R at Hwy"/>
+		<upstreamLocation id="GRSA2" name="GRSA2 : Gulkana R at Sourdough"/>
+		<travelTime unit="minute"/>
+		<validPeriod unit="hour" start="-30" end="1">
+			<description>Sourdough to Hwy</description>
+		</validPeriod>
+		<defaultEquation equationType="simple_linear"/>
+	</travelTime>
+</travelTimes>

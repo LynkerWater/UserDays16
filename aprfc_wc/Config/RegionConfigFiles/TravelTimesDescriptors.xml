@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<travelTimesDescriptors xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/travelTimesDescriptors.xsd">
+
+	<travelTimesDescriptor id="GulkanaTimes" name="GulkanaTimes">
+	</travelTimesDescriptor>
+	<travelTimesDescriptor id="WillowTimes" name="WillowTimes">
+	</travelTimesDescriptor>
+	<travelTimesDescriptor id="Willow2Times" name="Willow2Times">
+	</travelTimesDescriptor>
+	<travelTimesDescriptor id="Willow3Times" name="Willow3Times">
+	</travelTimesDescriptor>
+	
+</travelTimesDescriptors>

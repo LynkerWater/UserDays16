@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!-- gage precip -->
+	<variable>
+		<variableId>PP06</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportIHFSDB</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>PP06</parameterId>
+			<locationSetId>Gages_Precip_AK</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>			
+		</timeSeriesSet>
+	</variable>	
+	<variable>
+		<variableId>Cumulative_Precip_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>PSUM</parameterId>
+			<locationSetId>Gages_Precip_AK</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Precip_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>PSUM_Month</parameterId>
+			<locationSetId>Gages_Precip_AK</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-365" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- catchment precip -->
+	<variable>
+		<variableId>MAPX_observed</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAPX_PreProcessing_QPE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAPX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+			<ensembleId>main</ensembleId>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP_observed</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportSHEF</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAP-MAPX</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAPX_PreProcessing_QPE</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP-MAPX</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAPX-MAP</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAPX-MAP</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAPX_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAPX_SUM</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAP_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAP-MAPX_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP-MAPX_SUM</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAPX-MAP_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAPX-MAP_SUM</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAPX_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAPX_SUM_Month</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-180" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAP_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP_SUM_Month</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-180" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAP-MAPX_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAP-MAPX_SUM_Month</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-180" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_MAPX-MAP_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAPX-MAP_SUM_Month</parameterId>
+			<locationSetId>Catchments_Cumulative_Precip</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-180" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- grid precip -->
+	<variable>
+		<variableId>QPE06</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>			
+		</timeSeriesSet>
+	</variable>	
+	<variable>
+		<variableId>Cumulative_Grid_6hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-123" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM_Month</parameterId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly_6hr"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-180" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_7day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>7day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-7" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_14day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>14day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-14" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_30day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>30day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-30" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_60day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>60day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-60" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_90day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>90day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-90" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Cumulative_Grid_120day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Cumulative_Precip</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPE_SUM</parameterId>
+			<qualifierId>120day</qualifierId>
+			<locationId>HRAP</locationId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="day" start="-120" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- gage transformations -->
+	<transformation id="PSUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>PP06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Precip_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="PSUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>PP06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Precip_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>
+	
+	<!-- catchment transformations -->
+	<transformation id="MAPX-MAP">
+		<user>
+			<simple>
+				<expression>+(MAPX_observed)-(MAP_observed)</expression>
+				<outputVariable>
+					<variableId>MAPX-MAP</variableId>
+				</outputVariable>
+			</simple>
+		</user>
+	</transformation>
+	<transformation id="MAPX_SUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>MAPX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAPX_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="MAP_SUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>MAP_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAP_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="MAP-MAPX_SUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>MAP-MAPX</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAP-MAPX_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="MAPX-MAP_SUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>MAPX-MAP</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAPX-MAP_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="MAPX_SUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>MAPX_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAPX_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAP_SUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>MAP_observed</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAP_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAP-MAPX_SUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>MAP-MAPX</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAP-MAPX_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="MAPX-MAP_SUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>MAPX-MAP</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_MAPX-MAP_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>
+	
+	<!-- grid transformations -->
+	<transformation id="QPE_SUM">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_6hr</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_Month">
+		<statisticsPeriodic>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_Month</variableId>
+				</outputVariable>
+			</sum>
+		</statisticsPeriodic>
+	</transformation>
+	<transformation id="QPE_SUM_7day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_7day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_14day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_14day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_30day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_30day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_60day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_60day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_90day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_90day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	<transformation id="QPE_SUM_120day">
+		<accumulation>
+			<sum>
+				<inputVariable>
+					<variableId>QPE06</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Cumulative_Grid_120day</variableId>
+				</outputVariable>
+			</sum>
+		</accumulation>
+	</transformation>
+	
+</transformationModule>

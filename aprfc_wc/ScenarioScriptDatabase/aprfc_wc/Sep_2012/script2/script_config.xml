@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/watercoachschemas/version1.0/script_config.xsd">
+	<!-- The precip event in the Matsu and Kenai forecagroup  from 15-Sept to 23-Sept resulted in a  
+	flooding at serveral locations and there were several threshold levels crossed. 
+	There are several forecast locations for the Matsu forecast group  
+	with the TRTA2 being the most significant in terms of population/impact.
+	This event is particularly 	interesting because of the importance of freezing levels and the resulting rain vs snow -->
+	<title>Watercoach Course March 2016</title>
+	<timeZone>
+		<name>GMT</name>
+	</timeZone>
+	<dataStart date="2012-09-19" time="18:00:00"/>
+	<dataStop date="2012-09-23" time="18:00:00"/>
+	<displayStart date="2012-09-19" time="18:00:00"/>
+	<stories>
+		<inbox>
+			<title>inbox</title>
+			<frame>
+				<title lang="EN">Link to Wiki</title>
+				<start date="2012-09-19" time="18:00:01"/>
+				<popup>true</popup>
+				<message lang="EN"><![CDATA[<html>For more information about how to use the Watercoach, see description on the <a href="https://publicwiki.deltares.nl/pages/viewpage.action?pageId=120820368">general wiki</a> <br>
+</html>]]></message>
+			</frame>
+			<frame>
+				<title lang="EN">Welcome to Alaska</title>
+				<start date="2012-09-19" time="18:01:00"/>
+				<popup>true</popup>
+				<file>Q_welcome_to_alaska.jpg</file>
+			</frame>
+			
+			<frame>
+				<title lang="EN">Incoming Call nr1</title>
+				<start date="2012-09-19" time="18:15:00"/>
+				<popup>true</popup>
+				<once>true</once>
+				<file>call_incoming_1.jpg</file>
+			</frame>
+			
+		</inbox>
+		<story>
+			<title>Hints</title>
+			<frame>
+				<title lang="EN">Welcome to WaterCoach - Hints</title>
+				<start date="2012-09-19" time="18:00:00"/>
+				<stop date="2012-09-19" time="18:01:00"/>
+				<popup>false</popup>
+				<message lang="EN"><![CDATA[<html>Welcome to the WaterCoach - Hints
+H: No hints at the moment
+]]></message>
+			</frame>
+			<frame>
+				<title lang="EN">Welcome to Alaska - Hints</title>
+				<start date="2012-09-19" time="18:01:00"/>
+				<stop date="2012-09-19" time="18:03:00"/>
+				<popup>false</popup>
+				<message lang="EN"><![CDATA[<html>Welcome to Alaska - Hints<br>
+H: Zoom in on the map using the predefined zoom extents 
+</html>]]></message>
+			</frame>
+			
+			
+			
+			
+		</story>
+		<story>
+			<title>Answers</title>
+			<frame>
+				<title lang="EN">Welcome to WaterCoach - Answers</title>
+				<start date="2012-09-19" time="18:00:00"/>
+				<stop date="2012-09-19" time="18:01:00"/>
+				<popup>false</popup>
+				<message lang="EN"><![CDATA[<html>Welcome to WaterCoach - Answers<br></br> 
+A: No answers at the moment
+]]></message>
+			</frame>
+			<frame>
+				<title lang="EN">Welcome to Alaska - Answers</title>
+				<start date="2012-09-19" time="18:01:00"/>
+				<stop date="2012-09-19" time="18:03:00"/>
+				<popup>false</popup>
+				<message lang="EN"><![CDATA[<html>Welcome to Alaska - Answers<br>
+A: Map > Zoom extents > Matsu <br>
+You can also manually zoom in further (i.e. by scrolling) to focus on the Matsu Forecast group<br> </html>]]></message>
+			</frame>
+			
+			
+			
+		</story>
+		<story>
+			<title>Calls</title>
+			<frame>
+				<title lang="EN">Telephone call from radiostation</title>
+				<start date="2012-09-19" time="18:15:00"/>
+				<stop date="2012-09-19" time="18:16:00"/>
+				<popup>false</popup>
+				<once>true</once>
+				<file>call_message_1.jpg</file>
+			</frame>
+			<frame>
+				<title lang="EN">Telephone call to radiostation</title>
+				<start date="2012-09-19" time="18:16:00"/>
+				<stop date="2012-09-19" time="18:30:00"/>
+				<popup>false</popup>
+				<condition>
+					<columnId>Answer</columnId>
+					<rowId>7</rowId>
+					<ifForecastPublicationTime>
+						<operator>before</operator>
+						<value date="2012-09-19" time="18:30:00"/>
+					</ifForecastPublicationTime>
+				</condition>
+				<file>call_return_1.jpg</file>
+			</frame>
+		</story>
+	</stories>
+	<forecastTable>
+		<header>
+			<column id="Question">Question</column>
+			<column id="Answer" isEditable="true" exportName="Answers" type="string">Answer</column>
+		</header>
+		<row id="1">
+			<cell columnId="Question">Question 1</cell>
+		</row>
+		<row id="2">
+			<cell columnId="Question">Question 2</cell>
+		</row>
+		<row id="3">
+			<cell columnId="Question">Question 3</cell>
+		</row>
+		<row id="4">
+			<cell columnId="Question">Question 4</cell>
+		</row>
+		<row id="5">
+			<cell columnId="Question">Question 5</cell>
+		</row>
+		<row id="6">
+			<cell columnId="Question">Question 6</cell>
+		</row>
+		<row id="7">
+			<cell columnId="Question">Question 6</cell>
+		</row>
+	</forecastTable>
+	<forecastNote>
+		<initialText lang="EN">Here you can add additional remarks.</initialText>
+	</forecastNote>
+	<dictionaryFiles>
+		<dictionaryFile lang="EN">../../Dictionary.xml</dictionaryFile>
+	</dictionaryFiles>
+</script>

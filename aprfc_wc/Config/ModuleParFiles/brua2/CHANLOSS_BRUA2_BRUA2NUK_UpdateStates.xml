@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="TS_ID">
+      <stringValue>BRUA2</stringValue>
+    </parameter>
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>NUKA DIVERSION 5 CFS                0.14            0.0     
+BRUA2      SQIN    6
+</stringValue>
+    </parameter>
+    <parameter id="WATER_SURFACE_AREA">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="TS_TYPE">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="SSOUT_CONSTANT">
+      <dblValue>0.14</dblValue>
+    </parameter>
+    <parameter id="TS_TIME_STEP">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="OPERTATION_INFO">
+      <stringValue>NUKA DIVERSION 5 CFS</stringValue>
+    </parameter>
+  </group>
+</parameters>

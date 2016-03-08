@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2015 sp1 (x64) (http://www.altova.com) by Benjamin Balk (Amec E&I Inc.) -->
+<waterCoachDisplay xmlns="http://www.wldelft.nl/fews"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/waterCoachDisplay.xsd">
+	<config>
+		<scenarioScriptDatabasePath>$WATERCOACH_SCENARIO_DATABASE_FOLDER$</scenarioScriptDatabasePath>
+		<hideYear>false</hideYear>
+		<timeControl>
+			<pause>true</pause>
+			<next>true</next>
+			<set>true</set>
+			<fastForwardBackward>true</fastForwardBackward>
+		</timeControl>
+		<!--<experienceLevel>
+			<levels>Beginner;Intermediate;Expert</levels>
+			<adjustLevel>false</adjustLevel>
+		</experienceLevel>-->
+		<fewsLogEventCodes>Manual.*</fewsLogEventCodes>
+		<showVisualizeScriptButton>false</showVisualizeScriptButton>
+		<!-- does not work yet in embedded version, FEWS-13058-->
+		<participant>false</participant>
+		<copyLocalDataStore>true</copyLocalDataStore>
+		<defaultScript>script_config.xml</defaultScript>
+	</config>
+</waterCoachDisplay>

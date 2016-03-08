@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!-- QPF grids -->
+	<variable>
+		<variableId>qpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>gfsqpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>GFSQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>namqpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>NAMQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>ecmqpf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQPF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>ECMQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>qpf_merged_tmp</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Grid_Merge_Forecast</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>MRGQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>temporary</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>qpf_merged</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Grid_Merge_Forecast</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>MRGQPF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="6"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- QTF grids -->
+	<variable>
+		<variableId>qtf_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQTF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QTF</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>gfst_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQTF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>GFST</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>namt_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQTF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>NAMT</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>ecmt_grid</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQTF</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>ECMT</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>external forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>qtf_merged_tmp</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Grid_Merge_Forecast</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>MRGT</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>temporary</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>qtf_merged</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Grid_Merge_Forecast</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>MRGT</parameterId>
+			<locationId>HAS</locationId>
+			<timeSeriesType>simulated forecasting</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="0" startOverrulable="true" end="240" endOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	
+	<!-- merge transformation QPF grids -->
+	<transformation id="MergeQPF">
+		<merge>
+			<simple>
+				<inputVariable>
+					<variableId>qpf_grid</variableId>
+				</inputVariable>
+				<inputVariable>
+					<variableId>gfsqpf_grid</variableId>
+				</inputVariable>
+				<inputVariable>
+					<variableId>namqpf_grid</variableId>
+				</inputVariable>
+				<inputVariable>
+					<variableId>ecmqpf_grid</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>qpf_merged_tmp</variableId>
+				</outputVariable>
+			</simple>
+		</merge>
+	</transformation>
+	<!--<transformation id="InterpolateQPF">
+		<interpolationSerial>
+			<default>
+				<inputVariable>
+					<variableId>qpf_merged_tmp</variableId>
+				</inputVariable>
+				<defaultValue>0.00</defaultValue>
+				<outputVariable>
+					<variableId>qpf_merged</variableId>
+				</outputVariable>
+			</default>
+		</interpolationSerial>
+	</transformation>-->
+	<transformation id="InterpolateQPF">
+		<interpolationSerial>
+			<linear>
+				<inputVariable>
+					<variableId>qpf_merged_tmp</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>qpf_merged</variableId>
+				</outputVariable>
+			</linear>
+		</interpolationSerial>
+	</transformation>
+	
+	<!-- merge transformation QTF grids -->
+	<transformation id="MergeQTF">
+		<merge>
+			<simple>
+				<inputVariable>
+					<variableId>qtf_grid</variableId>
+				</inputVariable>
+				<inputVariable>
+					<variableId>gfst_grid</variableId>
+				</inputVariable>
+				<inputVariable>
+					<variableId>namt_grid</variableId>
+				</inputVariable>
+				<inputVariable>
+					<variableId>ecmt_grid</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>qtf_merged_tmp</variableId>
+				</outputVariable>
+			</simple>
+		</merge>
+	</transformation>
+	<transformation id="InterpolateQTF">
+		<interpolationSerial>
+			<linear>
+				<inputVariable>
+					<variableId>qtf_merged_tmp</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>qtf_merged</variableId>
+				</outputVariable>
+			</linear>
+		</interpolationSerial>
+	</transformation>
+</transformationModule>

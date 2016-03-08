@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformationModule xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd" version="1.0">
+	<!--<variable>
+		<variableId>RTMA_Temperatures</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>MAT_PreProcessing_RTMA</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>MAT</parameterId>
+			<locationId>NERFC</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="-24" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>RTMA_Temperatures</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportQTE</moduleInstanceId>
+			<valueType>grid</valueType>
+			<parameterId>QTE</parameterId>
+			<locationId>RTMA</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="day" start="-204" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Temp_1hr</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="hour" multiplier="1"/>
+			<relativeViewPeriod unit="day" start="-204" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Max_Temp</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>TAMX</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep id="8Z"/>
+			<relativeViewPeriod unit="day" start="-204" startOverrulable="false" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Min_Temp</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>TAMN</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep id="8Z"/>
+			<relativeViewPeriod unit="day" start="-204" startOverrulable="false" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>MAT_day</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="8Z"/>
+			<relativeViewPeriod unit="day" start="-730" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!--<variable>
+		<variableId>MAT_Day_MY</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep unit="day"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-730" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>MAT_month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly"/>
+			<relativeViewPeriod unit="day" start="-730" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!--<variable>
+		<variableId>MAT_Month_MY</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>MAT</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly"/>
+			<cycle unit="year"/>
+			<relativeViewPeriod unit="day" start="-730" end="0" startOverrulable="true"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>-->
+	<variable>
+		<variableId>Max_Temp_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>TAMX</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly"/>
+			<relativeViewPeriod unit="day" start="-730" end="0" startOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>Min_Temp_Month</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>Max_Min_Temperature</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>TAMN</parameterId>
+			<locationSetId>Gages_Kenai</locationSetId>
+			<timeSeriesType>simulated historical</timeSeriesType>
+			<timeStep id="monthly"/>
+			<relativeViewPeriod unit="day" start="-730" end="0" startOverrulable="true"/>
+			<readWriteMode>add originals</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<transformation id="SampleMAT">
+		<interpolationSpatial>
+			<closestDistance>
+				<inputVariable>
+					<variableId>RTMA_Temperatures</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Temp_1hr</variableId>
+				</outputVariable>
+			</closestDistance>
+		</interpolationSpatial>
+	</transformation>
+	<transformation id="Max Temp">
+		<statisticsSerial>
+			<max>
+				<inputVariable>
+					<variableId>Temp_1hr</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Max_Temp</variableId>
+				</outputVariable>
+			</max>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="Min_Temp">
+		<statisticsSerial>
+			<min>
+				<inputVariable>
+					<variableId>Temp_1hr</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Min_Temp</variableId>
+				</outputVariable>
+			</min>
+		</statisticsSerial>
+	</transformation>
+	<transformation id="MAT_24">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>Temp_1hr</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_day</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<!--<transformation id="MAT_Day_MY">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>Temp_1hr</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_Day_MY</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>-->
+	<transformation id="MAT_month">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>Temp_1hr</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_month</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<!--<transformation id="MAT_Month_MY">
+		<statisticsPeriodic>
+			<mean>
+				<inputVariable>
+					<variableId>Temp_1hr</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>MAT_Month_MY</variableId>
+				</outputVariable>
+			</mean>
+		</statisticsPeriodic>
+	</transformation>-->
+	<transformation id="Max_Temp_Month">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>Max_Temp</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Max_Temp_Month</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+	<transformation id="Min_Temp_Month">
+		<aggregation>
+			<instantaneousToMean>
+				<inputVariable>
+					<variableId>Min_Temp</variableId>
+				</inputVariable>
+				<outputVariable>
+					<variableId>Min_Temp_Month</variableId>
+				</outputVariable>
+			</instantaneousToMean>
+		</aggregation>
+	</transformation>
+</transformationModule>

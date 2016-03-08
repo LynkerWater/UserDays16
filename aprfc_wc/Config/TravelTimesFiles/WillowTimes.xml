@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<travelTimes xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/travelTimes.xsd">
+	<travelTime>
+		<downstreamLocation id="WILA2" name="WILA2 : Willow Cr at Hwy"/>
+		<upstreamLocation id="WLWA2" name="WLWA2 : Willow Cr nr Canyon"/>
+		<travelTime unit="minute"/>
+		<validPeriod unit="hour" start="-30" end="1">
+			<description>Canyon to Hwy</description>
+		</validPeriod>
+		<defaultEquation equationType="simple_linear"/>
+	</travelTime>
+</travelTimes>

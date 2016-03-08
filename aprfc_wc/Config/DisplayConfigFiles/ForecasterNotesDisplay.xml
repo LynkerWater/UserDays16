@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forecasterNotesDisplay xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/forecasterNotesDisplay.xsd">
+	<title>Forecaster Notes</title>
+	<defaultTopologyNodeId>APRFC</defaultTopologyNodeId>
+	<msgTemplate id="FloodWatch">
+		<message>FloodWatch for location: ...</message>
+	</msgTemplate>
+	<msgTemplate id="FloodWarning">
+		<message>FloodWarning for location: ...</message>
+	</msgTemplate>
+	<msgTemplate id="Forecaster Question">
+		<message>Question: ...</message>
+	</msgTemplate>
+	<eventCode id="General.info"/>
+	<eventCode id="Meteo.info"/>
+	<eventCode id="Meteo.warning"/>
+	<eventCode id="Flow.info"/>
+	<eventCode id="Flow.warning"/>
+	<eventCode id="System.info"/>
+	<eventCode id="System.maintenance"/>
+
+</forecasterNotesDisplay>

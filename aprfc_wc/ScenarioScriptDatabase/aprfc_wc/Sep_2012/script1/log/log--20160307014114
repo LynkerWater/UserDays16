@@ -1,0 +1,24 @@
+2016-03-07 01:41:15 GMT  2016-03-07 01:41:14 GMT  Scenario started.
+2016-03-07 01:41:23 GMT  2012-09-15 18:00:08 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:00:10 GMT
+2016-03-07 01:41:26 GMT  2012-09-15 18:00:13 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:01:00 GMT
+2016-03-07 01:41:29 GMT  2012-09-15 18:01:03 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:03:00 GMT
+2016-03-07 01:41:42 GMT  2012-09-15 18:03:13 GMT  Story button 'Hints' activated; messages [Data Viewer and Forecast Panel - Hints] shown.
+2016-03-07 01:41:45 GMT  2012-09-15 18:03:16 GMT  FEWS message: <html>Data Viewer and Forecast Panel - Hints<br>
+H: Display the flow gauges and forecast locations on the Map using the Data Viewer <br>
+<a href="file://c:/lemans/fews/aprfc_wc/ScenarioScriptDatabase/aprfc_wc/Sep_2012/script1/screenshot_dataviewer.jpg">Screenshot Data Viewer</a> <br>
+H: Look-up the meaning of the different icon threshold colours in the plots <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_plots_thresholds.jpg">Screenshot Plots</a> <br>
+</html>.
+2016-03-07 01:41:45 GMT  2012-09-15 18:03:16 GMT  FEWS message: <html>Data Viewer and Forecast Panel - Hints<br>
+H: Display the flow gauges and forecast locations on the Map using the Data Viewer <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_dataviewer.jpg">Screenshot Data Viewer</a> <br>
+H: Look-up the meaning of the different icon threshold colours in the plots <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_plots_thresholds.jpg">Screenshot Plots</a> <br>
+</html>.
+2016-03-07 01:43:15 GMT  2012-09-15 18:04:46 GMT  FEWS message: <html>Data Viewer and Forecast Panel - Hints<br>
+H: Display the flow gauges and forecast locations on the Map using the Data Viewer <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_dataviewer.jpg">Screenshot Data Viewer</a> <br>
+H: Look-up the meaning of the different icon threshold colours in the plots <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_plots_thresholds.jpg">Screenshot Plots</a> <br>
+</html>.
+2016-03-07 01:46:42 GMT  2012-09-15 18:08:12 GMT  Scenario ended.

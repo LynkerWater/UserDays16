@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>NULA2MRG SQIN  6 NULA2RTD SQIN  6     3     3 ENGL 0.00       0.0
+          15.000      250000.000          12.000      500000.000 X
+          18.000      600000.000
+          65.000      250000.000          75.000      500000.000 X
+          85.000      600000.000
+           0
+</stringValue>
+    </parameter>
+    <parameter id="PAIR_QT_LAG_CARRYOVER">
+      <intValue>0</intValue>
+    </parameter>
+    <parameter id="JK">
+      <intValue>3</intValue>
+    </parameter>
+    <parameter id="DTA">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="DTB">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="QBNTL">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="METENG">
+      <stringValue>ENGL</stringValue>
+    </parameter>
+    <parameter id="TSIDA">
+      <stringValue>NULA2MRG</stringValue>
+    </parameter>
+    <parameter id="ITB">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="ITA">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="TLRC">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="TSIDB">
+      <stringValue>NULA2RTD</stringValue>
+    </parameter>
+    <parameter id="LAGQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="15.0"/>
+        <row A="250000.0"/>
+        <row A="12.0"/>
+        <row A="500000.0"/>
+        <row A="18.0"/>
+        <row A="600000.0"/>
+      </table>
+    </parameter>
+    <parameter id="KQ_PAIRS">
+      <table>
+        <columnTypes A="double"/>
+        <row A="65.0"/>
+        <row A="250000.0"/>
+        <row A="75.0"/>
+        <row A="500000.0"/>
+        <row A="85.0"/>
+        <row A="600000.0"/>
+      </table>
+    </parameter>
+    <parameter id="JLAG">
+      <intValue>3</intValue>
+    </parameter>
+  </group>
+</parameters>

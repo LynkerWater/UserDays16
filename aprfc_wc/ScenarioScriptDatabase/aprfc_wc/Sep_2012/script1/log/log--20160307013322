@@ -1,0 +1,35 @@
+2016-03-07 01:33:22 GMT  2016-03-07 01:33:22 GMT  Scenario started.
+2016-03-07 01:33:32 GMT  2012-09-15 18:00:08 GMT  FEWS message: <html>For more information about how to use the Watercoach, see description on the <a href="https://publicwiki.deltares.nl/pages/viewpage.action?pageId=120820368">general wiki</a> <br>
+</html>.
+2016-03-07 01:34:02 GMT  2012-09-15 18:00:33 GMT  Inbox action '15-09-2012 18:00:01 GMT Link to Wiki' selected.
+2016-03-07 01:34:02 GMT  2012-09-15 18:00:34 GMT  FEWS message: <html>For more information about how to use the Watercoach, see description on the <a href="https://publicwiki.deltares.nl/pages/viewpage.action?pageId=120820368">general wiki</a> <br>
+</html>.
+2016-03-07 01:34:47 GMT  2012-09-15 18:01:18 GMT  Inbox action '15-09-2012 18:01:00 GMT Welcome to Alaska' selected.
+2016-03-07 01:34:54 GMT  2012-09-15 18:01:25 GMT  Inbox action '15-09-2012 18:00:01 GMT Link to Wiki' selected.
+2016-03-07 01:35:00 GMT  2012-09-15 18:01:31 GMT  Story button 'Hints' activated; messages [Welcome to Alaska - Hints] shown.
+2016-03-07 01:35:02 GMT  2012-09-15 18:01:34 GMT  FEWS message: <html>Welcome to Alaska - Hints<br>
+H: Zoom in on the map using the predefined zoom extents 
+</html>.
+2016-03-07 01:35:02 GMT  2012-09-15 18:01:34 GMT  FEWS message: <html>For more information about how to use the Watercoach, see description on the <a href="https://publicwiki.deltares.nl/pages/viewpage.action?pageId=120820368">general wiki</a> <br>
+</html>.
+2016-03-07 01:35:22 GMT  2012-09-15 18:01:53 GMT  Story button 'Answers' activated; messages [Welcome to Alaska - Answers] shown.
+2016-03-07 01:35:22 GMT  2012-09-15 18:01:54 GMT  FEWS message: <html>Welcome to Alaska - Answers<br>
+A: Map > Zoom extents > Matsu <br>
+You can also manually zoom in further (i.e. by scrolling) to focus on the Matsu Forecast group<br> </html>.
+2016-03-07 01:35:47 GMT  2012-09-15 18:02:18 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:03:00 GMT
+2016-03-07 01:35:56 GMT  2012-09-15 18:03:08 GMT  Story button 'Hints' activated; messages [Data Viewer and Forecast Panel - Hints] shown.
+2016-03-07 01:36:02 GMT  2012-09-15 18:03:16 GMT  FEWS message: <html>Data Viewer and Forecast Panel - Hints<br>
+H: Display the flow gauges and forecast locations on the Map using the Data Viewer <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_dataviewer.jpg">Screenshot Data Viewer</a> <br>
+H: Look-up the meaning of the different icon threshold colours in the plots <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_plots_thresholds.jpg">Screenshot Plots</a> <br>
+</html>.
+2016-03-07 01:37:29 GMT  2012-09-15 18:04:42 GMT  Scenario paused.
+2016-03-07 01:40:42 GMT  2012-09-15 18:04:42 GMT  Story button 'Hints' activated; messages [Data Viewer and Forecast Panel - Hints] shown.
+2016-03-07 01:40:52 GMT  2012-09-15 18:04:42 GMT  FEWS message: <html>Data Viewer and Forecast Panel - Hints<br>
+H: Display the flow gauges and forecast locations on the Map using the Data Viewer <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_dataviewer.jpg">Screenshot Data Viewer</a> <br>
+H: Look-up the meaning of the different icon threshold colours in the plots <br>
+<a href="file:///%WATERCOACH_SCENARIO_DATABASE_FOLDER%/aprfc_wc/Sep_2012/script1/screenshot_plots_thresholds.jpg">Screenshot Plots</a> <br>
+</html>.
+2016-03-07 01:40:55 GMT  2012-09-15 18:04:42 GMT  Scenario ended.

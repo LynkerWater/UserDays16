@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters version="1.5" xsi:schemaLocation="http://www.wldelft.nl/fews/PI pi_modelparameters.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI">
+  <group id="default">
+    <parameter id="TS_ID">
+      <stringValue>CHFA2LCL</stringValue>
+    </parameter>
+    <parameter id="OPERATION_CONTENTS">
+      <stringValue>CHENA R AT FAIRBANKS VARC                           0.0     
+CHFA2LCL   SQIN    6
+     -2.20     -1.85     -2.25     -2.30     -0.40     -0.80
+     -1.20     -0.50     -0.55     -0.80     -1.05     -1.75
+</stringValue>
+    </parameter>
+    <parameter id="WATER_SURFACE_AREA">
+      <dblValue>0.0</dblValue>
+    </parameter>
+    <parameter id="SSOUT_TYPE">
+      <stringValue>VARC</stringValue>
+    </parameter>
+    <parameter id="TS_TYPE">
+      <stringValue>SQIN</stringValue>
+    </parameter>
+    <parameter id="SSOUT_VALUES">
+      <table>
+        <columnTypes A="double"/>
+        <row A="-2.2"/>
+        <row A="-1.85"/>
+        <row A="-2.25"/>
+        <row A="-2.3"/>
+        <row A="-0.4"/>
+        <row A="-0.8"/>
+        <row A="-1.2"/>
+        <row A="-0.5"/>
+        <row A="-0.55"/>
+        <row A="-0.8"/>
+        <row A="-1.05"/>
+        <row A="-1.75"/>
+      </table>
+    </parameter>
+    <parameter id="TS_TIME_STEP">
+      <intValue>6</intValue>
+    </parameter>
+    <parameter id="OPERTATION_INFO">
+      <stringValue>CHENA R AT FAIRBANKS</stringValue>
+    </parameter>
+  </group>
+</parameters>
