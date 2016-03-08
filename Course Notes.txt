@@ -3,3 +3,6 @@ Water coach is a good training game using the FEWS enviro
 FEWS can import NetCDF Grids, can we use FEWS to dump out climate data?
 
 We could build a FEWS application for a drought game (monthly timestep) and use watercoach as a way to provide the data background for a group to work with
+
+Good online documentation for watercoach, better than most parts of the wiki
+

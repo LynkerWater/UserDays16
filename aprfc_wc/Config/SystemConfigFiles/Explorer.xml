@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<explorer version="1.1" xmlns="http://www.wldelft.nl/fews"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/explorer.xsd">
+<explorer version="1.1" xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/explorer.xsd">
 	<description>desc</description>
 	<rollingBarrelOptions>
 		<type>not_automatic</type>
@@ -184,8 +182,7 @@
 			<file>akdem_N.asc</file>
 			<visible>false</visible>
 			<classBreaks>
-				<color lowerValue="-300" label="below 0 ft" color="light steel blue2"
-					opaquenessPercentage="40"/>
+				<color lowerValue="-300" label="below 0 ft" color="light steel blue2" opaquenessPercentage="40"/>
 				<color lowerValue="0.01" label="0-100 ft" color="21A26B" opaquenessPercentage="80"/>
 				<color lowerValue="30" label="100-200 ft" color="42966B" opaquenessPercentage="80"/>
 				<color lowerValue="61" label="200-300 ft" color="427D5A" opaquenessPercentage="80"/>
@@ -193,72 +190,42 @@
 				<color lowerValue="122" label="400-600 ft" color="185931" opaquenessPercentage="80"/>
 				<color lowerValue="183" label="600-800 ft" color="004500" opaquenessPercentage="80"/>
 				<color lowerValue="244" label="800-1000 ft" color="004D00" opaquenessPercentage="80"/>
-				<color lowerValue="305" label="1000-1250 ft" color="006100"
-					opaquenessPercentage="80"/>
-				<color lowerValue="381" label="1250-1500 ft" color="4A6D31"
-					opaquenessPercentage="80"/>
-				<color lowerValue="457" label="1500-1750 ft" color="5A7531"
-					opaquenessPercentage="80"/>
-				<color lowerValue="533" label="1750-2000 ft" color="6B8239"
-					opaquenessPercentage="80"/>
-				<color lowerValue="610" label="2000-2250 ft" color="6B8E29"
-					opaquenessPercentage="80"/>
-				<color lowerValue="686" label="2250-2500 ft" color="8CA631"
-					opaquenessPercentage="80"/>
-				<color lowerValue="762" label="2500-2750 ft" color="94B218"
-					opaquenessPercentage="80"/>
-				<color lowerValue="838" label="2750-3000 ft" color="ADC710"
-					opaquenessPercentage="80"/>
-				<color lowerValue="914" label="3000-3250 ft" color="C6D36B"
-					opaquenessPercentage="80"/>
-				<color lowerValue="991" label="3250-3500 ft" color="DEE784"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1067" label="3500-3750 ft" color="F7F38C"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1143" label="3750-4000 ft" color="FFF3AD"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1219" label="4000-4250 ft" color="FFE39C"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1295" label="4250-4500 ft" color="F7CB84"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1372" label="4500-4750 ft" color="EFBA73"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1448" label="4750-5000 ft" color="EFB26B"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1524" label="5000-5500 ft" color="DE9E52"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1676" label="5500-6000 ft" color="CE8639"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1829" label="6000-6500 ft" color="B57131"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1981" label="6500-7000 ft" color="A56531"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2134" label="7000-7500 ft" color="785131"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2286" label="7500-8000 ft" color="634129"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2438" label="8000-8500 ft" color="4A2C10"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2591" label="8500-9000 ft" color="BCE0D4"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2743" label="9000-10000 ft" color="C9E5DC"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3048" label="10000-11000 ft" color="D3EAE2"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3353" label="11000-12000 ft" color="DCEFE9"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3658" label="12000-13000 ft" color="E6F2EE"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3962" label="over 13000 ft" color="FFFFFF"
-					opaquenessPercentage="80"/>
+				<color lowerValue="305" label="1000-1250 ft" color="006100" opaquenessPercentage="80"/>
+				<color lowerValue="381" label="1250-1500 ft" color="4A6D31" opaquenessPercentage="80"/>
+				<color lowerValue="457" label="1500-1750 ft" color="5A7531" opaquenessPercentage="80"/>
+				<color lowerValue="533" label="1750-2000 ft" color="6B8239" opaquenessPercentage="80"/>
+				<color lowerValue="610" label="2000-2250 ft" color="6B8E29" opaquenessPercentage="80"/>
+				<color lowerValue="686" label="2250-2500 ft" color="8CA631" opaquenessPercentage="80"/>
+				<color lowerValue="762" label="2500-2750 ft" color="94B218" opaquenessPercentage="80"/>
+				<color lowerValue="838" label="2750-3000 ft" color="ADC710" opaquenessPercentage="80"/>
+				<color lowerValue="914" label="3000-3250 ft" color="C6D36B" opaquenessPercentage="80"/>
+				<color lowerValue="991" label="3250-3500 ft" color="DEE784" opaquenessPercentage="80"/>
+				<color lowerValue="1067" label="3500-3750 ft" color="F7F38C" opaquenessPercentage="80"/>
+				<color lowerValue="1143" label="3750-4000 ft" color="FFF3AD" opaquenessPercentage="80"/>
+				<color lowerValue="1219" label="4000-4250 ft" color="FFE39C" opaquenessPercentage="80"/>
+				<color lowerValue="1295" label="4250-4500 ft" color="F7CB84" opaquenessPercentage="80"/>
+				<color lowerValue="1372" label="4500-4750 ft" color="EFBA73" opaquenessPercentage="80"/>
+				<color lowerValue="1448" label="4750-5000 ft" color="EFB26B" opaquenessPercentage="80"/>
+				<color lowerValue="1524" label="5000-5500 ft" color="DE9E52" opaquenessPercentage="80"/>
+				<color lowerValue="1676" label="5500-6000 ft" color="CE8639" opaquenessPercentage="80"/>
+				<color lowerValue="1829" label="6000-6500 ft" color="B57131" opaquenessPercentage="80"/>
+				<color lowerValue="1981" label="6500-7000 ft" color="A56531" opaquenessPercentage="80"/>
+				<color lowerValue="2134" label="7000-7500 ft" color="785131" opaquenessPercentage="80"/>
+				<color lowerValue="2286" label="7500-8000 ft" color="634129" opaquenessPercentage="80"/>
+				<color lowerValue="2438" label="8000-8500 ft" color="4A2C10" opaquenessPercentage="80"/>
+				<color lowerValue="2591" label="8500-9000 ft" color="BCE0D4" opaquenessPercentage="80"/>
+				<color lowerValue="2743" label="9000-10000 ft" color="C9E5DC" opaquenessPercentage="80"/>
+				<color lowerValue="3048" label="10000-11000 ft" color="D3EAE2" opaquenessPercentage="80"/>
+				<color lowerValue="3353" label="11000-12000 ft" color="DCEFE9" opaquenessPercentage="80"/>
+				<color lowerValue="3658" label="12000-13000 ft" color="E6F2EE" opaquenessPercentage="80"/>
+				<color lowerValue="3962" label="over 13000 ft" color="FFFFFF" opaquenessPercentage="80"/>
 			</classBreaks>
 		</esriAsciiGridLayer>
 		<esriAsciiGridLayer id="Topo South">
 			<file>akdem_S.asc</file>
 			<visible>false</visible>
 			<classBreaks>
-				<color lowerValue="-300" label="below 0 ft" color="light steel blue2"
-					opaquenessPercentage="40"/>
+				<color lowerValue="-300" label="below 0 ft" color="light steel blue2" opaquenessPercentage="40"/>
 				<color lowerValue="0.01" label="0-100 ft" color="21A26B" opaquenessPercentage="80"/>
 				<color lowerValue="30" label="100-200 ft" color="42966B" opaquenessPercentage="80"/>
 				<color lowerValue="61" label="200-300 ft" color="427D5A" opaquenessPercentage="80"/>
@@ -266,64 +233,35 @@
 				<color lowerValue="122" label="400-600 ft" color="185931" opaquenessPercentage="80"/>
 				<color lowerValue="183" label="600-800 ft" color="004500" opaquenessPercentage="80"/>
 				<color lowerValue="244" label="800-1000 ft" color="004D00" opaquenessPercentage="80"/>
-				<color lowerValue="305" label="1000-1250 ft" color="006100"
-					opaquenessPercentage="80"/>
-				<color lowerValue="381" label="1250-1500 ft" color="4A6D31"
-					opaquenessPercentage="80"/>
-				<color lowerValue="457" label="1500-1750 ft" color="5A7531"
-					opaquenessPercentage="80"/>
-				<color lowerValue="533" label="1750-2000 ft" color="6B8239"
-					opaquenessPercentage="80"/>
-				<color lowerValue="610" label="2000-2250 ft" color="6B8E29"
-					opaquenessPercentage="80"/>
-				<color lowerValue="686" label="2250-2500 ft" color="8CA631"
-					opaquenessPercentage="80"/>
-				<color lowerValue="762" label="2500-2750 ft" color="94B218"
-					opaquenessPercentage="80"/>
-				<color lowerValue="838" label="2750-3000 ft" color="ADC710"
-					opaquenessPercentage="80"/>
-				<color lowerValue="914" label="3000-3250 ft" color="C6D36B"
-					opaquenessPercentage="80"/>
-				<color lowerValue="991" label="3250-3500 ft" color="DEE784"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1067" label="3500-3750 ft" color="F7F38C"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1143" label="3750-4000 ft" color="FFF3AD"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1219" label="4000-4250 ft" color="FFE39C"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1295" label="4250-4500 ft" color="F7CB84"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1372" label="4500-4750 ft" color="EFBA73"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1448" label="4750-5000 ft" color="EFB26B"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1524" label="5000-5500 ft" color="DE9E52"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1676" label="5500-6000 ft" color="CE8639"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1829" label="6000-6500 ft" color="B57131"
-					opaquenessPercentage="80"/>
-				<color lowerValue="1981" label="6500-7000 ft" color="A56531"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2134" label="7000-7500 ft" color="785131"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2286" label="7500-8000 ft" color="634129"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2438" label="8000-8500 ft" color="4A2C10"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2591" label="8500-9000 ft" color="BCE0D4"
-					opaquenessPercentage="80"/>
-				<color lowerValue="2743" label="9000-10000 ft" color="C9E5DC"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3048" label="10000-11000 ft" color="D3EAE2"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3353" label="11000-12000 ft" color="DCEFE9"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3658" label="12000-13000 ft" color="E6F2EE"
-					opaquenessPercentage="80"/>
-				<color lowerValue="3962" label="over 13000 ft" color="FFFFFF"
-					opaquenessPercentage="80"/>
+				<color lowerValue="305" label="1000-1250 ft" color="006100" opaquenessPercentage="80"/>
+				<color lowerValue="381" label="1250-1500 ft" color="4A6D31" opaquenessPercentage="80"/>
+				<color lowerValue="457" label="1500-1750 ft" color="5A7531" opaquenessPercentage="80"/>
+				<color lowerValue="533" label="1750-2000 ft" color="6B8239" opaquenessPercentage="80"/>
+				<color lowerValue="610" label="2000-2250 ft" color="6B8E29" opaquenessPercentage="80"/>
+				<color lowerValue="686" label="2250-2500 ft" color="8CA631" opaquenessPercentage="80"/>
+				<color lowerValue="762" label="2500-2750 ft" color="94B218" opaquenessPercentage="80"/>
+				<color lowerValue="838" label="2750-3000 ft" color="ADC710" opaquenessPercentage="80"/>
+				<color lowerValue="914" label="3000-3250 ft" color="C6D36B" opaquenessPercentage="80"/>
+				<color lowerValue="991" label="3250-3500 ft" color="DEE784" opaquenessPercentage="80"/>
+				<color lowerValue="1067" label="3500-3750 ft" color="F7F38C" opaquenessPercentage="80"/>
+				<color lowerValue="1143" label="3750-4000 ft" color="FFF3AD" opaquenessPercentage="80"/>
+				<color lowerValue="1219" label="4000-4250 ft" color="FFE39C" opaquenessPercentage="80"/>
+				<color lowerValue="1295" label="4250-4500 ft" color="F7CB84" opaquenessPercentage="80"/>
+				<color lowerValue="1372" label="4500-4750 ft" color="EFBA73" opaquenessPercentage="80"/>
+				<color lowerValue="1448" label="4750-5000 ft" color="EFB26B" opaquenessPercentage="80"/>
+				<color lowerValue="1524" label="5000-5500 ft" color="DE9E52" opaquenessPercentage="80"/>
+				<color lowerValue="1676" label="5500-6000 ft" color="CE8639" opaquenessPercentage="80"/>
+				<color lowerValue="1829" label="6000-6500 ft" color="B57131" opaquenessPercentage="80"/>
+				<color lowerValue="1981" label="6500-7000 ft" color="A56531" opaquenessPercentage="80"/>
+				<color lowerValue="2134" label="7000-7500 ft" color="785131" opaquenessPercentage="80"/>
+				<color lowerValue="2286" label="7500-8000 ft" color="634129" opaquenessPercentage="80"/>
+				<color lowerValue="2438" label="8000-8500 ft" color="4A2C10" opaquenessPercentage="80"/>
+				<color lowerValue="2591" label="8500-9000 ft" color="BCE0D4" opaquenessPercentage="80"/>
+				<color lowerValue="2743" label="9000-10000 ft" color="C9E5DC" opaquenessPercentage="80"/>
+				<color lowerValue="3048" label="10000-11000 ft" color="D3EAE2" opaquenessPercentage="80"/>
+				<color lowerValue="3353" label="11000-12000 ft" color="DCEFE9" opaquenessPercentage="80"/>
+				<color lowerValue="3658" label="12000-13000 ft" color="E6F2EE" opaquenessPercentage="80"/>
+				<color lowerValue="3962" label="over 13000 ft" color="FFFFFF" opaquenessPercentage="80"/>
 			</classBreaks>
 		</esriAsciiGridLayer>
 		<esriShapeLayer id="Alaska Glaciers">
@@ -748,14 +686,14 @@
 			<menubarTask>true</menubarTask>
 			<loadAtStartup>false</loadAtStartup>
 		</explorerTask>
-		<!--<explorerTask name="WaterCoach">
+		<explorerTask name="WaterCoach">
 			<displayConfigFileName>APRFC_WC</displayConfigFileName>
 			<toolbarTask>false</toolbarTask>
 			<menubarTask>true</menubarTask>
 			<allowMultipleInstances>false</allowMultipleInstances>
 			<toolWindow>true</toolWindow>
 			<loadAtStartup>true</loadAtStartup>
-		</explorerTask>-->
+		</explorerTask>
 	</explorerTasks>
 	<statusBarConfig>
 		<description>Standard date-time format</description>
@@ -805,12 +743,9 @@
 		<parameterListSize>20</parameterListSize>
 		<forecastListSize>20</forecastListSize>
 	</panelSizes>
-	
-<notification enabled="true"/>
+	<notification enabled="true"/>
 	<forecasterNotesNotification enabled="true">
 		<!--<eventCodeId>Info</eventCodeId>-->
 	</forecasterNotesNotification>
-
-	
 	<piServicePortRange start="8100" end="8200"/>
 </explorer>
