@@ -1,0 +1,18 @@
+2016-03-08 23:27:22 GMT  2016-03-08 23:27:21 GMT  Scenario started.
+2016-03-08 23:27:26 GMT  2012-09-20 18:00:04 GMT  Jumping to next event; setting simulation time to 2012-09-20 18:00:10 GMT
+2016-03-08 23:27:28 GMT  2012-09-20 18:00:12 GMT  Jumping to next event; setting simulation time to 2012-09-20 18:00:30 GMT
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Enter the Date/Time/Peak of the forecasted flow at SUDA2.
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Please enter your name in the Forecast Table (click the Forecast button).
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Enter the Date/Time/Peak of the forecasted flow at SUDA2.
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Please enter your name in the Forecast Table (click the Forecast button).
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Please enter your name in the Forecast Table (click the Forecast button).
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Task run SUDA2_Forecast (T0=2012-09-20 18:00, Dispatch=2012-09-20 18:00, Id=460_79) is made current automatically.
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Enter the Date/Time/Peak of the forecasted flow at SUDA2.
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Enter the Date/Time/Peak of the forecasted flow at SUDA2.
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Please enter your name in the Forecast Table (click the Forecast button).
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Please enter your name in the Forecast Table (click the Forecast button).
+2016-03-08 23:27:32 GMT  2012-09-20 18:00:34 GMT  FEWS message: Enter the Date/Time/Peak of the forecasted flow at SUDA2.
+2016-03-08 23:27:42 GMT  2012-09-20 18:00:44 GMT  FEWS message: Task run Matsu_Forecast (T0=2012-09-20 18:00, Dispatch=2012-09-20 18:00, Id=460_77) is made current automatically.
+2016-03-08 23:27:52 GMT  2012-09-20 18:00:54 GMT  FEWS message: Congratulations, you know your own name!!.
+2016-03-08 23:28:02 GMT  2012-09-20 18:01:04 GMT  FEWS message: Please enter your name in the Forecast Table (click the Forecast button).
+2016-03-08 23:28:51 GMT  2012-09-20 18:01:52 GMT  Scenario ended.

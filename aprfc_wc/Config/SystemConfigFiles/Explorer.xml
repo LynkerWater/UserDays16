@@ -687,7 +687,7 @@
 			<loadAtStartup>false</loadAtStartup>
 		</explorerTask>
 		<explorerTask name="WaterCoach">
-			<displayConfigFileName>APRFC_WC</displayConfigFileName>
+			<displayConfigFileName>WaterCoachDisplay</displayConfigFileName>
 			<toolbarTask>false</toolbarTask>
 			<menubarTask>true</menubarTask>
 			<allowMultipleInstances>false</allowMultipleInstances>

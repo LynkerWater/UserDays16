@@ -1,0 +1,15 @@
+2016-03-08 23:28:55 GMT  2016-03-08 23:28:55 GMT  Scenario started.
+2016-03-08 23:28:59 GMT  2012-09-20 18:00:04 GMT  Jumping to next event; setting simulation time to 2012-09-20 18:00:10 GMT
+2016-03-08 23:29:01 GMT  2012-09-20 18:00:12 GMT  Jumping to next event; setting simulation time to 2012-09-20 18:00:30 GMT
+2016-03-08 23:29:04 GMT  2012-09-20 18:00:33 GMT  Jumping to next event; setting simulation time to 2012-09-20 18:01:00 GMT
+2016-03-08 23:29:05 GMT  2012-09-20 18:01:01 GMT  FEWS message: Please enter your name in the Forecast Table (click the Forecast button).
+2016-03-08 23:29:07 GMT  2012-09-20 18:01:03 GMT  Jumping to next event; setting simulation time to 2012-09-20 18:15:00 GMT
+2016-03-08 23:29:11 GMT  2012-09-20 18:15:03 GMT  Jumping to next event; setting simulation time to 2012-09-21 00:00:00 GMT
+2016-03-08 23:29:13 GMT  2012-09-21 00:00:03 GMT  Jumping to next event; setting simulation time to 2012-09-21 06:00:00 GMT
+2016-03-08 23:29:15 GMT  2012-09-21 06:00:02 GMT  FEWS message: Enter the Date/Time/Peak of the forecasted flow at SUDA2.
+2016-03-08 23:29:15 GMT  2012-09-21 06:00:02 GMT  FEWS message: Task run SUDA2_Forecast (T0=2012-09-21 06:00, Dispatch=2012-09-21 06:00, Id=460_82) is made current automatically.
+2016-03-08 23:29:16 GMT  2012-09-21 06:00:03 GMT  Jumping to next event; setting simulation time to 2012-09-21 12:00:00 GMT
+2016-03-08 23:29:20 GMT  2012-09-21 12:00:03 GMT  Jumping to next event; setting simulation time to 2012-09-21 18:00:00 GMT
+2016-03-08 23:29:22 GMT  2012-09-21 18:00:03 GMT  Jumping to next event; setting simulation time to 2012-09-22 00:00:00 GMT
+2016-03-08 23:29:25 GMT  2012-09-22 00:00:03 GMT  FEWS message: Enter the Date/Time/Peak of the forecasted flow at SUDA2.
+2016-03-08 23:29:25 GMT  2012-09-22 00:00:03 GMT  FEWS message: Task run SUDA2_Forecast (T0=2012-09-22 00:00, Dispatch=2012-09-22 00:00, Id=460_85) is made current automatically.

@@ -1,15 +1,60 @@
-[2016-03-08 10:22:06,385] INFO - DataStore.getConfigDirStorage - Use configuration from D:\Linux\GitHub\FY2016\watercoach\aprfc_wc\Config
-[2016-03-08 10:22:06,695] INFO - Application.init - Application.Info: version: 2015.02, build: 59429 (patched from 57990) Feb29, type: stable, jre: 1.8.0_45, os:Windows 8, user:pweil, mx: 1039m, db: Firebird, region: aprfc_wc
-[2016-03-08 10:22:07,675] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckStarted: Check of configuration started.
-[2016-03-08 10:22:07,676] INFO - ConfigValidator.isConfigAvailable - Configuration.Available: Configuration available in local filesystem.
-[2016-03-08 10:22:07,676] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckFinished: Check of configuration finished.
-[2016-03-08 10:22:07,826] WARN - FewsExplorerEnvironment.initAutomaticSystemTimeAdjusting - AUTO SYSTEM TIME SWITCHED OFF due to T0 global properties option
-[2016-03-08 10:22:07,854] INFO - AbstractFewsSession.log - Session.Created: Stand-alone system
-[2016-03-08 10:22:08,714] INFO - FewsExplorerEnvironment.startPiServiceRunnable - Started FewsPiServiceImpl on localHost : 8100
-[2016-03-08 10:22:10,426] INFO - FewsExplorer.<init> - Gui.Initialized: Graphical user interface initialized.
-[2016-03-08 10:22:10,444] INFO - Application.run - Application.Startup.Finished: The application finished starting up. (9.9s)
-[2016-03-08 10:22:32,959] WARN - FewsExplorerEnvironment.initAutomaticSystemTimeAdjusting - AUTO SYSTEM TIME SWITCHED OFF due to T0 global properties option
-[2016-03-08 10:22:33,198] INFO - FewsExplorerEnvironment.exit - FewsExplorer: exiting ... 
-[2016-03-08 10:22:33,202] INFO - AbstractFewsSession.log - Session.Closed: Stand-alone system
-[2016-03-08 10:22:33,257] INFO - FewsExplorerEnvironment.stopFewsPiService - Stopping FewsPiService on port 8100.
-[2016-03-08 10:22:33,641] INFO - LogEntriesTableLogAppender.dispose - Pending log messages flushed to database
+[2016-03-08 15:07:10,003] INFO - DataStore.getConfigDirStorage - Use configuration from D:\Linux\GitHub\FY2016\watercoach\aprfc_wc\Config
+[2016-03-08 15:07:10,329] INFO - Application.init - Application.Info: version: 2015.02, build: 59429 (patched from 57990) Feb29, type: stable, jre: 1.8.0_45, os:Windows 8, user:pweil, mx: 1039m, db: Firebird, region: aprfc_wc
+[2016-03-08 15:07:11,315] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckStarted: Check of configuration started.
+[2016-03-08 15:07:11,316] INFO - ConfigValidator.isConfigAvailable - Configuration.Available: Configuration available in local filesystem.
+[2016-03-08 15:07:11,316] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckFinished: Check of configuration finished.
+[2016-03-08 15:07:11,496] INFO - AbstractFewsSession.log - Session.Created: Stand-alone system
+[2016-03-08 15:07:12,372] INFO - FewsExplorerEnvironment.startPiServiceRunnable - Started FewsPiServiceImpl on localHost : 8100
+[2016-03-08 15:07:14,075] INFO - FewsExplorer.<init> - Gui.Initialized: Graphical user interface initialized.
+[2016-03-08 15:07:14,094] INFO - Application.run - Application.Startup.Finished: The application finished starting up. (9.9s)
+[2016-03-08 15:08:25,465] ERROR - WaterCoachDisplay.startScenario - File not found
+java.lang.Exception: Configuration error:  Row with id 7 was not specified in the forecast table. version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:pweil, mx: 1039m, db: Firebird, region: aprfc_wc
+	at nl.wldelft.fews.gui.plugin.watercoach.system.ScriptConfig.parseCondition(ScriptConfig.java:806)
+	at nl.wldelft.fews.gui.plugin.watercoach.system.ScriptConfig.parseFrame(ScriptConfig.java:357)
+	at nl.wldelft.fews.gui.plugin.watercoach.system.ScriptConfig.parseStory(ScriptConfig.java:310)
+	at nl.wldelft.fews.gui.plugin.watercoach.system.ScriptConfig.parseStories(ScriptConfig.java:251)
+	at nl.wldelft.fews.gui.plugin.watercoach.system.ScriptConfig.<init>(ScriptConfig.java:184)
+	at nl.wldelft.fews.gui.plugin.watercoach.gui.ScenarioFrame.<init>(ScenarioFrame.java:149)
+	at nl.wldelft.fews.gui.plugin.watercoach.WaterCoachDisplay.startScenario(WaterCoachDisplay.java:302)
+	at nl.wldelft.fews.gui.plugin.watercoach.WaterCoachDisplay.performAction(WaterCoachDisplay.java:318)
+	at nl.wldelft.fews.gui.plugin.watercoach.WaterCoachDisplay$$Lambda$608/4677557.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+[2016-03-08 15:10:38,554] INFO - FewsExplorerEnvironment.exit - FewsExplorer: exiting ... 
+[2016-03-08 15:10:38,558] INFO - AbstractFewsSession.log - Session.Closed: Stand-alone system
+[2016-03-08 15:10:38,584] INFO - FewsExplorerEnvironment.stopFewsPiService - Stopping FewsPiService on port 8100.
+[2016-03-08 15:10:38,718] INFO - LogEntriesTableLogAppender.dispose - Pending log messages flushed to database

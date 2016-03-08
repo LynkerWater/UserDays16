@@ -6,3 +6,14 @@ We could build a FEWS application for a drought game (monthly timestep) and use 
 
 Good online documentation for watercoach, better than most parts of the wiki
 
+Water coach scenario:
+15 basins
+Basins with 4 zones: 5 basins
+SUDA2
+MACA2
+SKWA2
+YLKA2
+YSSA2
+
+Working on script 2
+
