@@ -1,0 +1,16 @@
+2016-03-08 18:54:10 GMT  2016-03-08 18:54:10 GMT  Scenario started.
+2016-03-08 18:54:20 GMT  2012-09-15 18:00:10 GMT  FEWS message: <html>For more information about how to use the Watercoach, see description on the <a href="https://publicwiki.deltares.nl/pages/viewpage.action?pageId=120820368">general wiki</a> <br>
+</html>.
+2016-03-08 18:54:27 GMT  2012-09-15 18:00:16 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:01:00 GMT
+2016-03-08 18:54:29 GMT  2012-09-15 18:01:03 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:03:00 GMT
+2016-03-08 18:54:32 GMT  2012-09-15 18:03:03 GMT  Scenario paused.
+2016-03-08 18:54:34 GMT  2012-09-15 18:03:03 GMT  Forecast frame activated.
+2016-03-08 18:55:04 GMT  2012-09-15 18:03:03 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:06:00 GMT
+2016-03-08 18:58:24 GMT  2012-09-15 18:06:00 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:12:00 GMT
+2016-03-08 18:59:09 GMT  2012-09-15 18:12:00 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:15:00 GMT
+2016-03-08 18:59:12 GMT  2012-09-15 18:15:00 GMT  Story button 'Calls' activated; messages [Telephone call from radiostation] shown.
+2016-03-08 18:59:46 GMT  2012-09-15 18:15:00 GMT  Story button 'Answers' activated; messages [] shown.
+2016-03-08 18:59:52 GMT  2012-09-15 18:15:00 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:16:00 GMT
+2016-03-08 18:59:58 GMT  2012-09-15 18:16:00 GMT  Forecast frame activated.
+2016-03-08 19:00:17 GMT  2012-09-15 18:16:00 GMT  Scenario resumed.
+2016-03-08 19:00:37 GMT  2012-09-15 18:16:20 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:30:00 GMT

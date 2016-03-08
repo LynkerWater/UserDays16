@@ -9,3 +9,17 @@
 2016-03-08 18:41:42 GMT  2012-09-15 18:01:52 GMT  Scenario paused.
 2016-03-08 18:41:45 GMT  2012-09-15 18:01:52 GMT  Scenario resumed.
 2016-03-08 18:41:47 GMT  2012-09-15 18:01:54 GMT  Scenario paused.
+2016-03-08 18:44:32 GMT  2012-09-15 18:01:54 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:03:00 GMT
+2016-03-08 18:47:53 GMT  2012-09-15 18:03:00 GMT  Scenario resumed.
+2016-03-08 18:50:07 GMT  2012-09-15 18:05:40 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:06:00 GMT
+2016-03-08 18:50:11 GMT  2012-09-15 18:06:08 GMT  Scenario paused.
+2016-03-08 18:50:20 GMT  2012-09-15 18:06:08 GMT  Forecast frame activated.
+2016-03-08 18:51:04 GMT  2012-09-15 18:06:08 GMT  Clock adjustment frame activated.
+2016-03-08 18:51:13 GMT  2012-09-15 18:06:08 GMT  Clock adjusted manually; setting simulation time to 2012-09-15 18:00:00 GMT
+2016-03-08 18:51:35 GMT  2012-09-15 18:00:00 GMT  Scenario resumed.
+2016-03-08 18:51:38 GMT  2012-09-15 18:00:03 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:00:10 GMT
+2016-03-08 18:51:42 GMT  2012-09-15 18:00:14 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:01:00 GMT
+2016-03-08 18:51:44 GMT  2012-09-15 18:01:02 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:03:00 GMT
+2016-03-08 18:51:46 GMT  2012-09-15 18:03:02 GMT  Scenario paused.
+2016-03-08 18:51:53 GMT  2012-09-15 18:03:02 GMT  Jumping to next event; setting simulation time to 2012-09-15 18:06:00 GMT
+2016-03-08 18:52:27 GMT  2012-09-15 18:06:00 GMT  Scenario ended.
