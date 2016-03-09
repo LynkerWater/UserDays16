@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<correlationSets xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/correlationSets.xsd" version="1.1">
+  <!--Hydro 2 to Hydro 1-->
+  <correlationSet>
+    <inputTimeSerieSet>
+      <moduleInstanceId>ImportTelemetry</moduleInstanceId>
+      <valueType>scalar</valueType>
+      <parameterId>H.obs</parameterId>
+      <locationId>Hydro1</locationId>
+      <locationId>Hydro2</locationId>
+      <timeSeriesType>external historical</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <relativeViewPeriod unit="day" start="-4" end="2"/>
+      <readWriteMode>add originals</readWriteMode>
+    </inputTimeSerieSet>
+    <correlation>
+      <forecastLocationId>Hydro1</forecastLocationId>
+      <equationType equationType="simple_linear"/>
+      <eventSetsDescriptorId>IoMEvents</eventSetsDescriptorId>
+      <travelTimesDescriptorId>IoMTravelTimes</travelTimesDescriptorId>
+      <eventSelectionType>eventid</eventSelectionType>
+    </correlation>
+    <outputTimeSerieSet>
+      <moduleInstanceId>FluvialLevelToLevelCorrelation</moduleInstanceId>
+      <valueType>scalar</valueType>
+      <parameterId>H.correlated</parameterId>
+      <locationId>Hydro1</locationId>
+      <timeSeriesType>external historical</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <relativeViewPeriod unit="day" start="-4" end="2"/>
+      <readWriteMode>add originals</readWriteMode>
+      <synchLevel>1</synchLevel>
+    </outputTimeSerieSet>
+  </correlationSet>
+</correlationSets>

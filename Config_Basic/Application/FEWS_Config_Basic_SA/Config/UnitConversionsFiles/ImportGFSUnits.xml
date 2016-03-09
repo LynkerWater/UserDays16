@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp1 (http://www.altova.com) by Computer Services (WL | Delft Hydraulics) -->
+<unitConversions xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/unitConversions.xsd">
+	<unitConversion>
+		<inputUnitType>K</inputUnitType>
+		<outputUnitType>oC</outputUnitType>
+		<multiplier>1</multiplier>
+		<incrementer>-273</incrementer>
+	</unitConversion>
+	<unitConversion>
+		<inputUnitType>kg/m^2</inputUnitType>
+		<outputUnitType>m</outputUnitType>
+		<multiplier>0.0001</multiplier> <!-- actually should be 0.001 but because Precipitation is then 10x to high make it 0.0001-->
+		<incrementer>0</incrementer>
+	</unitConversion>
+	<unitConversion>
+		<inputUnitType>Pa</inputUnitType>
+		<outputUnitType>mbar</outputUnitType>
+		<multiplier>0.01</multiplier>
+		<incrementer>0</incrementer>
+	</unitConversion>
+</unitConversions>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp1 (http://www.altova.com) by Computer Services (WL | Delft Hydraulics) -->
+<timeSeriesImportRun xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesImportRun.xsd">
+  <import>
+    <general>
+      <importType>grib</importType>
+      <folder>$IMPORT_FOLDER_GFS_2m$</folder>
+      <idMapId>IdImportGFS</idMapId>
+      <unitConversionsId>ImportGFSUnits</unitConversionsId>
+      <importTimeZone>
+        <timeZoneOffset>+00:00</timeZoneOffset>
+      </importTimeZone>
+    </general>
+    <timeSeriesSet>
+      <moduleInstanceId>ImportGFS_2m</moduleInstanceId>
+      <valueType>grid</valueType>
+      <parameterId>T.gfs.forecast</parameterId>
+      <locationId>GFS</locationId>
+      <timeSeriesType>external forecasting</timeSeriesType>
+      <timeStep unit="hour" multiplier="3"/>
+      <readWriteMode>add originals</readWriteMode>
+      <synchLevel>6</synchLevel>
+      <expiryTime unit="day" multiplier="3"/>
+    </timeSeriesSet>
+  </import>
+</timeSeriesImportRun>

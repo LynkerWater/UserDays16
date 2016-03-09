@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2015 rel. 4 sp1 (x64) (http://www.altova.com) by Page Weil (Private) -->
+<!--NFFS Midlands region-->
+<importRun xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/importRun.xsd">
+	<import>
+		<folder>$IMPORT_TELEMETRY_FOLDER$</folder>
+		<failedFolder>$IMPORT_FAILED_FOLDER$</failedFolder>
+		<backupFolder>$BACKUP_TELEMETRY_FOLDER$</backupFolder>
+		<validate>true</validate>
+		<idMapId>Telemetry</idMapId>
+		<unitConversionsId>ImportUnitConversions</unitConversionsId>
+		<flagConversionsId>ImportFlagConversions</flagConversionsId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>H.obs</parameterId>
+			<locationSetId>hydgauges</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>T.obs</parameterId>
+			<locationSetId>metgauges_T.obs</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>P.obs</parameterId>
+			<locationSetId>metgauges</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+		<importType>telemetry</importType>
+		<dataFeedId>RTS</dataFeedId>
+	</import>
+</importRun>

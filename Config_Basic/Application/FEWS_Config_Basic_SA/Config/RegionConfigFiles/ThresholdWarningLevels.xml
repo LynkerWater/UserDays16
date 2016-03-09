@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by ICT (Stichting Deltares) -->
+<thresholdWarningLevels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/thresholdWarningLevels.xsd">
+	<thresholdWarningLevel id="0" name="No threshold exceeded">
+		<color>green</color>
+		<iconName>default1.gif</iconName>
+		<historicOverlayIconName>default1.gif</historicOverlayIconName>
+		<forecastOverlayIconName>default1.gif</forecastOverlayIconName>
+	</thresholdWarningLevel>
+	<thresholdWarningLevel id="1" name="Standby">
+		<color>blue</color>
+		<iconName>warninglevel.gif</iconName>
+		<historicOverlayIconName>historicwarninglevel_blue.gif</historicOverlayIconName>
+		<forecastOverlayIconName>forecastwarninglevel_blue.gif</forecastOverlayIconName>
+	</thresholdWarningLevel>
+	<thresholdWarningLevel id="2" name="Flood Watch">
+		<color>yellow</color>
+		<iconName>warninglevel.gif</iconName>
+		<historicOverlayIconName>historicwarninglevel_yellow.gif</historicOverlayIconName>
+		<forecastOverlayIconName>forecastwarninglevel_yellow.gif</forecastOverlayIconName>
+	</thresholdWarningLevel>
+	<thresholdWarningLevel id="3" name="Flood Warning">
+		<color>orange</color>
+		<iconName>warninglevel.gif</iconName>
+		<historicOverlayIconName>historicwarninglevel_orange.gif</historicOverlayIconName>
+		<forecastOverlayIconName>forecastwarninglevel_orange.gif</forecastOverlayIconName>
+	</thresholdWarningLevel>
+	<thresholdWarningLevel id="4" name="Severe Flood Warning">
+		<color>red</color>
+		<iconName>warninglevel.gif</iconName>
+		<historicOverlayIconName>historicwarninglevel_red.gif</historicOverlayIconName>
+		<forecastOverlayIconName>forecastwarninglevel_red.gif</forecastOverlayIconName>
+	</thresholdWarningLevel>
+</thresholdWarningLevels>

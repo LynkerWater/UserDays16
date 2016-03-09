@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thresholdValueSets xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/thresholdValueSets.xsd">
+  <thresholdValueSet id="London" name="London">
+    <description>London thresholds</description>
+    <levelThresholdValue>
+      <levelThresholdId>Flood Watch</levelThresholdId>
+      <value>10</value>
+    </levelThresholdValue>
+    <levelThresholdValue>
+      <levelThresholdId>Severe FW</levelThresholdId>
+      <value>50</value>
+    </levelThresholdValue>
+    <timeSeriesSet>
+      <moduleInstanceId>ImportTelemetry</moduleInstanceId>
+      <valueType>scalar</valueType>
+      <parameterId>H.obs</parameterId>
+      <locationId>London_hyd</locationId>
+      <timeSeriesType>external historical</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <relativeViewPeriod unit="hour" start="-36" end="36"/>
+      <readWriteMode>read only</readWriteMode>
+    </timeSeriesSet>
+  </thresholdValueSet>
+  <thresholdValueSet id="Hydro1" name="Hydro1">
+    <description>Hydro1 thresholds</description>
+    <levelThresholdValue>
+      <levelThresholdId>Flood Watch</levelThresholdId>
+      <value>1.0</value>
+    </levelThresholdValue>
+    <levelThresholdValue>
+      <levelThresholdId>Severe FW</levelThresholdId>
+      <value>1.4</value>
+    </levelThresholdValue>
+    <timeSeriesSet>
+      <moduleInstanceId>ImportTelemetry</moduleInstanceId>
+      <valueType>scalar</valueType>
+      <parameterId>H.obs</parameterId>
+      <locationId>Hydro1</locationId>
+      <timeSeriesType>external historical</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <relativeViewPeriod unit="hour" start="-36" end="36"/>
+      <readWriteMode>read only</readWriteMode>
+    </timeSeriesSet>
+  </thresholdValueSet>
+  <thresholdValueSet id="Hydro2" name="Hydro2">
+    <description>Hydro2 thresholds</description>
+    <levelThresholdValue>
+      <levelThresholdId>Flood Watch</levelThresholdId>
+      <value>1.9</value>
+    </levelThresholdValue>
+    <timeSeriesSet>
+      <moduleInstanceId>ImportTelemetry</moduleInstanceId>
+      <valueType>scalar</valueType>
+      <parameterId>H.obs</parameterId>
+      <locationId>Hydro2</locationId>
+      <timeSeriesType>external historical</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <relativeViewPeriod unit="hour" start="-36" end="36"/>
+      <readWriteMode>read only</readWriteMode>
+    </timeSeriesSet>
+  </thresholdValueSet>
+</thresholdValueSets>

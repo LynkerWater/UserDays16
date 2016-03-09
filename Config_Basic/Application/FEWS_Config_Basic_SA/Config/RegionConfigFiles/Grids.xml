@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp1 (http://www.altova.com) by Computer Services (WL | Delft Hydraulics) -->
+<grids xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/grids.xsd">
+  <regular locationId="NimrodNWP">
+    <description>Nimrod NWP Grids</description>
+    <rows>145</rows>
+    <columns>115</columns>
+    <geoDatum>Ordnance Survey Great Britain 1936</geoDatum>
+    <firstCellCenter>
+      <x>-397500</x>
+      <y>1542500</y>
+    </firstCellCenter>
+    <xCellSize>15000</xCellSize>
+    <yCellSize>15000</yCellSize>
+  </regular>
+  <regular locationId="GFS">
+    <description>grid def. for imported GFS data</description>
+    <rows>291</rows>
+    <columns>701</columns>
+    <geoDatum>WGS 1984</geoDatum>
+    <firstCellCenter>
+      <x>-175</x>
+      <y>80</y>
+      <z>0</z>
+    </firstCellCenter>
+    <xCellSize>0.5</xCellSize>
+    <yCellSize>0.5</yCellSize>
+  </regular>
+</grids>

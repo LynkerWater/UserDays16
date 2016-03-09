@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gridDisplay xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/gridDisplay.xsd">
+	<title>Spatial Display</title>
+	<defaults>
+		<plotGroupId>Grids</plotGroupId>
+		<geoMap>
+			<geoDatum>Ordnance Survey Great Britain 1936</geoDatum>
+			<projection>mercator</projection>
+			<extents>
+				<geoDatum>WGS 1984</geoDatum>
+				<defaultExtent name="default">
+					<left>-8.5</left>
+					<right>3.6</right>
+					<top>55</top>
+					<bottom>50</bottom>
+				</defaultExtent>
+			</extents>
+			<scaleBarVisible>true</scaleBarVisible>
+			<northArrowVisible>true</northArrowVisible>
+			<labelsVisible>true</labelsVisible>
+			<backgroundColor>azure</backgroundColor>
+			<openStreetMapLayer id="Landscape">
+				<url>http://tile.thunderforest.com/landscape</url>
+				<visible>true</visible>
+				<cacheDir>$REGION_HOME$/LandscapeTiles</cacheDir>
+			</openStreetMapLayer>
+			<esriShapeLayer id="Rest of Europe">
+				<file>%REGION_HOME%/map/Europe_withoutGB.shp</file>
+				<geoDatum>WGS 1984</geoDatum>
+				<visible>true</visible>
+				<fillColor>goldenrod</fillColor>
+				<opaquenessPercentage>20</opaquenessPercentage>
+			</esriShapeLayer>
+			<esriShapeLayer id="United Kingdom">
+				<description>United Kingdom Coastline</description>
+				<file>%REGION_HOME%/map/coastline_polygon.shp</file>
+				<geoDatum>Ordnance Survey Great Britain 1936</geoDatum>
+				<visible>true</visible>
+				<lineColor>gray50</lineColor>
+				<fillColor>gold</fillColor>
+				<opaquenessPercentage>40</opaquenessPercentage>
+			</esriShapeLayer>
+			<gridLayer/>
+		</geoMap>
+	</defaults>
+	<gridPlotGroup id="Grids">
+		<gridPlotGroup id="Rainfall">
+			<gridPlot id="NWP (N2)">
+				<timeSeriesSet>
+					<moduleInstanceId>ImportNimrod</moduleInstanceId>
+					<valueType>grid</valueType>
+					<parameterId>P.nwp.forecast</parameterId>
+					<locationId>NimrodNWP</locationId>
+					<timeSeriesType>external forecasting</timeSeriesType>
+					<timeStep unit="minute" multiplier="15"/>
+					<readWriteMode>read complete forecast</readWriteMode>
+				</timeSeriesSet>
+				<movingAccumulationTimeSpan unit="hour" multiplier="1"/>
+				<movingAccumulationTimeSpan unit="hour" multiplier="3"/>
+				<movingAccumulationTimeSpan unit="hour" multiplier="6"/>
+				<movingAccumulationTimeSpan unit="hour" multiplier="12"/>
+				<movingAccumulationTimeSpan unit="hour" multiplier="24"/>
+				<classBreaks>
+					<color color="070268" lowerValue="0.01"/>
+					<color color="0900AE" lowerValue="0.125"/>
+					<color color="4040FF" lowerValue="0.25"/>
+					<color color="0080C0" lowerValue="0.5"/>
+					<color color="129FFE" lowerValue="1.0"/>
+					<color color="00FF40" lowerValue="2.0"/>
+					<color color="FFFF00" lowerValue="4.0"/>
+					<color color="FF8000" lowerValue="8.0"/>
+					<color color="FF0000" lowerValue="16.0"/>
+					<color color="FF0080" lowerValue="32.0"/>
+					<color color="FFFFFF" lowerValue="64.0"/>
+				</classBreaks>
+			</gridPlot>
+		</gridPlotGroup>
+	</gridPlotGroup>
+</gridDisplay>

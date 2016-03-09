@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idMap xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/idMap.xsd" version="1.1">
+  <!-- these are the parameters -->
+  <parameter internal="T.obs" external="Temperature"/>
+  <parameter internal="H.obs" external="Water Level"/>
+  <parameter internal="Q.obs" external="Flow"/>
+  <parameter internal="P.obs" external="Rainfall"/>
+  <!-- these are the locations -->
+  <location internal="London" external="London"/>
+  <location internal="Hydro1" external="Hydro1"/>
+  <location internal="Hydro2" external="Hydro2"/>
+  <location internal="Raingauge" external="Raingauge"/>
+  <location internal="Meteostation" external="Meteostation"/>
+ </idMap>

@@ -1,0 +1,10 @@
+INFO	Started Common Adapter Postprocessor run Tue Mar 08 22:09:51 GMT 2016
+DEBUG	Total Postprocessor Activities = 1
+INFO	Reading Module Logs Messages
+INFO	Started run [2016-03-08 14:09:51]
+INFO	Completed run succesfully [2016-03-08 14:09:51]
+INFO	Finished reading Module Logs Messages
+DEBUG	Postprocessor Activity (1) for TimeSeries
+DEBUG	Writing TimeSeries to outputs.xml
+INFO	Writing State Xml File - states.xml
+INFO	Completed Common Adapter Postprocessor run Tue Mar 08 22:09:51 GMT 2016

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locationSets xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/locationSets.xsd" version="1.1">
+	<!-- Cities-->
+	<locationSet id="European_Cities" name="European Cities">
+		<locationSetId>Mainland_Europe_Cities</locationSetId>
+		<locationSetId>UK_Cities</locationSetId>
+	</locationSet>
+	<locationSet id="Mainland_Europe_Cities" name="Mainland Europe Cities">
+		<locationId>Amsterdam</locationId>
+		<locationId>Delft</locationId>
+	</locationSet>
+	<locationSet id="UK_Cities">
+		<csvFile>
+			<file>UK_Cities.csv</file>
+			<geoDatum>WGS 1984</geoDatum>
+			<id>%ID%</id>
+			<name>%NAME%</name>
+			<description>%DESCRIPT%</description>
+			<shortName>%SHORTNAME%</shortName>
+			<x>%XCOORD%</x>
+			<y>%YCOORD%</y>
+			<z>%ZCOORD%</z>
+			<attribute id="TYPE">
+				<text>%TYPE%</text>
+			</attribute>
+		</csvFile>
+	</locationSet>
+	<locationSet id="UK_Cities_meteo">
+		<locationSetId>UK_Cities</locationSetId>
+		<constraints>
+			<attributeTextEquals equals="METEO" id="TYPE"/>
+		</constraints>
+	</locationSet>
+	<!-- Hydrological Gauges -->
+	<locationSet id="hydgauges" name="Hydrological Gauges">
+		<locationId>London_hyd</locationId>
+		<locationId>Delft_hyd</locationId>
+		<locationId>Birmingham_hyd</locationId>
+		<locationId>Amsterdam_hyd</locationId>
+		<locationSetId>Gauges_H.obs</locationSetId>
+	</locationSet>
+	<locationSet id="Gauges_H.obs">
+		<locationId>Hydro1</locationId>
+		<locationId>Hydro2</locationId>
+	</locationSet>
+	<!-- Meteo gauges -->
+	<locationSet id="metgauges" name="Meteorological Gauges">
+		<locationId>London</locationId>
+		<locationId>Delft</locationId>
+		<locationId>Amsterdam</locationId>
+		<locationId>Birmingham</locationId>
+		<locationSetId>Gauges_P.obs</locationSetId>
+	</locationSet>
+	<locationSet id="metgauges_T.obs" name="Meteorological Gauges with dry bulb temperature">
+		<locationId>London</locationId>
+		<locationId>Delft</locationId>
+		<locationId>Meteostation</locationId>
+	</locationSet>
+	<locationSet id="Gauges_P.obs">
+		<csvFile>
+			<file>MeteoStations.csv</file>
+			<geoDatum>WGS 1984</geoDatum>
+			<id>%ID%</id>
+			<name>%NAME%</name>
+			<description>%DESCRIPT%</description>
+			<shortName>%SHORTNAME%</shortName>
+			<x>%XCOORD%</x>
+			<y>%YCOORD%</y>
+			<z>%ZCOORD%</z>
+		</csvFile>
+	</locationSet>
+	<!--Rated-->
+	<locationSet id="Gauges_rated" name="Gauges rated">
+		<locationId>London_hyd</locationId>
+	</locationSet>
+</locationSets>

@@ -1,0 +1,5 @@
+ID,NAME,DESCRIPT,SHORTNAME,XCOORD,YCOORD,ZCOORD,TYPE
+London,London,City,London,0,51.5,0,METEO
+London_hyd,London,City,London,0,51.5,0,HYDRO
+Birmingham,Birmingham,City,Birmingham,-1.9,52.48,0,METEO
+Birmingham_hyd,Birmingham,City,Birmingham,-1.9,52.48,0,HYDRO

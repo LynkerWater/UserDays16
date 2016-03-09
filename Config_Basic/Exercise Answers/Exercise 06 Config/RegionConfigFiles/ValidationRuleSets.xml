@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<validationRuleSets version="1.1" xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/validationRuleSets.xsd">
+   <validationRuleSet validationRuleSetId="Hydro1rule" timeZone="0">
+    <extremeValues>
+      <hardMax constantLimit="1.5"/>
+      <softMax constantLimit="1.2"/>
+    </extremeValues>
+    <timeSeriesSet>
+      <moduleInstanceId>ImportTelemetry</moduleInstanceId>
+      <valueType>scalar</valueType>
+      <parameterId>H.obs</parameterId>
+      <locationId>Hydro1</locationId>
+      <timeSeriesType>external historical</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <readWriteMode>add originals</readWriteMode>
+    </timeSeriesSet>
+  </validationRuleSet>
+   <validationRuleSet validationRuleSetId="Hydro2rule" timeZone="0">
+    <extremeValues>
+      <hardMax constantLimit="2.6"/>
+      <softMax constantLimit="2.4"/>
+    </extremeValues>
+    <timeSeriesSet>
+      <moduleInstanceId>ImportTelemetry</moduleInstanceId>
+      <valueType>scalar</valueType>
+      <parameterId>H.obs</parameterId>
+      <locationId>Hydro2</locationId>
+      <timeSeriesType>external historical</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <readWriteMode>add originals</readWriteMode>
+    </timeSeriesSet>
+  </validationRuleSet>
+</validationRuleSets>

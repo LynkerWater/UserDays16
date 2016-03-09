@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by ICT (Stichting Deltares) -->
+<transformationModule version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd">
+	<transformation id="InterpolatePrecipitation">
+		<interpolationSerial>
+			<default>
+				<inputVariable>
+					<timeSeriesSet>
+						<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>P.catchment</parameterId>
+						<locationId>CatchAvg</locationId>
+						<timeSeriesType>external historical</timeSeriesType>
+						<timeStep unit="minute" multiplier="15"/>
+						<relativeViewPeriod unit="hour" start="-48" startOverrulable="true" end="24" endOverrulable="true"/>
+						<readWriteMode>read only</readWriteMode>
+					</timeSeriesSet>
+				</inputVariable>
+				<defaultValue>0.00</defaultValue>
+				<extrapolateDirection>none</extrapolateDirection>
+				<outputVariable>
+					<timeSeriesSet>
+						<moduleInstanceId>Hydro_Train_Interpolate_Forecast</moduleInstanceId>
+						<valueType>scalar</valueType>
+						<parameterId>P.catchment</parameterId>
+						<locationId>CatchAvg</locationId>
+						<timeSeriesType>simulated forecasting</timeSeriesType>
+						<timeStep unit="minute" multiplier="15"/>
+						<relativeViewPeriod unit="hour" start="-48" startOverrulable="true" end="24" endOverrulable="true"/>
+						<readWriteMode>add originals</readWriteMode>
+					</timeSeriesSet>
+				</outputVariable>
+			</default>
+		</interpolationSerial>
+	</transformation>
+</transformationModule>

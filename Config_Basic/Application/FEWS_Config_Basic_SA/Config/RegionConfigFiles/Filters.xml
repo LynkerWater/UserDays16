@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2015 rel. 4 sp1 (x64) (http://www.altova.com) by Page Weil (Private) -->
+<filters version="1.1" xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/filters.xsd">
+	<filter id="All Europe Cities" name="All Europe Cities">
+		<child foreignKey="Mainland Europe"/>
+		<child foreignKey="UK"/>
+	</filter>
+	<filter id="Hydrological Gauges" name="Hydrological Gauges">
+		<child foreignKey="HydrologicalGauges"/>
+	</filter>
+	<filter id="Meteorological Gauges" name="Meteorological Gauges">
+		<child foreignKey="MeteorologicalGauges"/>
+	</filter>
+	<!--These are the actual filters-->
+	<filter id="Mainland Europe" name="Mainland Europe (monthly)">
+		<!--Europe-->
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>T.obs</parameterId>
+			<locationSetId>Mainland_Europe_Cities</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="month" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>editing visible to all future task runs</readWriteMode>
+			<synchLevel>5</synchLevel>
+		</timeSeriesSet>
+	</filter>
+	<filter id="UK" name="UK (monthly)">
+		<!--UK-->
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>T.obs</parameterId>
+			<locationSetId>UK_Cities_meteo</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="month" multiplier="1"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>editing visible to all future task runs</readWriteMode>
+			<synchLevel>5</synchLevel>
+		</timeSeriesSet>
+	</filter>
+	<filter id="HydrologicalGauges" name="Hydrological">
+		<!--All hydrological gauges. Parameters: Q.obs, H.obs and Q.rated-->
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>H.obs</parameterId>
+			<locationSetId>hydgauges</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>editing visible to all future task runs</readWriteMode>
+			<synchLevel>5</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q.rated</parameterId>
+			<locationSetId>hydgauges</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</filter>
+	<filter id="MeteorologicalGauges" name="Meteorological">
+		<!--All meteorological gauges. Parameters: P.obs and T.obs-->
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>P.obs</parameterId>
+			<locationSetId>metgauges</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>editing visible to all future task runs</readWriteMode>
+			<synchLevel>5</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>T.obs</parameterId>
+			<locationSetId>metgauges_T.obs</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>editing visible to all future task runs</readWriteMode>
+			<synchLevel>5</synchLevel>
+		</timeSeriesSet>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>P.catchment</parameterId>
+			<locationId>CatchAvg</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</filter>
+	<filter id="CatchmentAverageData" name="Catchment Avg Precip">
+		<!--Catchment Avg Precips. Parameters: P.obs-->
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>P.catchment</parameterId>
+			<locationId>CatchAvg</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-36" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</filter>
+	<filter id="Hydro_Train" name="Hydro_Train_input">
+		<!--Catchment Avg Precips. Parameters: P.obs-->
+        <timeSeriesSet>
+            <moduleInstanceId>Hydro_Train_Forecast</moduleInstanceId>
+            <valueType>scalar</valueType>
+            <parameterId>Q.simulated.forecast</parameterId>
+            <locationId>Hydro2</locationId>
+            <timeSeriesType>simulated forecasting</timeSeriesType>
+            <timeStep unit="minute" multiplier="15"/>
+            <readWriteMode>add originals</readWriteMode>
+          </timeSeriesSet>
+	</filter>
+</filters>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--NFFS Midlands region-->
+
+<coldModuleInstanceStateGroups xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://146.213.31.101/schemas/coldModuleInstanceStateGroups.xsd" version="1.0">
+
+	<defaultGroup id="Default" name="Cold states">
+
+		<description>Cold state all models</description>
+
+	</defaultGroup>
+
+</coldModuleInstanceStateGroups>

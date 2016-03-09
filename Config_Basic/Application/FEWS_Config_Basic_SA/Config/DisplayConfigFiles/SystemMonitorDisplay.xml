@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systemMonitorDisplay xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/systemMonitorDisplay.xsd">
+	<description>Configuration of the import status tab of the system monitor</description>
+	<importStatus>
+		<tabName>Import Status</tabName>
+		<defaultTimeThreshold>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="6" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="12" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="24" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</defaultTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>Astronomical</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="300" unit="day"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="350" unit="day"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="365" unit="day"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>AstroHiLo</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="300" unit="day"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="350" unit="day"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="365" unit="day"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>RTS</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="1" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="6" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="12" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>RadarForecast</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="1" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="3" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="6" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>RadarActual</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="1" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="3" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="6" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>NWPForecast</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>NWPTempForecast</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>SynopticForecast</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>Movjuk81</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>MOSurgeCS3</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>MOWave</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>MOWindActual</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>MOWindForecast</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="8" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>Surge</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="12" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>SurgeBCM</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="12" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>SurgeSEM</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="12" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>SurgeTWLF</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="12" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+		<extraTimeThreshold>
+			<dataFeedId>WindWave</dataFeedId>
+			<timeThreshold>
+				<periodLength value="0" unit="second"/>
+				<color>green</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="12" unit="hour"/>
+				<color>yellow</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="16" unit="hour"/>
+				<color>orange</color>
+			</timeThreshold>
+			<timeThreshold>
+				<periodLength value="32" unit="hour"/>
+				<color>red</color>
+			</timeThreshold>
+		</extraTimeThreshold>
+	</importStatus>
+</systemMonitorDisplay>

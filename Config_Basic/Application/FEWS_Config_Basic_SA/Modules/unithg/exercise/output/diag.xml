@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_diag.xsd" version="1.2">
+    <line level="3" description="INFO Started Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016"/>
+    <line level="3" description="INFO Completed Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016"/>
+    <line level="3" description="INFO	Started Common Adapter Postprocessor run Tue Mar 08 22:09:51 GMT 2016"/>
+    <line level="3" description="Reading Module Logs Messages"/>
+    <line level="3" description="Started run [2016-03-08 14:09:51]"/>
+    <line level="3" description="Completed run succesfully [2016-03-08 14:09:51]"/>
+    <line level="3" description="Finished reading Module Logs Messages"/>
+    <line level="3" description="Writing State Xml File - states.xml"/>
+    <line level="3" description="INFO	Completed Common Adapter Postprocessor run Tue Mar 08 22:09:51 GMT 2016"/>
+</Diag>

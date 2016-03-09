@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<displayGroups version="1.0" xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/displayGroups.xsd">
+	<!-- Below are the Severn Catchment and reaches-->
+	<displayGroup name="Meteorological">
+		<description>Meteorological</description>
+		<display name="London">
+			<description>London</description>
+			<subplot max="5">
+				<timeSeriesSet>
+					<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+					<valueType>scalar</valueType>
+					<parameterId>T.obs</parameterId>
+					<locationId>London</locationId>
+					<timeSeriesType>external historical</timeSeriesType>
+					<timeStep unit="month" multiplier="1"/>
+					<relativeViewPeriod unit="day" start="-365" end="365"/>
+					<readWriteMode>read only</readWriteMode>
+				</timeSeriesSet>
+			</subplot>
+		</display>
+	</displayGroup>
+	<displayGroup name="Isle of Man">
+		<description>Isle of Man</description>
+		<display name="Isle of Man">
+			<description>Isle of Man</description>
+			<subplot>
+				<timeSeriesSet>
+					<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+					<valueType>scalar</valueType>
+					<parameterId>H.obs</parameterId>
+					<locationId>Hydro1</locationId>
+					<timeSeriesType>external historical</timeSeriesType>
+					<timeStep unit="minute" multiplier="15"/>
+					<relativeViewPeriod unit="day" start="-36" end="36"/>
+					<readWriteMode>read only</readWriteMode>
+				</timeSeriesSet>
+				<timeSeriesSet>
+					<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+					<valueType>scalar</valueType>
+					<parameterId>H.obs</parameterId>
+					<locationId>Hydro2</locationId>
+					<timeSeriesType>external historical</timeSeriesType>
+					<timeStep unit="minute" multiplier="15"/>
+					<relativeViewPeriod unit="day" start="-36" end="36"/>
+					<readWriteMode>read only</readWriteMode>
+				</timeSeriesSet>
+			</subplot>
+		</display>
+	</displayGroup>
+</displayGroups>

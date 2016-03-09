@@ -1,0 +1,6 @@
+INFO	Started Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016
+DEBUG	Total Preprocessor Activities = 1
+DEBUG	Preprocessor Activity (1) for TimeSeries
+DEBUG	Reading TimeSeries File from inputs.xml
+DEBUG	Writing TimeSeries to unithg_in.tsd
+INFO	Completed Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016

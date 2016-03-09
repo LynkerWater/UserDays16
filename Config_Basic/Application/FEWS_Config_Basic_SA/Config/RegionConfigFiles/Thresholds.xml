@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by ICT (Stichting Deltares) -->
+<thresholdGroups xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/thresholds.xsd">
+	<thresholdGroup id="Fluvial_Flood" name="Fluvial Flood">
+		<defaultThreshold shortName="AC"/>
+		<levelThreshold id="Standby" name="Standby" shortName="SB">
+			<upWarningLevelId>1</upWarningLevelId>
+		</levelThreshold>
+		<levelThreshold id="Flood Watch" name="Flood Watch" shortName="FWt">
+			<upWarningLevelId>2</upWarningLevelId>
+		</levelThreshold>
+		<levelThreshold id="Flood Warning" name="Flood Warning" shortName="FW">
+			<upWarningLevelId>3</upWarningLevelId>
+		</levelThreshold>
+		<levelThreshold id="Severe FW" name="Severe FW" shortName="SFW">
+			<upWarningLevelId>4</upWarningLevelId>
+		</levelThreshold>
+	</thresholdGroup>
+	<thresholdGroup id="Coastal_Flood" name="Coastal Flood">
+		<defaultThreshold shortName="AC"/>
+		<levelThreshold id="Coastal Flood Warning" name="Flood Warning" shortName="FW">
+			<upWarningLevelId>3</upWarningLevelId>
+		</levelThreshold>
+		<levelThreshold id="Coastal Severe FW" name="Severe FW" shortName="SFW">
+			<upWarningLevelId>4</upWarningLevelId>
+		</levelThreshold>
+	</thresholdGroup>
+</thresholdGroups>

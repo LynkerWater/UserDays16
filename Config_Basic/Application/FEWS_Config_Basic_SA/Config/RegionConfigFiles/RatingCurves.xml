@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ratingCurves xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/ratingCurves.xsd" version="1.1">
+  <ratingCurve ratingCurveId="London">
+    <location>
+      <locationId>London_hyd</locationId>
+    </location>
+    <ratingCurveType>LevelToFlow</ratingCurveType>
+    <reversible>true</reversible>
+    <ratingCurveEquation>
+      <lowerLevel>0</lowerLevel>
+      <upperLevel>50</upperLevel>
+      <equation>Power</equation>
+      <a>21.9814</a>
+      <b>-0.0675243</b>
+      <c>1.46336</c>
+    </ratingCurveEquation>
+    <ratingCurveEquation>
+      <lowerLevel>50</lowerLevel>
+      <upperLevel>100</upperLevel>
+      <equation>Power</equation>
+      <a>23.4388</a>
+      <b>-0.04408</b>
+      <c>1.69202</c>
+    </ratingCurveEquation>
+  </ratingCurve>
+</ratingCurves>

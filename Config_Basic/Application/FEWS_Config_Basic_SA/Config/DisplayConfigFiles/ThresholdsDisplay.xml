@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by WL | Delft Hydraulics (WL | Delft Hydraulics) -->
+<thresholdOverviewDisplay xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/thresholdOverviewDisplay.xsd">
+	<general>
+		<displayName>ThresholdsDisplay</displayName>
+		<forecastFilter>
+			<workflowId>ImportExternal</workflowId>
+		</forecastFilter>
+	</general>
+	<displayDescriptor>
+			<thresholdCrossingCountsTab>
+		<!--		<forecastTime>
+			<columnName>Forecast Time</columnName>
+		</forecastTime>-->
+			<tabName>Fluvial Crossing Counts</tabName>
+			<thresholdGroupId>Fluvial_Flood</thresholdGroupId>
+			<relativePeriod unit="day" start="-1" end="0"/>
+			<relativePeriod unit="day" start="0" end="1"/>
+		</thresholdCrossingCountsTab>
+
+
+	</displayDescriptor>
+	<inputVariable variableId="Hydgauges">
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>H.obs</parameterId>
+			<locationSetId>hydgauges</locationSetId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-36" end="36"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</inputVariable>
+	<columnAttributes variableId="Hydgauges" columnName="Hydgauges" analyse="true" display="true"/>
+</thresholdOverviewDisplay>

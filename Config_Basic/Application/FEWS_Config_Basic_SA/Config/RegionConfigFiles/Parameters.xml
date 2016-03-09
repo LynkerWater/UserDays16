@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by ICT (Stichting Deltares) -->
+<parameterGroups version="1.0" xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/parameters.xsd">
+	<parameterGroup id="Discharge">
+		<parameterType>instantaneous</parameterType>
+		<unit>m3/s</unit>
+		<parameter id="Q.obs" name="Observed Discharge">
+			<shortName>Q.obs</shortName>
+		</parameter>
+		<parameter id="Q.rated" name="Calculated Discharge">
+			<shortName>Q.rated</shortName>
+		</parameter>
+		<parameter id="Q.simulated" name="Simulated Discharge">
+			<shortName>Q.simulated</shortName>
+		</parameter>
+		<parameter id="Q.simulated.historical" name="Simulated Historical Discharge">
+			<shortName>Q.simulated.historical</shortName>
+		</parameter>
+		<parameter id="Q.simulated.forecast" name="Simulated Forecast Discharge">
+			<shortName>Q.simulated.forecast</shortName>
+		</parameter>
+		<parameter id="Q.simulated.event" name="Simulated Forecast Discharge (Event)">
+			<shortName>Q.simulated.event</shortName>
+		</parameter>
+		<parameter id="Q.updated" name="Updated Discharge">
+			<shortName>Q.updated</shortName>
+		</parameter>
+		<parameter id="Q.correlated" name="Correlated Discharge">
+			<shortName>Q.correlated</shortName>
+		</parameter>
+		<parameter id="Q.updated.historical" name="Updated Historical Discharge">
+			<shortName>Q.updated.historical</shortName>
+		</parameter>
+		<parameter id="Q.updated.forecast" name="Updated Forecast Discharge">
+			<shortName>Q.updated.forecast</shortName>
+		</parameter>
+		<parameter id="Q.generated" name="Generated Discharge">
+			<shortName>Q.generated</shortName>
+		</parameter>
+		<parameter id="Q.merged" name="Merged discharge">
+			<shortName>Q.merged</shortName>
+		</parameter>
+		<parameter id="Q.profile" name="Typical Profile">
+			<shortName>Q.profile</shortName>
+		</parameter>
+		<parameter id="Q.target" name="Target Flow">
+			<shortName>Q.target</shortName>
+		</parameter>
+		<parameter id="Q.peak" name="Peak Discharge">
+			<shortName>Q.peak</shortName>
+		</parameter>
+		<parameter id="Q.simulated.inflow" name="Simulated Inflow">
+			<shortName>Q.simulated.inflow</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Water Level">
+		<parameterType>instantaneous</parameterType>
+		<unit>m</unit>
+		<usesDatum>true</usesDatum>
+		<parameter id="H.obs" name="Observed Water Levels">
+			<shortName>H.obs</shortName>
+		</parameter>
+		<parameter id="H.obs.upstream" name="Observed Upstream Water Levels">
+			<shortName>H.obs.upstream</shortName>
+		</parameter>
+		<parameter id="H.obs.downstream" name="Observed Downstream Water Levels">
+			<shortName>H.obs.downstream</shortName>
+		</parameter>
+		<parameter id="H.obs.head" name="Observed Head Water Levels">
+			<shortName>H.obs.head</shortName>
+		</parameter>
+		<parameter id="H.obs.tail" name="Observed Tail Water Levels">
+			<shortName>H.obs.tail</shortName>
+		</parameter>
+		<parameter id="H.obs.crest" name="Observed Crest Water Levels">
+			<shortName>H.obs.crest</shortName>
+		</parameter>
+		<parameter id="H.simulated" name="Simulated Water Levels">
+			<shortName>H.simulated</shortName>
+		</parameter>
+		<parameter id="H.simulated.historical" name="Simulated Historical Water Levels">
+			<shortName>H.simulated.historical</shortName>
+		</parameter>
+		<parameter id="H.simulated.forecast" name="Simulated Forecast Water Levels">
+			<shortName>H.simulated.forecast</shortName>
+		</parameter>
+		<parameter id="H.simulated.event" name="Simulated Forecast Level (Event)">
+			<shortName>H.simulated.event</shortName>
+		</parameter>
+		<parameter id="H.rated" name="Calculated Water Levels">
+			<shortName>H.rated</shortName>
+		</parameter>
+		<parameter id="H.rated.historical" name="Calculated Historical Water Levels">
+			<shortName>H.rated.historical</shortName>
+		</parameter>
+		<parameter id="H.rated.forecast" name="Calculated Forecast Water Levels">
+			<shortName>H.rated.forecast</shortName>
+		</parameter>
+		<parameter id="H.correlated" name="Correlated Water Levels">
+			<shortName>H.correlated</shortName>
+		</parameter>
+		<parameter id="H.correlated.upstream" name="Correlated Upstream Water Levels">
+			<shortName>H.correlated.upstream</shortName>
+		</parameter>
+		<parameter id="H.correlated.downstream" name="Correlated Downstream Water Levels">
+			<shortName>H.correlated.downstream</shortName>
+		</parameter>
+		<parameter id="H.astronomical" name="Astronomical Water Levels">
+			<shortName>H.astronomical</shortName>
+		</parameter>
+		<parameter id="H.astronomical.hi" name="Astronomical Water Levels (Highs)">
+			<shortName>H.astronomical.hi</shortName>
+		</parameter>
+		<parameter id="H.astronomical.lo" name="Astronomical Water Levels (Lows)">
+			<shortName>H.astronomical.lo</shortName>
+		</parameter>
+		<parameter id="H.astronomical.hilo" name="Astronomical Water Levels (Highs and Lows)">
+			<shortName>H.astronomical.hilo</shortName>
+		</parameter>
+		<parameter id="H.updated" name="Updated Water Levels">
+			<shortName>H.updated</shortName>
+		</parameter>
+		<parameter id="H.updated.historical" name="Updated Historical Water Levels">
+			<shortName>H.updated.historical</shortName>
+		</parameter>
+		<parameter id="H.updated.forecast" name="Updated Forecast Water Levels">
+			<shortName>H.updated.forecast</shortName>
+		</parameter>
+		<parameter id="H.merged" name="Merged water levels">
+			<shortName>H.merged</shortName>
+		</parameter>
+		<parameter id="H.tidal" name="Tidal Water Levels (Observed)">
+			<shortName>H.tidal</shortName>
+		</parameter>
+		<parameter id="H.forecast.tidal" name="Tidal Water Levels (Forecast)">
+			<shortName>H.forecast.tidal</shortName>
+		</parameter>
+		<parameter id="H.tidal.hilo" name="Tidal Water Levels (Highs and Lows)">
+			<shortName>H.tidal.hilo</shortName>
+		</parameter>
+		<parameter id="H.tidal.hi" name="Tidal Water Levels (Highs)">
+			<shortName>H.tidal.hi</shortName>
+		</parameter>
+		<parameter id="H.tidal.lo" name="Tidal Water Levels (Lows)">
+			<shortName>H.tidal.lo</shortName>
+		</parameter>
+		<parameter id="H.historical.tidal" name="Tidal Water Levels (Historical)">
+			<shortName>H.historical.tidal</shortName>
+		</parameter>
+		<parameter id="H.profile" name="Level profile">
+			<shortName>H.profile</shortName>
+		</parameter>
+		<parameter id="H.critical" name="Critical level">
+			<shortName>H.critical</shortName>
+		</parameter>
+		<parameter id="H.target" name="Target level">
+			<shortName>H.target</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Precipitation">
+		<parameterType>accumulative</parameterType>
+		<unit>mm</unit>
+		<valueResolution>0.01</valueResolution>
+		<parameter id="P.obs" name="Observed Precipitation">
+			<shortName>P.obs</shortName>
+		</parameter>
+		<parameter id="P.catchment" name="Catchment Average Precipitation">
+			<shortName>P.catchment</shortName>
+		</parameter>
+		<parameter id="P.radar.actual" name="Precipitation Actuals (Radar)">
+			<shortName>P.radar.actual</shortName>
+		</parameter>
+		<parameter id="P.radar.forecast" name="Precipitation Forecast (Radar)">
+			<shortName>P.radar.forecast</shortName>
+		</parameter>
+		<parameter id="P.nwp.forecast" name="Precipitation Forecast (NWP)">
+			<shortName>P.nwp.forecast</shortName>
+		</parameter>
+		<parameter id="P.persist.forecast" name="Precipitation Forecast (Persistence)">
+			<shortName>P.persist.forecast</shortName>
+		</parameter>
+		<parameter id="P.synoptic.forecast" name="Precipitation Forecast (Synoptic)">
+			<shortName>P.synoptic.forecast</shortName>
+		</parameter>
+		<parameter id="P.snowmelt.merged" name="Total Snowmelt and Precipitation">
+			<shortName>P.snowmelt.merged</shortName>
+		</parameter>
+		<parameter id="P.user.forecast" name="Forecast Precipitation (User)">
+			<shortName>P.user.forecast</shortName>
+		</parameter>
+		<parameter id="P.backup" name="Backup Precipitation">
+			<shortName>P.backup</shortName>
+		</parameter>
+		<parameter id="P.merged" name="Merged Precipitation">
+			<shortName>P.merged</shortName>
+		</parameter>
+		<parameter id="P.input" name="Model Input Precipitation">
+			<shortName>P.input</shortName>
+		</parameter>
+		<parameter id="P.simulated" name="Simulated Precipitation">
+			<shortName>P.simulated</shortName>
+		</parameter>
+		<parameter id="P.simulated.effective" name="Simulated Effective Precipitation">
+			<shortName>P.simulated.effective</shortName>
+		</parameter>
+		<parameter id="P.event" name="Precipitation Event">
+			<shortName>P.event</shortName>
+		</parameter>
+		<parameter id="P.volume" name="Precipitation Volume">
+			<shortName>P.volume</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Temperature">
+		<parameterType>instantaneous</parameterType>
+		<unit>oC</unit>
+		<valueResolution>0.001</valueResolution>
+		<parameter id="T.catchment" name="Catchment Average Temperature">
+			<shortName>T.catchment</shortName>
+		</parameter>
+		<parameter id="T.obs" name="Observed Temperature">
+			<shortName>T.obs</shortName>
+		</parameter>
+		<parameter id="T.obs.wetbulb" name="Observed Wetbulb Temperature">
+			<shortName>T.obs.wetbulb</shortName>
+		</parameter>
+		<parameter id="T.obs.max" name="Observed Maximum Temperature">
+			<shortName>T.obs.max</shortName>
+		</parameter>
+		<parameter id="T.obs.min" name="Observed Minimum Temperature">
+			<shortName>T.obs.min</shortName>
+		</parameter>
+		<parameter id="T.synoptic.forecast.max" name="Maximum Synoptic Temperature Forecast">
+			<shortName>T.synoptic.forecast.max</shortName>
+		</parameter>
+		<parameter id="T.synoptic.forecast.min" name="Minimum Synoptic Temperature Forecast">
+			<shortName>T.synoptic.forecast.min</shortName>
+		</parameter>
+		<parameter id="T.synoptic.forecast" name="Temperature Forecast (Synoptic)">
+			<shortName>T.synoptic.forecast</shortName>
+		</parameter>
+		<parameter id="T.synoptic.drybulb" name="Drybulb Temperature Forecast (Synoptic)">
+			<shortName>T.synoptic.drybulb</shortName>
+		</parameter>
+		<parameter id="T.user.forecast" name="Temperature Forecast (User)">
+			<shortName>T.user.forecast</shortName>
+		</parameter>
+		<parameter id="T.simulated.drybulb" name="Simulated Drybulb Temperature">
+			<shortName>T.simulated.drybulb</shortName>
+		</parameter>
+		<parameter id="T.historical" name="Constructed Historic Temperature">
+			<shortName>T.historical</shortName>
+		</parameter>
+		<parameter id="T.forecast" name="Constructed Forecast Temperature">
+			<shortName>T.forecast</shortName>
+		</parameter>
+		<parameter id="T.backup" name="Backup Temperature">
+			<shortName>T.backup</shortName>
+		</parameter>
+		<parameter id="T.nwp.forecast" name="Temperature Forecast (NWP)">
+			<shortName>T.nwp.forecast</shortName>
+		</parameter>
+		<parameter id="T.gfs.forecast" name="Temperature Forecast (GFS)">
+			<shortName>T.gfs.forecast</shortName>
+		</parameter>
+		<parameter id="T.merged" name="Merged Temperature">
+			<shortName>T.merged</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Evaporation">
+		<parameterType>accumulative</parameterType>
+		<unit>mm</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="AE.metoffice" name="Actual Evaporation (Met. Office)">
+			<shortName>AE.metoffice</shortName>
+		</parameter>
+		<parameter id="E.metoffice" name="Evaporation (Met. Office)">
+			<shortName>E.metoffice</shortName>
+		</parameter>
+		<parameter id="E.simulated" name="Simulated Evaporation">
+			<shortName>E.simulated</shortName>
+		</parameter>
+		<parameter id="E.simulated.merged" name="Simulated Evaporation Merged">
+			<shortName>E.simulated.merged</shortName>
+		</parameter>
+		<parameter id="E.profile" name="Standard Profile Evaporation">
+			<shortName>E.profile</shortName>
+		</parameter>
+		<parameter id="E.backup" name="Backup Evaporation">
+			<shortName>E.backup</shortName>
+		</parameter>
+		<parameter id="E.volume" name="Evaporation Event (Volume)">
+			<shortName>E.volume</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Radiation">
+		<parameterType>instantaneous</parameterType>
+		<unit>W/m2</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Netrad.obs" name="Net Radiation">
+			<shortName>Netrad.obs</shortName>
+		</parameter>
+		<parameter id="Sol.obs" name="Solar Radiation">
+			<shortName>Sol.obs</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Snow Rate">
+		<parameterType>instantaneous</parameterType>
+		<unit>mm/hr</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Snow.simulated" name="Simulated snow rate">
+			<shortName>Snow.simulated</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Snow Depth">
+		<parameterType>accumulative</parameterType>
+		<unit>mm</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Snow.obs.depth" name="Observed Snow Depth">
+			<shortName>Snow.obs.depth</shortName>
+		</parameter>
+		<parameter id="Snow.obs.waterequivalent" name="Observed Snow Water Equivalent">
+			<shortName>Snow.obs.waterequivalent</shortName>
+		</parameter>
+		<parameter id="Snow.obs.density" name="Observed Snow Water density">
+			<shortName>Snow.obs.density</shortName>
+		</parameter>
+		<parameter id="Snow.simulated.depth" name="Simulated Snow Depth">
+			<shortName>Snow.simulated.depth</shortName>
+		</parameter>
+		<parameter id="Snow.simulated.waterequivalent" name="Simulated Snow Water Equivalent">
+			<shortName>Snow.simulated.waterequivalent</shortName>
+		</parameter>
+		<parameter id="Snow.simulated.dry" name="Simulated Dry Snow Component">
+			<shortName>Snow.simulated.dry</shortName>
+		</parameter>
+		<parameter id="Snow.simulated.density" name="Simulated Snow Density (MCRM modelled)">
+			<shortName>Snow.simulated.density</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Snow Weight">
+		<parameterType>accumulative</parameterType>
+		<unit>g</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Snow.obs.weight" name="Observed Snow Weight">
+			<shortName>Snow.obs.weight</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Snow Factor">
+		<parameterType>instantaneous</parameterType>
+		<unit>%</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Snow.obs.relativedensity" name="Observed Relative Snow Density">
+			<shortName>Snow.obs.relativedensity</shortName>
+		</parameter>
+		<parameter id="Snow.simulated.relativedensity" name="Simulated Relative Snow Density">
+			<shortName>Snow.simulated.relativedensity</shortName>
+		</parameter>
+		<parameter id="Snow.simulated.correction" name="Simulated Snow Correction Factor">
+			<shortName>Snow.simulated.correction</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Wind Speed">
+		<parameterType>instantaneous</parameterType>
+		<unit>m/s</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Wind.obs.speed" name="Observed Wind Speed">
+			<shortName>Wind.obs.speed</shortName>
+		</parameter>
+		<parameter id="Wind.obs.catchment.speed" name="Catchment Wind Speed">
+			<shortName>Wind.obs.catchment.speed</shortName>
+		</parameter>
+		<parameter id="Wind.forecast.speed" name="Wind Speed Forecast">
+			<shortName>Wind.forecast.speed</shortName>
+		</parameter>
+		<parameter id="Wind.merged.speed" name="Merged Wind Speed">
+			<shortName>Wind.merged.speed</shortName>
+		</parameter>
+		<parameter id="Wind.forecast.catchment.speed" name="Catchment Wind Speed Forecast">
+			<shortName>Wind.forecast.catchment.speed</shortName>
+		</parameter>
+		<parameter id="Wind.backup" name="Backup Windspeed">
+			<shortName>Wind.backup</shortName>
+		</parameter>
+		<parameter id="Wind.u" name="Wind Speed in u Direction">
+			<shortName>Wind.u</shortName>
+		</parameter>
+		<parameter id="Wind.v" name="Wind Speed in v Direction">
+			<shortName>Wind.v</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Wind Force">
+		<parameterType>instantaneous</parameterType>
+		<unit>Bft</unit>
+		<valueResolution>1</valueResolution>
+		<parameter id="Wind.obs.force" name="Observed Wind Force">
+			<shortName>Wind.obs.force</shortName>
+		</parameter>
+		<parameter id="Wind.forecast.force" name="Wind Force Forecast">
+			<shortName>Wind.forecast.force</shortName>
+		</parameter>
+		<parameter id="Wind.merged.force" name="Merged Wind Force">
+			<shortName>Wind.merged.force</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Wind Direction">
+		<parameterType>instantaneous</parameterType>
+		<unit>degrees</unit>
+		<valueResolution>1</valueResolution>
+		<parameter id="Wind.obs.dir" name="Observed Wind Direction">
+			<shortName>Wind.obs.dir</shortName>
+		</parameter>
+		<parameter id="Wind.forecast.dir" name="Wind Direction Forecast">
+			<shortName>Wind.forecast.dir</shortName>
+		</parameter>
+		<parameter id="Wind.merged.dir" name="Merged Wind Direction">
+			<shortName>Wind.merged.dir</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Wave Height">
+		<parameterType>instantaneous</parameterType>
+		<unit>m</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Wave.obs.swell.height" name="Observed Swell Height">
+			<shortName>Wave.obs.swell.height</shortName>
+		</parameter>
+		<parameter id="Wave.obs.wind.height" name="Observed Wind Wave Height">
+			<shortName>Wave.obs.wind.height</shortName>
+		</parameter>
+		<parameter id="Wave.obs.total.height" name="Observed Total Wave Height">
+			<shortName>Wave.obs.Total.height</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.swell.height" name="Swell Height Forecast">
+			<shortName>Wave.forecast.swell.height</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.wind.height" name="Wind Wave Height Forecast">
+			<shortName>Wave.forecast.wind.height</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.total.height" name="Total Wave Height Forecast">
+			<shortName>Wave.forecast.Total.height</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.nearshore.height" name="Nearshore Wave Height Forecast">
+			<shortName>Wave.forecast.nearshore.height</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Wave Direction">
+		<parameterType>instantaneous</parameterType>
+		<unit>degrees</unit>
+		<valueResolution>1</valueResolution>
+		<parameter id="Wave.obs.swell.dir" name="Observed Swell Direction">
+			<shortName>Wave.obs.swell.dir</shortName>
+		</parameter>
+		<parameter id="Wave.obs.wind.dir" name="Observed Wind Wave Direction">
+			<shortName>Wave.obs.wind.dir</shortName>
+		</parameter>
+		<parameter id="Wave.obs.total.dir" name="Observed Total Wave Direction">
+			<shortName>Wave.obs.Total.dir</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.swell.dir" name="Swell Direction Forecast">
+			<shortName>Wave.forecast.swell.dir</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.wind.dir" name="Wind Wave Direction Forecast">
+			<shortName>Wave.forecast.wind.dir</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.total.dir" name="Total Wave Direction Forecast">
+			<shortName>Wave.forecast.Total.dir</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.nearshore.dir" name="Nearshore Wave Direction Forecast">
+			<shortName>Wave.forecast.nearshore.dir</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.used.dir" name="Used Wave Direction Forecast">
+			<shortName>Wave.forecast.used.dir</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Wave Period">
+		<parameterType>instantaneous</parameterType>
+		<unit>s</unit>
+		<valueResolution>1</valueResolution>
+		<parameter id="Wave.obs.swell.period" name="Observed Swell Period">
+			<shortName>Wave.obs.swell.period</shortName>
+		</parameter>
+		<parameter id="Wave.obs.wind.period" name="Observed Wind Wave Period">
+			<shortName>Wave.obs.wind.period</shortName>
+		</parameter>
+		<parameter id="Wave.obs.total.period" name="Observed Total Wave Period">
+			<shortName>Wave.obs.Total.period</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.swell.period" name="Swell Period Forecast">
+			<shortName>Wave.forecast.swell.period</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.wind.period" name="Wind Wave Period Forecast">
+			<shortName>Wave.forecast.wind.period</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.total.period" name="Total Wave Period Forecast">
+			<shortName>Wave.forecast.Total.period</shortName>
+		</parameter>
+		<parameter id="Wave.forecast.nearshore.period" name="Nearshore Wave Period Forecast">
+			<shortName>Wave.forecast.nearshore.period</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Groundwater">
+		<parameterType>instantaneous</parameterType>
+		<unit>m</unit>
+		<valueResolution>0.01</valueResolution>
+		<parameter id="GW.obs" name="Observed Groundwater Level">
+			<shortName>GW.obs</shortName>
+		</parameter>
+		<parameter id="GW.simulated" name="Simulated Groundwater Level">
+			<shortName>GW.simulated</shortName>
+		</parameter>
+		<parameter id="GW.updated" name="Updated Groundwater Level">
+			<shortName>GW.updated</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Structure Level">
+		<parameterType>instantaneous</parameterType>
+		<unit>m</unit>
+		<valueResolution>0.001</valueResolution>
+		<parameter id="Structure.obs.height" name="Observed Control Setting">
+			<shortName>Structure.obs.height</shortName>
+		</parameter>
+		<parameter id="Structure.simulated.height" name="Simulated Control Setting">
+			<shortName>Structure.simulated.height</shortName>
+		</parameter>
+		<parameter id="Gate.simulated.position" name="Simulated Gate Position">
+			<shortName>Gate.simulated.position</shortName>
+		</parameter>
+		<parameter id="Gate.obs.position" name="Observed Gate Position">
+			<shortName>Gate.obs.position</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Structure Angle">
+		<parameterType>instantaneous</parameterType>
+		<unit>degrees</unit>
+		<valueResolution>1</valueResolution>
+		<parameter id="Structure.obs.angle" name="Observed Control Setting">
+			<shortName>Structure.obs.angle</shortName>
+		</parameter>
+		<parameter id="Structure.simulated.angle" name="Simulated Control Setting">
+			<shortName>Structure.simulated.angle</shortName>
+		</parameter>
+		<parameter id="Gate.simulated.angle" name="Simulated Gate Angle">
+			<shortName>Gate.simulated.angle</shortName>
+		</parameter>
+		<parameter id="Gate.obs.angle" name="Observed Gate Angle">
+			<shortName>Gate.obs.angle</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Structure Status">
+		<parameterType>instantaneous</parameterType>
+		<unit>-</unit>
+		<valueResolution>1</valueResolution>
+		<parameter id="Pump.obs.status" name="Observed Pump Status">
+			<shortName>Pump.obs.status</shortName>
+		</parameter>
+		<parameter id="Pump.simulated.status" name="Simulated Pump Status">
+			<shortName>Pump.simulated.status</shortName>
+		</parameter>
+		<parameter id="Gate.perc.open" name="Gate Percentage Open">
+			<shortName>Gate.perc.open</shortName>
+		</parameter>
+		<parameter id="Gate.perc.closed" name="Gate Percentage Closed">
+			<shortName>Gate.perc.closed</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Dimensionless Parameters">
+		<parameterType>instantaneous</parameterType>
+		<unit>-</unit>
+		<parameter id="Lookup.index" name="Lookup index">
+			<shortName>Lookup.index</shortName>
+		</parameter>
+		<parameter id="CWI.forecast" name="Catchment Wetness Index (Forecast)">
+			<shortName>CWI.forecast</shortName>
+		</parameter>
+		<parameter id="CWI.historical" name="Catchment Wetness Index (Historical)">
+			<shortName>CWI.historical</shortName>
+		</parameter>
+		<parameter id="CWI.simulated" name="Catchment Wetness Index (Simulated)">
+			<shortName>CWI.simulated</shortName>
+		</parameter>
+		<parameter id="SMI.forecast" name="Soil Moisture Index (Forecast)">
+			<shortName>SMI.forecast</shortName>
+		</parameter>
+		<parameter id="SMI.historical" name="Soil Moisture Index (Historical)">
+			<shortName>SMI.historical</shortName>
+		</parameter>
+		<parameter id="SMI.simulated" name="Soil Moisture Index (Simulated)">
+			<shortName>SMI.simulated</shortName>
+		</parameter>
+		<parameter id="API5.calculated" name="Antecedent Precipitation Index (Calculated)">
+			<shortName>API5.calculated</shortName>
+		</parameter>
+		<parameter id="DA.calculated" name="Dynamic Adjustment Factor (Calculated)">
+			<shortName>DA.calculated</shortName>
+		</parameter>
+		<parameter id="SB.observed" name="Shingle Beach Index (Observed)">
+			<shortName>SB.observed</shortName>
+		</parameter>
+		<parameter id="SB.forecast" name="Shingle Beach Index (Forecast)">
+			<shortName>SB.forecast</shortName>
+		</parameter>
+		<parameter id="SB.historical" name="Shingle Beach Index (Historical)">
+			<shortName>SB.historical</shortName>
+		</parameter>
+		<parameter id="WE.forecast" name="Wave Effect (Forecast)">
+			<shortName>WE.forecast</shortName>
+		</parameter>
+		<parameter id="Wind.site.used" name="Wind Site Used">
+			<shortName>Wind.site.used</shortName>
+		</parameter>
+		<parameter id="Wave.site.used" name="Wave Site Used">
+			<shortName>Wave.site.used</shortName>
+		</parameter>
+		<parameter id="Runoff.factor" name="Runoff Factor">
+			<shortName>Runoff.factor</shortName>
+		</parameter>
+		<parameter id="Tidal.state" name="Tidal State">
+			<shortName>Tidal.state</shortName>
+		</parameter>
+		<parameter id="WI.tmp" name="What-If Indicator">
+			<shortName>WI.tmp</shortName>
+		</parameter>
+		<parameter id="Shingle.profile" name="Shingle Profile">
+			<shortName>Shingle.profile</shortName>
+		</parameter>
+		<parameter id="Shingle.warning.level" name="Shingle Warning Level">
+			<shortName>Shingle.warning.level</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="State Variables">
+		<parameterType>instantaneous</parameterType>
+		<unit>-</unit>
+		<parameter id="SMD.metoffice" name="Soil Moisture Deficit (Met. Office)">
+			<shortName>SMD.metoffice</shortName>
+		</parameter>
+		<parameter id="SMD.simulated" name="Soil Moisture Deficit (Simulated)">
+			<shortName>SMD.simulated</shortName>
+		</parameter>
+		<parameter id="SMD.historical" name="Soil Moisture Deficit (Historical)">
+			<shortName>SMD.historical</shortName>
+		</parameter>
+		<parameter id="SMD.obs" name="Soil Moisture Deficit (Observed)">
+			<shortName>SMD.obs</shortName>
+		</parameter>
+		<parameter id="Reservoir.storage" name="Simulated Reservoir Storage">
+			<shortName>Reservoir.storage</shortName>
+		</parameter>
+		<parameter id="Reservoir.release" name="Simulated Reservoir Release">
+			<shortName>Reservoir.release</shortName>
+		</parameter>
+		<parameter id="Floodplain.storage" name="Simulated Floodplain Storage">
+			<shortName>Floodplain.storage</shortName>
+		</parameter>
+		<parameter id="Floodplain.storage.obs" name="Observed Floodplain Storage">
+			<shortName>Floodplain.storage.obs</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Residuals">
+		<parameterType>instantaneous</parameterType>
+		<unit>m</unit>
+		<valueResolution>0.01</valueResolution>
+		<parameter id="H.obs.diff" name="Trash Screen Difference">
+			<shortName>H.obs.diff</shortName>
+		</parameter>
+		<parameter id="H.obs.surge" name="Tidal Surge Residuals (Observed)">
+			<shortName>H.obs.surge</shortName>
+		</parameter>
+		<parameter id="H.simulated.surge" name="Tidal Surge Residuals (Simulated)">
+			<shortName>H.simulated.surge</shortName>
+		</parameter>
+		<parameter id="H.forecast.surge" name="Tidal Surge Residuals (Forecast)">
+			<shortName>H.forecast.surge</shortName>
+		</parameter>
+		<parameter id="H.forecast.surgeBCM" name="Tidal Surge Residuals from BCM (Forecast)">
+			<shortName>H.forecast.surgeBCM</shortName>
+		</parameter>
+		<parameter id="H.forecast.surgeSEM" name="Tidal Surge Residuals from SEM (Forecast)">
+			<shortName>H.forecast.surgeSEM</shortName>
+		</parameter>
+		<parameter id="H.merged.surge" name="Merged Tidal Surge Residuals">
+			<shortName>H.merged.surge</shortName>
+		</parameter>
+		<parameter id="H.msl.adjustment" name="Mean Sea Level Adjustement">
+			<shortName>H.msl.adjustment</shortName>
+		</parameter>
+		<parameter id="H.totalrise" name="Total waterlevel rise">
+			<shortName>H.totalrise</shortName>
+		</parameter>
+		<parameter id="H.simulated.adjustment" name="Simulated Surge Adjustment">
+			<shortName>H.simulated.adjustment</shortName>
+		</parameter>
+		<parameter id="H.manual.adjustment" name="Manual Surge Adjustment">
+			<shortName>H.manual.adjustment</shortName>
+		</parameter>
+		<parameter id="Surge.u" name="Surge Velocity in u Direction">
+			<shortName>Surge.u</shortName>
+		</parameter>
+		<parameter id="Surge.v" name="Surge Velocity in v Direction">
+			<shortName>Surge.v</shortName>
+		</parameter>
+		<parameter id="H.obs.drawdown" name="Observed Drawdown Level">
+			<shortName>H.obs.drawdown</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Performance Indicators">
+		<parameterType>instantaneous</parameterType>
+		<unit>-</unit>
+		<parameter id="Perf.ns" name="Nash-Sutcliffe Efficiency">
+			<shortName>Perf.NSE</shortName>
+		</parameter>
+		<parameter id="Perf.R2" name="Coefficient of Determination">
+			<shortName>Perf.R2</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE" name="RMSE">
+			<shortName>Perf.RMSE</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF" name="RMSF">
+			<shortName>Perf.RMSF</shortName>
+		</parameter>
+		<parameter id="Perf.bias" name="Bias">
+			<shortName>Perf.bias</shortName>
+		</parameter>
+		<parameter id="Perf.meanabs" name="Mean Absolute Error">
+			<shortName>Perf.MAE</shortName>
+		</parameter>
+		<parameter id="Perf.meansqr" name="Meas Square Error">
+			<shortName>Perf.MSE</shortName>
+		</parameter>
+		<parameter id="Perf.peakmeansqr" name="Peak Mean Square Error">
+			<shortName>Perf.PeakMSE</shortName>
+		</parameter>
+		<parameter id="Perf.volume" name="Volume Error">
+			<shortName>Perf.VolumeError</shortName>
+		</parameter>
+		<parameter id="Perf.bias.tide1" name="Bias 1st Tide">
+			<shortName>Perf.bias.tide1</shortName>
+		</parameter>
+		<parameter id="Perf.bias.tide2" name="Bias 2nd Tide">
+			<shortName>Perf.bias.tide2</shortName>
+		</parameter>
+		<parameter id="Perf.bias.tide3" name="Bias 3rd Tide">
+			<shortName>Perf.bias.tide3</shortName>
+		</parameter>
+		<parameter id="Perf.bias.02" name="Bias 2 hr lead time">
+			<shortName>Perf.bias.02</shortName>
+		</parameter>
+		<parameter id="Perf.bias.06" name="Bias 6 hr lead time">
+			<shortName>Perf.bias.06</shortName>
+		</parameter>
+		<parameter id="Perf.bias.12" name="Bias 12 hr lead time">
+			<shortName>Perf.bias.12</shortName>
+		</parameter>
+		<parameter id="Perf.bias.18" name="Bias 18 hr lead time">
+			<shortName>Perf.bias.18</shortName>
+		</parameter>
+		<parameter id="Perf.bias.24" name="Bias 24 hr lead time">
+			<shortName>Perf.bias.24</shortName>
+		</parameter>
+		<parameter id="Perf.R2.tide1" name="R2 1st Tide">
+			<shortName>Perf.R2.tide1</shortName>
+		</parameter>
+		<parameter id="Perf.R2.tide2" name="R2 2nd Tide">
+			<shortName>Perf.R2.tide2</shortName>
+		</parameter>
+		<parameter id="Perf.R2.tide3" name="R2 3rd Tide">
+			<shortName>Perf.R2.tide3</shortName>
+		</parameter>
+		<parameter id="Perf.R2.02" name="R2 2 hr lead time">
+			<shortName>Perf.R2.02</shortName>
+		</parameter>
+		<parameter id="Perf.R2.06" name="R2 6 hr lead time">
+			<shortName>Perf.R2.06</shortName>
+		</parameter>
+		<parameter id="Perf.R2.12" name="R2 12 hr lead time">
+			<shortName>Perf.R2.12</shortName>
+		</parameter>
+		<parameter id="Perf.R2.18" name="R2 18 hr lead time">
+			<shortName>Perf.R2.18</shortName>
+		</parameter>
+		<parameter id="Perf.R2.24" name="R2 24 hr lead time">
+			<shortName>Perf.R2.24</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.tide1" name="RMSE 1st Tide">
+			<shortName>Perf.RMSE.tide1</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.tide2" name="RMSE 2nd Tide">
+			<shortName>Perf.RMSE.tide2</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.tide3" name="RMSE 3rd Tide">
+			<shortName>Perf.RMSE.tide3</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.02" name="RMSE 2 hr lead time">
+			<shortName>Perf.RMSE.02</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.06" name="RMSE 6 hr lead time">
+			<shortName>Perf.RMSE.06</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.12" name="RMSE 12 hr lead time">
+			<shortName>Perf.RMSE.12</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.18" name="RMSE 18 hr lead time">
+			<shortName>Perf.RMSE.18</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.24" name="RMSE 24 hr lead time">
+			<shortName>Perf.RMSE.24</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.00-03" name="RMSF 0-3 hrs lead time">
+			<shortName>Perf.RMSF.00-03</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.03-06" name="RMSF 3-6 hrs lead time">
+			<shortName>Perf.RMSF.03-06</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.00-06" name="RMSF 0-6 hrs lead time">
+			<shortName>Perf.RMSF.00-06</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.06-12" name="RMSF 6-12 hrs lead time">
+			<shortName>Perf.RMSF.06-12</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.12-18" name="RMSF 12-18 hrs lead time">
+			<shortName>Perf.RMSF.12-18</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.18-24" name="RMSF 18-24 hrs lead time">
+			<shortName>Perf.RMSF.18-24</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.24-30" name="RMSF 24-30 hrs lead time">
+			<shortName>Perf.RMSF.24-30</shortName>
+		</parameter>
+		<parameter id="Perf.RMSF.30-36" name="RMSF 30-36 hrs lead time">
+			<shortName>Perf.RMSF.30-36</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.00-03" name="RMSE 0-3 hrs lead time">
+			<shortName>Perf.RMSE.00-03</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.03-06" name="RMSE 3-6 hrs lead time">
+			<shortName>Perf.RMSE.03-06</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.00-06" name="RMSE 0-6 hrs lead time">
+			<shortName>Perf.RMSE.00-06</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.06-12" name="RMSE 6-12 hrs lead time">
+			<shortName>Perf.RMSE.06-12</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.12-18" name="RMSE 12-18 hrs lead time">
+			<shortName>Perf.RMSE.12-18</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.18-24" name="RMSE 18-24 hrs lead time">
+			<shortName>Perf.RMSE.18-24</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.24-30" name="RMSE 24-30 hrs lead time">
+			<shortName>Perf.RMSE.24-30</shortName>
+		</parameter>
+		<parameter id="Perf.RMSE.30-36" name="RMSE 30-36 hrs lead time">
+			<shortName>Perf.RMSE.30-36</shortName>
+		</parameter>
+		<parameter id="Perf.bias.00-03" name="Bias 0-3 hrs lead time">
+			<shortName>Perf.bias.00-03</shortName>
+		</parameter>
+		<parameter id="Perf.bias.03-06" name="Bias 3-6 hrs lead time">
+			<shortName>Perf.bias.03-06</shortName>
+		</parameter>
+		<parameter id="Perf.bias.00-06" name="Bias 0-6 hrs lead time">
+			<shortName>Perf.bias.00-06</shortName>
+		</parameter>
+		<parameter id="Perf.bias.06-12" name="Bias 6-12 hrs lead time">
+			<shortName>Perf.bias.06-12</shortName>
+		</parameter>
+		<parameter id="Perf.bias.12-18" name="Bias 12-18 hrs lead time">
+			<shortName>Perf.bias.12-18</shortName>
+		</parameter>
+		<parameter id="Perf.bias.18-24" name="Bias 18-24 hrs lead time">
+			<shortName>Perf.bias.18-24</shortName>
+		</parameter>
+		<parameter id="Perf.bias.24-30" name="Bias 24-30 hrs lead time">
+			<shortName>Perf.bias.24-30</shortName>
+		</parameter>
+		<parameter id="Perf.bias.30-36" name="Bias 30-36 hrs lead time">
+			<shortName>Perf.bias.30-36</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Overtopping Rate">
+		<parameterType>instantaneous</parameterType>
+		<unit>m2/s</unit>
+		<parameter id="Overtop.forecast.mean" name="Mean Overtopping Rate (Forecast)">
+			<shortName>Overtop.forecast.mean</shortName>
+		</parameter>
+		<parameter id="Overtop.forecast.peak" name="Peak Overtopping Rate (Forecast)">
+			<shortName>Overtop.forecast.peak</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Overtopping Volume">
+		<parameterType>instantaneous</parameterType>
+		<unit>m3</unit>
+		<parameter id="Overtop.forecast.volume" name="Overtopping Volume (Forecast)">
+			<shortName>Overtop.forecast.volume</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Time">
+		<parameterType>instantaneous</parameterType>
+		<unit>s</unit>
+		<valueResolution>1</valueResolution>
+		<parameter id="Time.forecast.offset" name="Time Offset (Forecast)">
+			<shortName>Time.forecast.offset</shortName>
+		</parameter>
+		<parameter id="Time.forecast.travel" name="Travel Time (Forecast)">
+			<shortName>Time.forecast.travel</shortName>
+		</parameter>
+		<parameter id="Time.peak" name="Time to Peak">
+			<shortName>Time.peak</shortName>
+		</parameter>
+		<parameter id="Time.threshold" name="Time to Threshold">
+			<shortName>Time.threshold</shortName>
+		</parameter>
+		<parameter id="Time.event" name="Event Duration">
+			<shortName>Time.event</shortName>
+		</parameter>
+		<parameter id="Time.start" name="Event Start">
+			<shortName>Time.start</shortName>
+		</parameter>
+		<parameter id="Time.end" name="Event End">
+			<shortName>Time.end</shortName>
+		</parameter>
+		<parameter id="Time.diff" name="Time Difference">
+			<shortName>Time.diff</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Distance">
+		<parameterType>instantaneous</parameterType>
+		<unit>m</unit>
+		<valueResolution>0.001</valueResolution>
+		<parameter id="Distance.travel" name="Travel Distance">
+			<shortName>Distance.travel</shortName>
+		</parameter>
+		<parameter id="Beach.Crest.Width" name="Beach Crest Width">
+			<shortName>Beach.Crest.Width</shortName>
+		</parameter>
+	</parameterGroup>
+	<parameterGroup id="Pressure">
+		<parameterType>instantaneous</parameterType>
+		<unit>Pa</unit>
+		<valueResolution>0.1</valueResolution>
+		<parameter id="Pressure.msl" name="Mean Sea Level Pressure">
+			<shortName>MSLP</shortName>
+		</parameter>
+	</parameterGroup>
+</parameterGroups>

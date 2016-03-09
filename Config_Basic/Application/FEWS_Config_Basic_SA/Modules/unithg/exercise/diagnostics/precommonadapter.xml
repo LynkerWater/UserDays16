@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_diag.xsd" version="1.2">
+    <line level="3" description="INFO	Started Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016"/>
+    <line level="4" description="Total Preprocessor Activities = 1"/>
+    <line level="4" description="Preprocessor Activity (1) for TimeSeries"/>
+    <line level="4" description="Reading TimeSeries File from inputs.xml"/>
+    <line level="4" description="Writing TimeSeries to unithg_in.tsd"/>
+    <line level="3" description="INFO	Completed Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016"/>
+</Diag>

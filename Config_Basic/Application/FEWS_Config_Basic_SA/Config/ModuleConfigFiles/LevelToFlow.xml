@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2015 rel. 4 sp1 (x64) (http://www.altova.com) by Page Weil (Private) -->
+<transformationModule version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd">
+	<!-- input variable-->
+		<variable>
+		<variableId>level_Hydro1</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>H.obs</parameterId>
+			<locationId>Hydro1</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-96" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>level_Hydro2</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>H.obs</parameterId>
+			<locationId>Hydro2</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-96" startOverrulable="true" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!-- output variable-->
+	<variable>
+		<variableId>flow_Hydro1</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q.rated</parameterId>
+			<locationId>Hydro1</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-96" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>flow_Hydro2</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>Q.rated</parameterId>
+			<locationId>Hydro2</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-96" startOverrulable="true" end="0"/>
+			<readWriteMode>add originals</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+	</variable>
+	<!-- transformations -->
+	<transformation id="LevelToFlow_Hydro1">
+		<rangeTransformation>
+			<range>
+				<limitVariableId>level_Hydro1</limitVariableId>
+				<lowerLimit>0</lowerLimit>
+				<upperLimit>0.390</upperLimit>
+			</range>
+			<stageDischarge>
+				<power>
+					<stage>
+						<variableId>level_Hydro1</variableId>
+					</stage>
+					<coefficientSetId>hydro1_range1</coefficientSetId>
+					<coefficientSetFile>LevelToFlowCoefficientSets</coefficientSetFile>
+					<discharge>
+						<variableId>flow_Hydro1</variableId>
+					</discharge>
+				</power>
+			</stageDischarge>
+		</rangeTransformation>
+		<rangeTransformation>
+			<range>
+				<limitVariableId>level_Hydro1</limitVariableId>
+				<lowerLimit>0.390</lowerLimit>
+				<upperLimit>9.999</upperLimit>
+			</range>
+			<stageDischarge>
+				<power>
+					<stage>
+						<variableId>level_Hydro1</variableId>
+					</stage>
+					<coefficientSetId>hydro1_range2</coefficientSetId>
+					<coefficientSetFile>LevelToFlowCoefficientSets</coefficientSetFile>
+					<discharge>
+						<variableId>flow_Hydro1</variableId>
+					</discharge>
+				</power>
+			</stageDischarge>
+		</rangeTransformation>
+	</transformation>
+	<transformation id="LevelToFlow_Hydro2">
+		<stageDischarge>
+			<power>
+				<stage>
+					<variableId>level_Hydro2</variableId>
+				</stage>
+				<coefficientSetId>hydro2_range1</coefficientSetId>
+				<coefficientSetFile>LevelToFlowCoefficientSets</coefficientSetFile>
+				<discharge>
+					<variableId>flow_Hydro2</variableId>
+				</discharge>
+			</power>
+		</stageDischarge>
+	</transformation>
+</transformationModule>

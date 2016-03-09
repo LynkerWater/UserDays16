@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<State xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_state.xsd" version="1.2">
+    <stateId>Default</stateId>
+    <timeZone>0.0</timeZone>
+    <dateTime date="2007-10-05" time="10:00:00"/>
+    <stateLoc type="file">
+        <readLocation>D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\exercise\states\state_in.dat</readLocation>
+        <writeLocation>D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\exercise\states\state_out.dat</writeLocation>
+    </stateLoc>
+</State>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by ICT (Stichting Deltares) -->
+<transformationCoefficientSets version="1.0" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationCoefficientSets.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews">
+	<coefficientSet id="LevelToFlow_range1">
+		<locationCoefficientSet>
+			<location>
+				<locationId>London_hyd</locationId>
+			</location>
+			<stageDischarge>
+				<power>
+					<a>21.9814</a>
+					<b>-0.0675243</b>
+					<c>1.46336</c>
+					<type>level_to_flow_and_flow_to_level</type>
+				</power>
+			</stageDischarge>
+		</locationCoefficientSet>
+	</coefficientSet>
+	<coefficientSet id="LevelToFlow_range2">
+		<locationCoefficientSet>
+			<location>
+				<locationId>London_hyd</locationId>
+			</location>
+			<stageDischarge>
+				<power>
+					<a>23.4388</a>
+					<b>-0.04408</b>
+					<c>1.69202</c>
+					<type>level_to_flow_and_flow_to_level</type>
+				</power>
+			</stageDischarge>
+		</locationCoefficientSet>
+	</coefficientSet>
+	<coefficientSet id="hydro1_range1">
+		<locationCoefficientSet>
+			<location>
+				<locationId>Hydro1</locationId>
+			</location>
+			<stageDischarge>
+				<power>
+					<a>15.183</a>
+					<b>0.000</b>
+					<c>2.572</c>
+					<type>level_to_flow_and_flow_to_level</type>
+				</power>
+			</stageDischarge>
+		</locationCoefficientSet>
+	</coefficientSet>
+	<coefficientSet id="hydro1_range2">
+		<locationCoefficientSet>
+			<location>
+				<locationId>Hydro1</locationId>
+			</location>
+			<stageDischarge>
+				<power>
+					<a>4.716</a>
+					<b>0.000</b>
+					<c>1.323</c>
+					<type>level_to_flow_and_flow_to_level</type>
+				</power>
+			</stageDischarge>
+		</locationCoefficientSet>
+	</coefficientSet>
+	<coefficientSet id="hydro2_range1">
+		<locationCoefficientSet>
+			<location>
+				<locationId>Hydro2</locationId>
+			</location>
+			<stageDischarge>
+				<power>
+					<a>24.200</a>
+					<b>0.000</b>
+					<c>2.424</c>
+					<type>level_to_flow_and_flow_to_level</type>
+				</power>
+			</stageDischarge>
+		</locationCoefficientSet>
+	</coefficientSet>
+</transformationCoefficientSets>

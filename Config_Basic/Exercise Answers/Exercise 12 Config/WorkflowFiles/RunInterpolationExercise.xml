@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/workflow.xsd" version="1.1">
+	<!--Interpolate Hydro1 and Hydro2       -->
+	<activity>
+		<runIndependent>true</runIndependent>
+		<moduleInstanceId>InterpolateExample</moduleInstanceId>
+	</activity>
+	<!--Level to Flow Hydro1 and Hydro2       -->
+	<activity>
+		<runIndependent>true</runIndependent>
+		<moduleInstanceId>LevelToFlow</moduleInstanceId>
+	</activity>
+	<!--Catchment Average-->
+	<activity>
+		<runIndependent>true</runIndependent>
+		<moduleInstanceId>CatchmentAveragePrecipitation</moduleInstanceId>
+	</activity>
+	<!--Interpolation-->
+	<activity>
+		<runIndependent>true</runIndependent>
+		<moduleInstanceId>Hydro_Train_Interpolate_Forecast</moduleInstanceId>
+	</activity>
+	<!--General Adapter Run-->
+	<activity>
+		<runIndependent>true</runIndependent>
+		<moduleInstanceId>Hydro_Train_Forecast</moduleInstanceId>
+	</activity>
+</workflow>

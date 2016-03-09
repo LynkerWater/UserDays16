@@ -1,0 +1,150 @@
+[2016-03-08 13:59:12,817] INFO - DataStore.getConfigDirStorage - Use configuration from D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Config
+[2016-03-08 13:59:12,826] INFO - DataStore.getConfigDirStorage - Using cold states from D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\ColdStates
+[2016-03-08 13:59:13,211] INFO - Application.init - Application.Info: version: 2015.02, build: 59429 (patched from 57990) Feb29, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+[2016-03-08 13:59:15,145] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckStarted: Check of configuration started.
+[2016-03-08 13:59:15,149] INFO - ConfigValidator.isConfigAvailable - Configuration.Available: Configuration available in local filesystem.
+[2016-03-08 13:59:15,150] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckFinished: Check of configuration finished.
+[2016-03-08 13:59:15,762] INFO - AbstractFewsSession.log - Session.Created: Stand-alone system
+[2016-03-08 13:59:15,829] INFO - SystemActivitiesTable.continueScan - Building new system activity cache files
+[2016-03-08 13:59:15,841] INFO - SystemActivitiesTable.continueScan - Build new system activities cache files finished
+[2016-03-08 13:59:15,861] INFO - TaskRunsTable.continueScan - Building new task run cache files
+[2016-03-08 13:59:15,871] INFO - TaskRunsTable.continueScan - Build new task run cache files finished
+[2016-03-08 13:59:15,883] INFO - ModuleRunsTable.continueScan - Building new module run cache files
+[2016-03-08 13:59:15,893] INFO - ModuleRunsTable.continueScan - Build new module run state cache files finished
+[2016-03-08 13:59:15,921] INFO - SamplesTable.continueScan - Building new sample cache files
+[2016-03-08 13:59:15,930] INFO - SamplesTable.continueScan - Build new samples cache files finished
+[2016-03-08 13:59:15,954] INFO - TimeSeriesTable.continueScan - Building new time series cache files
+[2016-03-08 13:59:15,984] INFO - TimeSeriesTable.continueScan - Build new time series cache files finished
+[2016-03-08 13:59:15,986] INFO - WarmStatesTable.continueScan - Building new warm state cache files
+[2016-03-08 13:59:15,992] INFO - WarmStatesTable.continueScan - Build new warm state cache files finished
+[2016-03-08 13:59:20,098] INFO - FewsExplorer.<init> - Gui.Initialized: Graphical user interface initialized.
+[2016-03-08 13:59:20,187] INFO - Application.run - Application.Startup.Finished: The application finished starting up. (21s)
+[2016-03-08 13:59:21,183] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:59:50,292] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <03-08-2016 21:00:00 ImportExternal> has been sent to the task scheduler
+[2016-03-08 13:59:50,671] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task ImportExternal with ID 1_1, T0 2016-03-08 21:00:00, default forecast length, available memory 912 MB, config revision unknown
+
+[2016-03-08 13:59:50,673] INFO - Workflow.run - Workflow.ActivityStarted: Workflow ImportExternal
+[2016-03-08 13:59:50,675] INFO - WorkflowPluginActivity.run - Started Activity ImportTelemetry
+[2016-03-08 13:59:51,648] WARN - ValidationController.logValidationEvent - Validation.HardLimit: HardLimit max violated for Observed Water Levels at Hydro Gauge 1,  value 1.514 above limit value 1.5 at 2007-10-04 19:30:00
+[2016-03-08 13:59:51,657] WARN - ValidationController.logValidationEvent - Validation.HardLimit: HardLimit max violated for Observed Water Levels at Hydro Gauge 2,  value 2.62 above limit value 2.6 at 2007-10-03 01:00:00
+[2016-03-08 13:59:51,710] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportTelemetry' completed in 1s
+[2016-03-08 13:59:51,711] INFO - WorkflowPluginActivity.run - Started Activity ImportNimrod
+[2016-03-08 13:59:52,467] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportNimrod' completed in 0s
+[2016-03-08 13:59:52,468] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 13:59:52,839] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 13:59:52,839] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow ImportExternal completed in 2s
+[2016-03-08 13:59:52,845] INFO - TaskRun.run - TaskRun.TimeSpent:EaImport 1s 43%  TimeSeriesImport 1s 31%  TransformationModule 0s 15%  datastore 0s 18%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 3 queries, 0 rows)  reloaded 0 B  time series read 3 (unique=2)  time series written 7 (changed=5)  files 0s 1%  logging 0s 0%  gc 0s 3%  cpu 152%  max mem. 105 MB  index mem. 44 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 13:59:52,845] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task ImportExternal with ID 1_1 completed in 2s
+[2016-03-08 13:59:52,846] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 21:59:50 End time: 2016-03-08 21:59:52 T0: 2016-03-08 21:00:00 User Id:Ryan Spies
+[2016-03-08 13:59:52,846] INFO - TaskRun.run -                 ******************      Workflow ImportExternal Completed    ******************
+
+[2016-03-08 14:00:13,171] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 ImportExternal> has been sent to the task scheduler
+[2016-03-08 14:00:13,195] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task ImportExternal with ID 1_2, T0 2007-10-04 10:00:00, default forecast length, available memory 885 MB, config revision unknown
+
+[2016-03-08 14:00:13,196] INFO - Workflow.run - Workflow.ActivityStarted: Workflow ImportExternal
+[2016-03-08 14:00:13,196] INFO - WorkflowPluginActivity.run - Started Activity ImportTelemetry
+[2016-03-08 14:00:13,226] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportTelemetry' completed in 0s
+[2016-03-08 14:00:13,227] INFO - WorkflowPluginActivity.run - Started Activity ImportNimrod
+[2016-03-08 14:00:13,238] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportNimrod' completed in 0s
+[2016-03-08 14:00:13,239] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 14:00:13,281] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 14:00:13,282] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow ImportExternal completed in 0s
+[2016-03-08 14:00:13,283] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 45%  EaImport 0s 31%  TimeSeriesImport 0s 12%  datastore 0s 6%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 3 queries, 2 rows)  reloaded 0 B  time series read 11 (unique=2)  time series written 10 (changed=2)  files 0s 0%  logging 0s 5%  gc 0s 0%  cpu 152%  max mem. 105 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 14:00:13,283] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task ImportExternal with ID 1_2 completed in 0s
+[2016-03-08 14:00:13,284] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 22:00:13 End time: 2016-03-08 22:00:13 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 14:00:13,285] INFO - TaskRun.run -                 ******************      Workflow ImportExternal Completed    ******************
+
+[2016-03-08 14:00:21,475] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 14:00:21,503] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_3, T0 2007-10-04 10:00:00, default forecast length, available memory 885 MB, config revision unknown
+
+[2016-03-08 14:00:21,504] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 14:00:21,504] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 14:00:21,552] WARN - ValidationController.logValidationEvent - Validation.SoftLimit: SoftLimit max violated for Observed Water Levels at Hydro Gauge 1,  value 1.4417499 above limit value 1.2 at 2007-10-04 08:45:00
+[2016-03-08 14:00:21,556] WARN - ValidationController.logValidationEvent - Validation.SoftLimit: SoftLimit max violated for Observed Water Levels at Hydro Gauge 2,  value 2.5904999 above limit value 2.4 at 2007-10-03 01:00:00
+[2016-03-08 14:00:21,558] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 14:00:21,559] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 14:00:21,593] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 14:00:21,594] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 14:00:21,659] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 14:00:21,659] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 14:00:21,697] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Interpolate_Forecast' completed in 0s
+[2016-03-08 14:00:21,698] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Forecast
+[2016-03-08 14:00:21,987] INFO - GeneralAdapter.init - General Adapter initialized for task - RunInterpolationExercise T0=Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 14:00:22,034] INFO - WarmStates.exportState - Unexpected cold state exported. No current runs available for warm state  Hydro_Train_Historical
+[2016-03-08 14:00:22,148] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PreCommonAdapter
+[2016-03-08 14:00:22,368] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Preprocessor run Tue Mar 08 22:00:22 GMT 2016
+[2016-03-08 14:00:22,369] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Preprocessor run Tue Mar 08 22:00:22 GMT 2016
+[2016-03-08 14:00:22,371] INFO - ExecuteExecutableActivity.run - GA Execution Started D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe
+[2016-03-08 14:00:22,546] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PostCommonAdapter
+[2016-03-08 14:00:22,691] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Postprocessor run Tue Mar 08 22:00:22 GMT 2016
+[2016-03-08 14:00:22,692] INFO - ExecuteActivity.processDiagnosticFile - Reading Module Logs Messages
+[2016-03-08 14:00:22,693] INFO - ExecuteActivity.processDiagnosticFile - Started run [2016-03-08 14:00:22]
+[2016-03-08 14:00:22,694] INFO - ExecuteActivity.processDiagnosticFile - Completed run succesfully [2016-03-08 14:00:22]
+[2016-03-08 14:00:22,694] INFO - ExecuteActivity.processDiagnosticFile - Finished reading Module Logs Messages
+[2016-03-08 14:00:22,695] INFO - ExecuteActivity.processDiagnosticFile - Writing State Xml File - states.xml
+[2016-03-08 14:00:22,695] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Postprocessor run Tue Mar 08 22:00:22 GMT 2016
+[2016-03-08 14:00:22,717] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Forecast' completed in 1s
+[2016-03-08 14:00:22,718] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 1s
+[2016-03-08 14:00:22,821] INFO - TaskRun.run - TaskRun.TimeSpent:GeneralAdapter (without executables) 1s 38%  TransformationModule 0s 14%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PreCommonAdapter.class 0s 15%  D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe 0s 13%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PostCommonAdapter.class 0s 11%  datastore 0s 27%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 11 (unique=6)  time series written 9 (changed=7)  files 0s 8%  logging 0s 1%  gc 0s 0%  cpu 121%  max mem. 105 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 14:00:22,821] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_3 completed in 1s
+[2016-03-08 14:00:22,822] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 22:00:21 End time: 2016-03-08 22:00:22 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 14:00:22,822] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 14:00:45,227] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 14:00:45,282] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 14:04:22,777] INFO - ModuleRunDescriptors.makeAllTaskRunChildrenCurrent - DataStore.NewCurrentRun: Task run RunInterpolationExercise (T0=2007-10-04 10:00, Dispatch=2016-03-08 22:00, Id=1_3) is made current manually
+[2016-03-08 14:05:13,743] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 14:05:13,770] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 14:09:51,239] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 14:09:51,278] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_4, T0 2007-10-04 10:00:00, default forecast length, available memory 871 MB, config revision unknown
+, Cold state selection null:-3 day
+[2016-03-08 14:09:51,279] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 14:09:51,280] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 14:09:51,291] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 14:09:51,292] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 14:09:51,315] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 14:09:51,316] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 14:09:51,326] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 14:09:51,327] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 14:09:51,333] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Interpolate_Forecast' completed in 0s
+[2016-03-08 14:09:51,333] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Forecast
+[2016-03-08 14:09:51,336] INFO - GeneralAdapter.init - General Adapter initialized for task - RunInterpolationExercise T0=Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 14:09:51,417] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PreCommonAdapter
+[2016-03-08 14:09:51,554] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016
+[2016-03-08 14:09:51,555] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Preprocessor run Tue Mar 08 22:09:51 GMT 2016
+[2016-03-08 14:09:51,557] INFO - ExecuteExecutableActivity.run - GA Execution Started D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe
+[2016-03-08 14:09:51,765] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PostCommonAdapter
+[2016-03-08 14:09:51,897] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Postprocessor run Tue Mar 08 22:09:51 GMT 2016
+[2016-03-08 14:09:51,898] INFO - ExecuteActivity.processDiagnosticFile - Reading Module Logs Messages
+[2016-03-08 14:09:51,899] INFO - ExecuteActivity.processDiagnosticFile - Started run [2016-03-08 14:09:51]
+[2016-03-08 14:09:51,899] INFO - ExecuteActivity.processDiagnosticFile - Completed run succesfully [2016-03-08 14:09:51]
+[2016-03-08 14:09:51,900] INFO - ExecuteActivity.processDiagnosticFile - Finished reading Module Logs Messages
+[2016-03-08 14:09:51,901] INFO - ExecuteActivity.processDiagnosticFile - Writing State Xml File - states.xml
+[2016-03-08 14:09:51,901] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Postprocessor run Tue Mar 08 22:09:51 GMT 2016
+[2016-03-08 14:09:51,932] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Forecast' completed in 0s
+[2016-03-08 14:09:51,933] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 14:09:51,957] INFO - TaskRun.run - TaskRun.TimeSpent:GeneralAdapter (without executables) 0s 19%  TransformationModule 0s 7%  D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe 0s 30%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PreCommonAdapter.class 0s 19%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PostCommonAdapter.class 0s 19%  datastore 0s 1%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 10 (unique=6)  time series written 8 (changed=2)  files 0s 17%  logging 0s 2%  gc 0s 0%  cpu 133%  max mem. 119 MB  index mem. 46 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 14:09:51,957] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_4 completed in 0s
+[2016-03-08 14:09:51,958] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 22:09:51 End time: 2016-03-08 22:09:51 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 14:09:51,958] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 14:20:39,443] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 ImportExternal> has been sent to the task scheduler
+[2016-03-08 14:20:39,483] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task ImportExternal with ID 1_5, T0 2007-10-04 10:00:00, default forecast length, available memory 870 MB, config revision unknown
+
+[2016-03-08 14:20:39,484] INFO - Workflow.run - Workflow.ActivityStarted: Workflow ImportExternal
+[2016-03-08 14:20:39,485] INFO - WorkflowPluginActivity.run - Started Activity ImportTelemetry
+[2016-03-08 14:20:39,565] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportTelemetry' completed in 0s
+[2016-03-08 14:20:39,565] INFO - WorkflowPluginActivity.run - Started Activity ImportNimrod
+[2016-03-08 14:20:55,816] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportNimrod' completed in 16s
+[2016-03-08 14:20:55,817] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 14:20:55,839] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 14:20:55,840] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow ImportExternal completed in 16s
+[2016-03-08 14:20:55,842] INFO - TaskRun.run - TaskRun.TimeSpent:TimeSeriesImport 16s 99%  datastore 5s 28%  cache files 0 B   database 0s 0% (196 ms/query,40 kB,  41 kB/s, 5 queries, 6519 rows)  reloaded 0 B  time series read 5 (unique=2)  time series written 4512 (changed=2)  files 3s 16%  logging 0s 0%  gc 0s 2%  cpu 117%  max mem. 237 MB  index mem. 153 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 14:20:55,842] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task ImportExternal with ID 1_5 completed in 16s
+[2016-03-08 14:20:55,843] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 22:20:39 End time: 2016-03-08 22:20:55 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 14:20:55,843] INFO - TaskRun.run -                 ******************      Workflow ImportExternal Completed    ******************
+
+[2016-03-08 16:53:46,474] INFO - FewsExplorerEnvironment.exit - FewsExplorer: exiting ... 
+[2016-03-08 16:53:46,488] INFO - AbstractFewsSession.log - Session.Closed: Stand-alone system
+[2016-03-08 16:53:46,574] INFO - FewsExplorerEnvironment.stopFewsPiService - Stopping FewsPiService on port -1.
+[2016-03-08 16:53:46,907] INFO - LogEntriesTableLogAppender.dispose - Pending log messages flushed to database

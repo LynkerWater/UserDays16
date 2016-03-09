@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesImportRun xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesImportRun.xsd">
+  <import>
+    <general>
+      <importType>nimrod</importType>
+      <folder>$IMPORT_NIMROD_NWPRAIN_FOLDER$</folder>
+      <failedFolder>$IMPORT_FAILED_FOLDER$</failedFolder>
+      <idMapId>IdImportNimrod</idMapId>
+      <unitConversionsId>ImportUnitConversions</unitConversionsId>
+      <missingValue>65535</missingValue>
+      <dataFeedId>NimrodNWPRain</dataFeedId>
+    </general>
+    <timeSeriesSet>
+      <moduleInstanceId>ImportNimrod</moduleInstanceId>
+      <valueType>grid</valueType>
+      <parameterId>P.nwp.forecast</parameterId>
+      <locationId>NimrodNWP</locationId>
+      <timeSeriesType>external forecasting</timeSeriesType>
+      <timeStep unit="minute" multiplier="15"/>
+      <readWriteMode>add originals</readWriteMode>
+      <synchLevel>6</synchLevel>
+    </timeSeriesSet>
+    <externUnit parameterId="P.nwp.forecast" unit="Nimrod rain"/>
+  </import>
+</timeSeriesImportRun>

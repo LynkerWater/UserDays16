@@ -1,0 +1,819 @@
+[2016-03-08 11:21:51,776] INFO - DataStore.getConfigDirStorage - Use configuration from D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Config
+[2016-03-08 11:21:51,786] INFO - DataStore.getConfigDirStorage - Using cold states from D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\ColdStates
+[2016-03-08 11:21:52,179] INFO - Application.init - Application.Info: version: 2015.02, build: 59429 (patched from 57990) Feb29, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+[2016-03-08 11:21:54,104] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckStarted: Check of configuration started.
+[2016-03-08 11:21:54,111] INFO - ConfigValidator.isConfigAvailable - Configuration.Available: Configuration available in local filesystem.
+[2016-03-08 11:21:54,111] INFO - FewsExplorerEnvironment.checkConfiguration - Config.CheckFinished: Check of configuration finished.
+[2016-03-08 11:21:54,722] INFO - AbstractFewsSession.log - Session.Created: Stand-alone system
+[2016-03-08 11:21:54,785] INFO - SystemActivitiesTable.continueScan - Building new system activity cache files
+[2016-03-08 11:21:54,794] INFO - SystemActivitiesTable.continueScan - Build new system activities cache files finished
+[2016-03-08 11:21:54,831] INFO - TaskRunsTable.continueScan - Building new task run cache files
+[2016-03-08 11:21:54,840] INFO - TaskRunsTable.continueScan - Build new task run cache files finished
+[2016-03-08 11:21:54,851] INFO - ModuleRunsTable.continueScan - Building new module run cache files
+[2016-03-08 11:21:54,860] INFO - ModuleRunsTable.continueScan - Build new module run state cache files finished
+[2016-03-08 11:21:54,883] INFO - SamplesTable.continueScan - Building new sample cache files
+[2016-03-08 11:21:54,893] INFO - SamplesTable.continueScan - Build new samples cache files finished
+[2016-03-08 11:21:54,918] INFO - TimeSeriesTable.continueScan - Building new time series cache files
+[2016-03-08 11:21:54,948] INFO - TimeSeriesTable.continueScan - Build new time series cache files finished
+[2016-03-08 11:21:54,951] INFO - WarmStatesTable.continueScan - Building new warm state cache files
+[2016-03-08 11:21:54,957] INFO - WarmStatesTable.continueScan - Build new warm state cache files finished
+[2016-03-08 11:21:59,191] INFO - FewsExplorer.<init> - Gui.Initialized: Graphical user interface initialized.
+[2016-03-08 11:21:59,326] INFO - Application.run - Application.Startup.Finished: The application finished starting up. (22s)
+[2016-03-08 11:22:00,323] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 11:22:28,196] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 ImportExternal> has been sent to the task scheduler
+[2016-03-08 11:22:28,569] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task ImportExternal with ID 1_1, T0 2007-10-04 10:00:00, default forecast length, available memory 912 MB, config revision unknown
+
+[2016-03-08 11:22:28,571] INFO - Workflow.run - Workflow.ActivityStarted: Workflow ImportExternal
+[2016-03-08 11:22:28,573] INFO - WorkflowPluginActivity.run - Started Activity ImportTelemetry
+[2016-03-08 11:22:29,694] WARN - ValidationController.logValidationEvent - Validation.HardLimit: HardLimit max violated for Observed Water Levels at Hydro Gauge 1,  value 1.514 above limit value 1.5 at 2007-10-04 19:30:00
+[2016-03-08 11:22:29,712] WARN - ValidationController.logValidationEvent - Validation.HardLimit: HardLimit max violated for Observed Water Levels at Hydro Gauge 2,  value 2.62 above limit value 2.6 at 2007-10-03 01:00:00
+[2016-03-08 11:22:29,768] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportTelemetry' completed in 1s
+[2016-03-08 11:22:29,769] INFO - WorkflowPluginActivity.run - Started Activity ImportNimrod
+[2016-03-08 11:22:30,580] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportNimrod' completed in 0s
+[2016-03-08 11:22:30,581] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 11:22:31,053] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 11:22:31,053] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow ImportExternal completed in 2s
+[2016-03-08 11:22:31,062] INFO - TaskRun.run - TaskRun.TimeSpent:EaImport 1s 44%  TimeSeriesImport 1s 30%  TransformationModule 0s 17%  datastore 1s 22%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 2 queries, 0 rows)  reloaded 0 B  time series read 5 (unique=2)  time series written 8 (changed=6)  files 0s 1%  logging 0s 0%  gc 0s 4%  cpu 140%  max mem. 104 MB  index mem. 44 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 11:22:31,063] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task ImportExternal with ID 1_1 completed in 2s
+[2016-03-08 11:22:31,064] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 19:22:28 End time: 2016-03-08 19:22:31 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 11:22:31,064] INFO - TaskRun.run -                 ******************      Workflow ImportExternal Completed    ******************
+
+[2016-03-08 11:24:33,778] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 11:24:33,804] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_2, T0 2007-10-04 10:00:00, default forecast length, available memory 881 MB, config revision unknown
+
+[2016-03-08 11:24:33,805] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 11:24:33,805] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 11:24:33,850] WARN - ValidationController.logValidationEvent - Validation.SoftLimit: SoftLimit max violated for Observed Water Levels at Hydro Gauge 1,  value 1.4417499 above limit value 1.2 at 2007-10-04 08:45:00
+[2016-03-08 11:24:33,854] WARN - ValidationController.logValidationEvent - Validation.SoftLimit: SoftLimit max violated for Observed Water Levels at Hydro Gauge 2,  value 2.5904999 above limit value 2.4 at 2007-10-03 01:00:00
+[2016-03-08 11:24:33,856] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 11:24:33,856] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 11:24:33,876] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 11:24:33,878] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 11:24:33,879] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 85%  datastore 0s 42%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 7 (unique=2)  time series written 5 (changed=3)  files 0s 0%  logging 0s 7%  gc 0s 0%  cpu 135%  max mem. 109 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 11:24:33,880] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_2 completed in 0s
+[2016-03-08 11:24:33,880] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 19:24:33 End time: 2016-03-08 19:24:33 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 11:24:33,881] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 11:27:18,727] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 ImportExternal> has been sent to the task scheduler
+[2016-03-08 11:27:18,753] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task ImportExternal with ID 1_3, T0 2007-10-04 10:00:00, default forecast length, available memory 881 MB, config revision unknown
+
+[2016-03-08 11:27:18,754] INFO - Workflow.run - Workflow.ActivityStarted: Workflow ImportExternal
+[2016-03-08 11:27:18,755] INFO - WorkflowPluginActivity.run - Started Activity ImportTelemetry
+[2016-03-08 11:27:18,837] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportTelemetry' completed in 0s
+[2016-03-08 11:27:18,838] INFO - WorkflowPluginActivity.run - Started Activity ImportNimrod
+[2016-03-08 11:27:18,860] INFO - WorkflowPluginActivity.run - Completed Activity 'ImportNimrod' completed in 0s
+[2016-03-08 11:27:18,860] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 11:27:18,882] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 11:27:18,883] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow ImportExternal completed in 0s
+[2016-03-08 11:27:18,884] INFO - TaskRun.run - TaskRun.TimeSpent:EaImport 0s 60%  TransformationModule 0s 16%  TimeSeriesImport 0s 16%  datastore 0s 1%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 3 queries, 2 rows)  reloaded 0 B  time series read 5 (unique=2)  time series written 3 (changed=0)  files 0s 0%  logging 0s 3%  gc 0s 0%  cpu 206%  max mem. 109 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 11:27:18,885] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task ImportExternal with ID 1_3 completed in 0s
+[2016-03-08 11:27:18,886] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 19:27:18 End time: 2016-03-08 19:27:18 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 11:27:18,886] INFO - TaskRun.run -                 ******************      Workflow ImportExternal Completed    ******************
+
+[2016-03-08 11:27:44,013] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 11:27:44,036] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_4, T0 2007-10-04 10:00:00, default forecast length, available memory 881 MB, config revision unknown
+
+[2016-03-08 11:27:44,037] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 11:27:44,037] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 11:27:44,046] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 11:27:44,046] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 11:27:44,047] DEBUG - WorkflowPluginActivity.run - Memory usage 109 MB
+[2016-03-08 11:27:44,048] DEBUG - TransformationModule.loadConfiguration - Starting unmarshalling of configuration xml
+[2016-03-08 11:27:44,049] DEBUG - TransformationModule.loadConfiguration - Configuration xml is successfully loaded
+[2016-03-08 11:27:44,049] DEBUG - TransformationModule.createProcessQueue - Start creation of the process queue 
+[2016-03-08 11:27:44,050] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'LevelToFlow' to queue.
+[2016-03-08 11:27:44,050] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'LevelToFlow_Hydro1' to queue.
+[2016-03-08 11:27:44,051] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:27:44,053] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'LevelToFlow_Hydro2' to queue.
+[2016-03-08 11:27:44,053] DEBUG - TransformationModule.createProcessQueue - Process queue is successfully created with 3 processes, start processing
+[2016-03-08 11:27:44,054] DEBUG - TransformationModule.createProcessQueue - Process queue is created, queue contains:3 processes
+[2016-03-08 11:27:44,054] DEBUG - TransformationModule.run - Start creation of the variable storage
+[2016-03-08 11:27:44,055] DEBUG - TransformationModule.run - Memory usage 109 MB
+[2016-03-08 11:27:44,055] DEBUG - LimitVariableDependentTransformationProcess.run - Start limit variable dependent run with id: LevelToFlow
+[2016-03-08 11:27:44,056] DEBUG - LimitVariableDependentTransformationProcess.createLimitVariableTimeSeriesArrays - Retrieving time series array for rangeTransformation limit variable with id: level
+[2016-03-08 11:27:44,057] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=London (London_hyd);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,058] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=London (London_hyd);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,059] DEBUG - TimeSeriesView.privateRead - Trying to read time series data for a not yet used key combination:-1:London_hyd:H.obs:ImportTelemetry:SETS15:external historical:scalar
+[2016-03-08 11:27:44,060] DEBUG - LimitVariableDependentTransformationProcess.run - Process has 1 limit variables
+[2016-03-08 11:27:44,061] DEBUG - LimitVariableDependentTransformationProcess.run - The common period of the limit variables is 2007/9/30 10:00 to 10/4 10:00 GMT
+[2016-03-08 11:27:44,062] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - Starting limit variable process with id LevelToFlow for period 2007/9/30 10:00 to 10/4 10:00 GMT
+[2016-03-08 11:27:44,063] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - creating transformation process for this period
+[2016-03-08 11:27:44,065] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:27:44,066] DEBUG - SingleTransformationProcess.run - Started transformation with id 'LevelToFlow'.
+[2016-03-08 11:27:44,067] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 11:27:44,067] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for output variable: flow_Hydro1
+[2016-03-08 11:27:44,068] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,069] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,069] DEBUG - VariableStorage.retrieveInputTimeSeriesSets - creating a timeseries set using variable id: level_Hydro1
+[2016-03-08 11:27:44,070] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,071] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 11:27:44,072] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 11:27:44,072] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,079] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Sun Sep 30 10:00:00 GMT 2007 - Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 11:27:44,080] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 11:27:44,081] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 385: only missings:Hydro1 Q.rated (m3/s) "15 minutes":2007/9/30 10:00 to 10/4 10:00 GMT', 'Hydro1 Q.rated (m3/s) "15 minutes"'
+ type = external historical
+ period = 2007/9/30 10:00 to 10/4 10:00 GMT
+ externalForecastTime = null
+[2016-03-08 11:27:44,083] DEBUG - SingleTransformationProcess.run - End of transformation with id 'LevelToFlow'.
+[2016-03-08 11:27:44,083] DEBUG - LimitVariableDependentTransformationProcess.run - In the period 2007/9/30 10:00 to 10/4 10:00 GMT the function is valid for 0 periods
+[2016-03-08 11:27:44,084] DEBUG - TransformationModule.run - Memory usage 109 MB
+[2016-03-08 11:27:44,084] DEBUG - LimitVariableDependentTransformationProcess.run - Start limit variable dependent run with id: LevelToFlow_Hydro1
+[2016-03-08 11:27:44,085] DEBUG - LimitVariableDependentTransformationProcess.createLimitVariableTimeSeriesArrays - Retrieving time series array for rangeTransformation limit variable with id: level
+[2016-03-08 11:27:44,086] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=London (London_hyd);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,086] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=London (London_hyd);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,087] DEBUG - TimeSeriesView.privateRead - Trying to read time series data for a not yet used key combination:-1:London_hyd:H.obs:ImportTelemetry:SETS15:external historical:scalar
+[2016-03-08 11:27:44,088] DEBUG - LimitVariableDependentTransformationProcess.run - Process has 1 limit variables
+[2016-03-08 11:27:44,088] DEBUG - LimitVariableDependentTransformationProcess.run - The common period of the limit variables is 2007/9/30 10:00 to 10/4 10:00 GMT
+[2016-03-08 11:27:44,089] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - Starting limit variable process with id LevelToFlow_Hydro1 for period 2007/9/30 10:00 to 10/4 10:00 GMT
+[2016-03-08 11:27:44,090] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - creating transformation process for this period
+[2016-03-08 11:27:44,091] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:27:44,093] DEBUG - SingleTransformationProcess.run - Started transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:27:44,094] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 11:27:44,094] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for output variable: flow_Hydro1
+[2016-03-08 11:27:44,095] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,096] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,096] DEBUG - VariableStorage.retrieveInputTimeSeriesSets - creating a timeseries set using variable id: level_Hydro1
+[2016-03-08 11:27:44,097] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,098] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 11:27:44,098] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 11:27:44,099] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,100] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Sun Sep 30 10:00:00 GMT 2007 - Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 11:27:44,101] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 11:27:44,102] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 385: only missings:Hydro1 Q.rated (m3/s) "15 minutes":2007/9/30 10:00 to 10/4 10:00 GMT', 'Hydro1 Q.rated (m3/s) "15 minutes"'
+ type = external historical
+ period = 2007/9/30 10:00 to 10/4 10:00 GMT
+ externalForecastTime = null
+[2016-03-08 11:27:44,103] DEBUG - SingleTransformationProcess.run - End of transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:27:44,104] DEBUG - LimitVariableDependentTransformationProcess.run - In the period 2007/9/30 10:00 to 10/4 10:00 GMT the function is valid for 0 periods
+[2016-03-08 11:27:44,104] DEBUG - TransformationModule.run - Memory usage 109 MB
+[2016-03-08 11:27:44,105] DEBUG - SingleTransformationProcess.run - Started transformation with id 'LevelToFlow_Hydro2'.
+[2016-03-08 11:27:44,105] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 11:27:44,105] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for output variable: flow_Hydro2
+[2016-03-08 11:27:44,106] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,107] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,107] DEBUG - VariableStorage.retrieveInputTimeSeriesSets - creating a timeseries set using variable id: level_Hydro2
+[2016-03-08 11:27:44,108] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:27:44,108] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 11:27:44,109] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 11:27:44,109] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:27:44,111] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Sun Sep 30 10:00:00 GMT 2007 - Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 11:27:44,112] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting initialization of function:
+[2016-03-08 11:27:44,116] DEBUG - SingleTimeTransformationRunner.runTransformation - Valid Coefficient Set : Coefficient set is valid in period:from 2007/9/30 10:00 GMT values are <?xml version="1.0" encoding="UTF-8"?>
+<StageDischargePowerCoefficientSetComplexType xmlns="http://www.wldelft.nl/fews">
+    <a>24.2</a>
+    <b>0.0</b>
+    <c>2.424</c>
+    <type>level_to_flow_and_flow_to_level</type>
+</StageDischargePowerCoefficientSetComplexType>
+
+[2016-03-08 11:27:44,117] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting calculation
+[2016-03-08 11:27:44,120] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 11:27:44,121] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 329:329 none missing:Hydro2 Q.rated (m3/s) "15 minutes":2007/10/1 0:00 to 10/4 10:00 GMT', 'Hydro2 Q.rated (m3/s) "15 minutes"'
+ type = external historical
+ period = 2007/10/1 0:00 to 10/4 10:00 GMT
+ externalForecastTime = null
+[2016-03-08 11:27:44,123] DEBUG - SingleTransformationProcess.run - End of transformation with id 'LevelToFlow_Hydro2'.
+[2016-03-08 11:27:44,123] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 11:27:44,124] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 11:27:44,125] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 92%  datastore 0s 2%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 7 (unique=2)  time series written 5 (changed=0)  files 0s 0%  logging 0s 67%  gc 0s 0%  cpu 153%  max mem. 109 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 11:27:44,125] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_4 completed in 0s
+[2016-03-08 11:27:44,126] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 19:27:44 End time: 2016-03-08 19:27:44 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 11:27:44,126] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 11:35:22,014] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: ModuleConfigFiles/LevelToFlow.xml
+[2016-03-08 11:35:22,640] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: CoefficientSetsFiles/LevelToFlowCoefficientSets.xml
+[2016-03-08 11:35:55,366] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 11:35:55,386] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_5, T0 2007-10-04 10:00:00, default forecast length, available memory 881 MB, config revision unknown
+
+[2016-03-08 11:35:55,387] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 11:35:55,388] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 11:35:55,398] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 11:35:55,399] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 11:35:55,399] DEBUG - WorkflowPluginActivity.run - Memory usage 109 MB
+[2016-03-08 11:35:55,400] DEBUG - TransformationModule.loadConfiguration - Starting unmarshalling of configuration xml
+[2016-03-08 11:35:55,400] DEBUG - ConfigFileCache.unmarshalFastInfosetStream - Unmarshall ModuleConfigFiles/LevelToFlow.xml
+[2016-03-08 11:35:55,412] DEBUG - ConfigFileCache.unmarshalFastInfosetStream - No properties resolved in ModuleConfigFiles/LevelToFlow.xml
+[2016-03-08 11:35:55,414] DEBUG - TransformationModule.loadConfiguration - Configuration xml is successfully loaded
+[2016-03-08 11:35:55,415] DEBUG - TransformationModule.createProcessQueue - Start creation of the process queue 
+[2016-03-08 11:35:55,415] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'LevelToFlow_Hydro1' to queue.
+[2016-03-08 11:35:55,416] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:35:55,417] DEBUG - ConfigFileCache.unmarshalFastInfosetStream - Unmarshall CoefficientSetsFiles/LevelToFlowCoefficientSets.xml
+[2016-03-08 11:35:55,423] DEBUG - ConfigFileCache.unmarshalFastInfosetStream - No properties resolved in CoefficientSetsFiles/LevelToFlowCoefficientSets.xml
+[2016-03-08 11:35:55,425] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'LevelToFlow_Hydro2' to queue.
+[2016-03-08 11:35:55,426] DEBUG - TransformationModule.createProcessQueue - Process queue is successfully created with 2 processes, start processing
+[2016-03-08 11:35:55,426] DEBUG - TransformationModule.createProcessQueue - Process queue is created, queue contains:2 processes
+[2016-03-08 11:35:55,426] DEBUG - TransformationModule.run - Start creation of the variable storage
+[2016-03-08 11:35:55,427] DEBUG - TransformationModule.run - Memory usage 109 MB
+[2016-03-08 11:35:55,427] DEBUG - LimitVariableDependentTransformationProcess.run - Start limit variable dependent run with id: LevelToFlow_Hydro1
+[2016-03-08 11:35:55,428] DEBUG - LimitVariableDependentTransformationProcess.createLimitVariableTimeSeriesArrays - Retrieving time series array for rangeTransformation limit variable with id: level
+[2016-03-08 11:35:55,429] ERROR - Workflow.run - TaskRun.PartlyFailed: Workflow RunInterpolationExercise with task run id 1_5 partly failed because activity LevelToFlow failed, Plugin 'LevelToFlow' failed, message was: 'Exception occurred in transformation with id 'LevelToFlow_Hydro1' Invalid configuration: rangeTransformation limit variable with id 'level' not defined in configuration.
+ModuleConfigFiles/LevelToFlow.xml
+WorkflowFiles/RunInterpolationExercise.xml
+java.lang.Exception: Invalid configuration: rangeTransformation limit variable with id 'level' not defined in configuration. version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+	at nl.wldelft.fews.system.plugin.transformationmodule.persistence.VariableStorage.retrieveRangeLimitVariableTimeSeriesArrays(VariableStorage.java:527)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.LimitVariableDependentTransformationProcess.createLimitVariableTimeSeriesArrays(LimitVariableDependentTransformationProcess.java:414)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.LimitVariableDependentTransformationProcess.run(LimitVariableDependentTransformationProcess.java:143)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:135)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:102)
+	at nl.wldelft.fews.system.dispatcher.local.WorkflowPluginActivity.run(WorkflowPluginActivity.java:221)
+	at nl.wldelft.fews.system.workflow.Workflow.run(Workflow.java:129)
+	at nl.wldelft.fews.system.dispatcher.local.TaskRun.run(TaskRun.java:311)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher.runnable(LocalTaskDispatcher.java:85)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher$$Lambda$108/3793396.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-08 11:35:55,436] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 11:35:55,437] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 70%  datastore 0s 28%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 2 (unique=2)  time series written 2 (changed=0)  files 0s 0%  logging 0s 31%  gc 0s 0%  cpu 226%  max mem. 109 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 11:35:55,438] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_5 completed in 0s
+[2016-03-08 11:35:55,439] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 19:35:55 End time: 2016-03-08 19:35:55 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 11:35:55,439] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed with ERRORS ******************
+
+[2016-03-08 11:37:32,569] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: ModuleConfigFiles/LevelToFlow.xml
+[2016-03-08 11:37:35,486] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 11:37:35,543] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_6, T0 2007-10-04 10:00:00, default forecast length, available memory 881 MB, config revision unknown
+
+[2016-03-08 11:37:35,543] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 11:37:35,544] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 11:37:35,554] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 11:37:35,555] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 11:37:35,555] DEBUG - WorkflowPluginActivity.run - Memory usage 109 MB
+[2016-03-08 11:37:35,556] DEBUG - TransformationModule.loadConfiguration - Starting unmarshalling of configuration xml
+[2016-03-08 11:37:35,557] DEBUG - ConfigFileCache.unmarshalFastInfosetStream - Unmarshall ModuleConfigFiles/LevelToFlow.xml
+[2016-03-08 11:37:35,567] DEBUG - ConfigFileCache.unmarshalFastInfosetStream - No properties resolved in ModuleConfigFiles/LevelToFlow.xml
+[2016-03-08 11:37:35,568] DEBUG - TransformationModule.loadConfiguration - Configuration xml is successfully loaded
+[2016-03-08 11:37:35,569] DEBUG - TransformationModule.createProcessQueue - Start creation of the process queue 
+[2016-03-08 11:37:35,569] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'LevelToFlow_Hydro1' to queue.
+[2016-03-08 11:37:35,570] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:37:35,571] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'LevelToFlow_Hydro2' to queue.
+[2016-03-08 11:37:35,571] DEBUG - TransformationModule.createProcessQueue - Process queue is successfully created with 2 processes, start processing
+[2016-03-08 11:37:35,572] DEBUG - TransformationModule.createProcessQueue - Process queue is created, queue contains:2 processes
+[2016-03-08 11:37:35,572] DEBUG - TransformationModule.run - Start creation of the variable storage
+[2016-03-08 11:37:35,573] DEBUG - TransformationModule.run - Memory usage 109 MB
+[2016-03-08 11:37:35,573] DEBUG - LimitVariableDependentTransformationProcess.run - Start limit variable dependent run with id: LevelToFlow_Hydro1
+[2016-03-08 11:37:35,573] DEBUG - LimitVariableDependentTransformationProcess.createLimitVariableTimeSeriesArrays - Retrieving time series array for rangeTransformation limit variable with id: level_Hydro1
+[2016-03-08 11:37:35,574] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,575] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,576] DEBUG - LimitVariableDependentTransformationProcess.run - Process has 1 limit variables
+[2016-03-08 11:37:35,577] DEBUG - LimitVariableDependentTransformationProcess.run - The common period of the limit variables is 2007/9/30 10:00 to 10/4 10:00 GMT
+[2016-03-08 11:37:35,579] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - Starting limit variable process with id LevelToFlow_Hydro1 for period 2007/9/30 10:00 to 10/1 0:00 GMT
+[2016-03-08 11:37:35,579] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - creating transformation process for this period
+[2016-03-08 11:37:35,580] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:37:35,581] DEBUG - SingleTransformationProcess.run - Started transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:37:35,581] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 11:37:35,582] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for output variable: flow_Hydro1
+[2016-03-08 11:37:35,582] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,583] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,584] DEBUG - VariableStorage.retrieveInputTimeSeriesSets - creating a timeseries set using variable id: level_Hydro1
+[2016-03-08 11:37:35,584] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,585] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 11:37:35,586] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 11:37:35,586] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,588] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Sun Sep 30 10:00:00 GMT 2007 - Mon Oct 01 00:00:00 GMT 2007
+[2016-03-08 11:37:35,589] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 11:37:35,590] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 57: only missings:Hydro1 Q.rated (m3/s) "15 minutes":2007/9/30 10:00 to 10/1 0:00 GMT', 'Hydro1 Q.rated (m3/s) "15 minutes"'
+ type = external historical
+ period = 2007/9/30 10:00 to 10/1 0:00 GMT
+ externalForecastTime = null
+[2016-03-08 11:37:35,591] DEBUG - SingleTransformationProcess.run - End of transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:37:35,591] DEBUG - LimitVariableDependentTransformationProcess.run - In the period 2007/9/30 10:00 to 10/4 10:00 GMT the function is valid for 2 periods
+[2016-03-08 11:37:35,592] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - Starting limit variable process with id LevelToFlow_Hydro1 for period 2007/10/1 0:00 to 10/2 23:45 GMT
+[2016-03-08 11:37:35,592] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - creating transformation process for this period
+[2016-03-08 11:37:35,598] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:37:35,600] DEBUG - SingleTransformationProcess.run - Started transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:37:35,601] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 11:37:35,601] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for output variable: flow_Hydro1
+[2016-03-08 11:37:35,602] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,603] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,604] DEBUG - VariableStorage.retrieveInputTimeSeriesSets - creating a timeseries set using variable id: level_Hydro1
+[2016-03-08 11:37:35,605] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,606] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 11:37:35,607] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 11:37:35,607] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,609] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Mon Oct 01 00:00:00 GMT 2007 - Tue Oct 02 23:45:00 GMT 2007
+[2016-03-08 11:37:35,610] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting initialization of function:
+[2016-03-08 11:37:35,611] DEBUG - SingleTimeTransformationRunner.runTransformation - Valid Coefficient Set : Coefficient set is valid in period:from 2007/10/1 0:00 GMT values are <?xml version="1.0" encoding="UTF-8"?>
+<StageDischargePowerCoefficientSetComplexType xmlns="http://www.wldelft.nl/fews">
+    <a>15.183</a>
+    <b>0.0</b>
+    <c>2.572</c>
+    <type>level_to_flow_and_flow_to_level</type>
+</StageDischargePowerCoefficientSetComplexType>
+
+[2016-03-08 11:37:35,612] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting calculation
+[2016-03-08 11:37:35,614] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 11:37:35,614] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 192:192 none missing:Hydro1 Q.rated (m3/s) "15 minutes":2007/10/1 0:00 to 10/2 23:45 GMT', 'Hydro1 Q.rated (m3/s) "15 minutes"'
+ type = external historical
+ period = 2007/10/1 0:00 to 10/2 23:45 GMT
+ externalForecastTime = null
+[2016-03-08 11:37:35,616] DEBUG - SingleTransformationProcess.run - End of transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:37:35,617] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - Starting limit variable process with id LevelToFlow_Hydro1 for period 2007/10/3 0:00 to 10/4 10:00 GMT
+[2016-03-08 11:37:35,617] DEBUG - LimitVariableDependentTransformationProcess.runTransformation - creating transformation process for this period
+[2016-03-08 11:37:35,619] DEBUG - CoefficientSetFactory.createCoefficientSetReaderFromChoiceObject - Start creating coefficient set reader from castor
+[2016-03-08 11:37:35,624] DEBUG - SingleTransformationProcess.run - Started transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:37:35,625] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 11:37:35,626] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for output variable: flow_Hydro1
+[2016-03-08 11:37:35,626] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,627] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,628] DEBUG - VariableStorage.retrieveInputTimeSeriesSets - creating a timeseries set using variable id: level_Hydro1
+[2016-03-08 11:37:35,628] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,629] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 11:37:35,629] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 11:37:35,630] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 1 (Hydro1);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,632] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Wed Oct 03 00:00:00 GMT 2007 - Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 11:37:35,632] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting initialization of function:
+[2016-03-08 11:37:35,634] DEBUG - SingleTimeTransformationRunner.runTransformation - Valid Coefficient Set : Coefficient set is valid in period:from 2007/10/3 0:00 GMT values are <?xml version="1.0" encoding="UTF-8"?>
+<StageDischargePowerCoefficientSetComplexType xmlns="http://www.wldelft.nl/fews">
+    <a>4.716</a>
+    <b>0.0</b>
+    <c>1.323</c>
+    <type>level_to_flow_and_flow_to_level</type>
+</StageDischargePowerCoefficientSetComplexType>
+
+[2016-03-08 11:37:35,634] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting calculation
+[2016-03-08 11:37:35,636] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 11:37:35,636] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 137:137 none missing:Hydro1 Q.rated (m3/s) "15 minutes":2007/10/3 0:00 to 10/4 10:00 GMT', 'Hydro1 Q.rated (m3/s) "15 minutes"'
+ type = external historical
+ period = 2007/10/3 0:00 to 10/4 10:00 GMT
+ externalForecastTime = null
+[2016-03-08 11:37:35,639] DEBUG - SingleTransformationProcess.run - End of transformation with id 'LevelToFlow_Hydro1'.
+[2016-03-08 11:37:35,639] DEBUG - TransformationModule.run - Memory usage 109 MB
+[2016-03-08 11:37:35,639] DEBUG - SingleTransformationProcess.run - Started transformation with id 'LevelToFlow_Hydro2'.
+[2016-03-08 11:37:35,640] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 11:37:35,640] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for output variable: flow_Hydro2
+[2016-03-08 11:37:35,641] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,641] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Calculated Discharge (Q.rated);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,642] DEBUG - VariableStorage.retrieveInputTimeSeriesSets - creating a timeseries set using variable id: level_Hydro2
+[2016-03-08 11:37:35,643] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Observed Water Levels (H.obs);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day is created
+[2016-03-08 11:37:35,643] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 11:37:35,644] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 11:37:35,644] DEBUG - TimeSeriesView.privateRead - read time series for par=Observed Water Levels (H.obs);loc=Hydro Gauge 2 (Hydro2);mod=ImportTelemetry;external historical;-4 day to 0, 4 day
+[2016-03-08 11:37:35,646] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Sun Sep 30 10:00:00 GMT 2007 - Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 11:37:35,646] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting initialization of function:
+[2016-03-08 11:37:35,648] DEBUG - SingleTimeTransformationRunner.runTransformation - Valid Coefficient Set : Coefficient set is valid in period:from 2007/9/30 10:00 GMT values are <?xml version="1.0" encoding="UTF-8"?>
+<StageDischargePowerCoefficientSetComplexType xmlns="http://www.wldelft.nl/fews">
+    <a>24.2</a>
+    <b>0.0</b>
+    <c>2.424</c>
+    <type>level_to_flow_and_flow_to_level</type>
+</StageDischargePowerCoefficientSetComplexType>
+
+[2016-03-08 11:37:35,648] DEBUG - SingleTimeTransformationRunner.runTransformation - Starting calculation
+[2016-03-08 11:37:35,652] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 11:37:35,652] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 329:329 none missing:Hydro2 Q.rated (m3/s) "15 minutes":2007/10/1 0:00 to 10/4 10:00 GMT', 'Hydro2 Q.rated (m3/s) "15 minutes"'
+ type = external historical
+ period = 2007/10/1 0:00 to 10/4 10:00 GMT
+ externalForecastTime = null
+[2016-03-08 11:37:35,654] DEBUG - SingleTransformationProcess.run - End of transformation with id 'LevelToFlow_Hydro2'.
+[2016-03-08 11:37:35,655] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 11:37:35,655] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 11:37:35,656] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 93%  datastore 0s 13%  cache files 0 B   database 0s 0% (1 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 7 (unique=2)  time series written 6 (changed=1)  files 0s 0%  logging 0s 47%  gc 0s 0%  cpu 172%  max mem. 109 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 11:37:35,657] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_6 completed in 0s
+[2016-03-08 11:37:35,657] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 19:37:35 End time: 2016-03-08 19:37:35 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 11:37:35,658] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 11:53:51,740] INFO - FewsExplorerEnvironment.acknowledgeAll - Start acknowledging log messages
+[2016-03-08 11:53:51,751] INFO - FewsExplorerEnvironment.acknowledgeAll - All log messages acknowledged for last 2d
+[2016-03-08 12:00:36,073] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 12:00:36,495] ERROR - Filter.getTimeSeriesSets - Config.Error: filter id MeteorologicalGauges parameter id P.catchment Location Set  with id CatchAvg does not exist;
+RegionConfigFiles/Filters.xml
+[2016-03-08 12:00:37,592] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:00:38,683] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:01:44,004] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 12:01:44,087] ERROR - Filter.getTimeSeriesSets - Config.Error: filter id MeteorologicalGauges parameter id P.catchment Location  with id CatchAvg does not exist; 
+RegionConfigFiles/Filters.xml
+[2016-03-08 12:01:44,904] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:01:45,987] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:03:46,107] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Locations.xml
+[2016-03-08 12:03:47,186] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:03:48,258] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:08:19,022] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 12:08:19,930] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:08:20,991] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:10:56,008] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/ModuleInstanceDescriptors.xml
+[2016-03-08 12:10:56,393] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: WorkflowFiles/RunInterpolationExercise.xml
+[2016-03-08 12:10:57,440] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:10:58,521] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:11:07,970] INFO - FewsExplorerEnvironment.acknowledgeAll - Start acknowledging log messages
+[2016-03-08 12:11:07,976] INFO - FewsExplorerEnvironment.acknowledgeAll - All log messages acknowledged for last 2d
+[2016-03-08 12:11:12,516] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 12:11:12,578] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_7, T0 2007-10-04 10:00:00, default forecast length, available memory 932 MB, config revision unknown
+
+[2016-03-08 12:11:12,579] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 12:11:12,579] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 12:11:12,589] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 12:11:12,589] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 12:11:12,618] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 12:11:12,619] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 12:11:12,713] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 12:11:12,714] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 12:11:12,716] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 73%  datastore 0s 46%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 9 (unique=4)  time series written 7 (changed=2)  files 0s 0%  logging 0s 2%  gc 0s 0%  cpu 165%  max mem. 58 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 12:11:12,716] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_7 completed in 0s
+[2016-03-08 12:11:12,717] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 20:11:12 End time: 2016-03-08 20:11:12 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 12:11:12,717] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 12:18:01,771] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/ModuleInstanceDescriptors.xml
+[2016-03-08 12:18:01,815] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: WorkflowFiles/RunInterpolationExercise.xml
+[2016-03-08 12:18:02,815] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:18:03,914] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:18:16,472] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 12:18:16,519] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_8, T0 2007-10-04 10:00:00, default forecast length, available memory 921 MB, config revision unknown
+
+[2016-03-08 12:18:16,520] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 12:18:16,521] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 12:18:16,529] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 12:18:16,530] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 12:18:16,556] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 12:18:16,556] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 12:18:16,568] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 12:18:16,569] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 12:18:16,659] ERROR - Workflow.run - TaskRun.PartlyFailed: Workflow RunInterpolationExercise with task run id 1_8 partly failed because activity Hydro_Train_Interpolate_Forecast failed, Plugin 'Hydro_Train_Interpolate_Forecast' failed, message was: 'Exception occurred in transformation with id 'InterpolatePrecipitation' Error while writing time series array to data store: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes"
+ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+WorkflowFiles/RunInterpolationExercise.xml
+nl.wldelft.fews.system.data.DataStoreException: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes" version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesViewUtils.checkAllTimeSeriesAreWritable(TimeSeriesViewUtils.java:195)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.write(TimeSeriesView.java:2401)
+	at nl.wldelft.fews.system.plugin.transformationmodule.persistence.VariableStorage.writeTimeSeriesArrays(VariableStorage.java:776)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.startRunner(SingleTransformationProcess.java:725)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.runTransformation(SingleTransformationProcess.java:540)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.run(SingleTransformationProcess.java:333)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:135)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:102)
+	at nl.wldelft.fews.system.dispatcher.local.WorkflowPluginActivity.run(WorkflowPluginActivity.java:221)
+	at nl.wldelft.fews.system.workflow.Workflow.run(Workflow.java:129)
+	at nl.wldelft.fews.system.dispatcher.local.TaskRun.run(TaskRun.java:311)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher.runnable(LocalTaskDispatcher.java:85)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher$$Lambda$108/3793396.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-08 12:18:16,661] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 12:18:16,663] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 78%  datastore 0s 35%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 10 (unique=5)  time series written 7 (changed=1)  files 0s 1%  logging 0s 4%  gc 0s 0%  cpu 145%  max mem. 69 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 12:18:16,664] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_8 completed in 0s
+[2016-03-08 12:18:16,664] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 20:18:16 End time: 2016-03-08 20:18:16 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 12:18:16,665] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed with ERRORS ******************
+
+[2016-03-08 12:20:35,537] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+[2016-03-08 12:20:38,739] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 12:20:38,762] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_9, T0 2007-10-04 10:00:00, default forecast length, available memory 883 MB, config revision unknown
+
+[2016-03-08 12:20:38,763] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 12:20:38,763] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 12:20:38,772] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 12:20:38,773] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 12:20:38,797] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 12:20:38,798] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 12:20:38,807] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 12:20:38,807] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 12:20:38,818] ERROR - Workflow.run - TaskRun.PartlyFailed: Workflow RunInterpolationExercise with task run id 1_9 partly failed because activity Hydro_Train_Interpolate_Forecast failed, Plugin 'Hydro_Train_Interpolate_Forecast' failed, message was: 'Exception occurred in transformation with id 'InterpolatePrecipitation' Error while writing time series array to data store: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes"
+ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+WorkflowFiles/RunInterpolationExercise.xml
+nl.wldelft.fews.system.data.DataStoreException: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes" version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesViewUtils.checkAllTimeSeriesAreWritable(TimeSeriesViewUtils.java:195)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.write(TimeSeriesView.java:2401)
+	at nl.wldelft.fews.system.plugin.transformationmodule.persistence.VariableStorage.writeTimeSeriesArrays(VariableStorage.java:776)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.startRunner(SingleTransformationProcess.java:725)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.runTransformation(SingleTransformationProcess.java:540)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.run(SingleTransformationProcess.java:333)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:135)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:102)
+	at nl.wldelft.fews.system.dispatcher.local.WorkflowPluginActivity.run(WorkflowPluginActivity.java:221)
+	at nl.wldelft.fews.system.workflow.Workflow.run(Workflow.java:129)
+	at nl.wldelft.fews.system.dispatcher.local.TaskRun.run(TaskRun.java:311)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher.runnable(LocalTaskDispatcher.java:85)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher$$Lambda$108/3793396.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-08 12:20:38,821] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 12:20:38,822] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 78%  datastore 0s 19%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 10 (unique=5)  time series written 7 (changed=1)  files 0s 0%  logging 0s 11%  gc 0s 0%  cpu 241%  max mem. 107 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 12:20:38,823] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_9 completed in 0s
+[2016-03-08 12:20:38,823] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 20:20:38 End time: 2016-03-08 20:20:38 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 12:20:38,824] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed with ERRORS ******************
+
+[2016-03-08 12:21:02,216] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+[2016-03-08 12:21:04,829] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 12:21:04,868] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_10, T0 2007-10-04 10:00:00, default forecast length, available memory 883 MB, config revision unknown
+
+[2016-03-08 12:21:04,869] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 12:21:04,869] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 12:21:04,879] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 12:21:04,880] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 12:21:04,904] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 12:21:04,904] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 12:21:04,910] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 12:21:04,911] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 12:21:04,923] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Interpolate_Forecast' completed in 0s
+[2016-03-08 12:21:04,924] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 12:21:04,925] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 82%  datastore 0s 22%  cache files 0 B   database 0s 0% (1 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 10 (unique=5)  time series written 8 (changed=2)  files 0s 0%  logging 0s 7%  gc 0s 0%  cpu 203%  max mem. 107 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 12:21:04,925] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_10 completed in 0s
+[2016-03-08 12:21:04,926] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 20:21:04 End time: 2016-03-08 20:21:04 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 12:21:04,926] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 12:27:27,040] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+[2016-03-08 12:27:35,536] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 12:27:35,559] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_11, T0 2007-10-04 10:00:00, default forecast length, available memory 883 MB, config revision unknown
+
+[2016-03-08 12:27:35,559] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 12:27:35,560] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 12:27:35,571] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 12:27:35,572] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 12:27:35,597] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 12:27:35,598] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 12:27:35,607] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 12:27:35,608] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 12:27:35,623] ERROR - Workflow.run - TaskRun.PartlyFailed: Workflow RunInterpolationExercise with task run id 1_11 partly failed because activity Hydro_Train_Interpolate_Forecast failed, Plugin 'Hydro_Train_Interpolate_Forecast' failed, message was: 'Exception occurred in transformation with id 'InterpolatePrecipitation' Error while writing time series array to data store: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes"
+ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+WorkflowFiles/RunInterpolationExercise.xml
+nl.wldelft.fews.system.data.DataStoreException: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes" version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesViewUtils.checkAllTimeSeriesAreWritable(TimeSeriesViewUtils.java:195)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.write(TimeSeriesView.java:2401)
+	at nl.wldelft.fews.system.plugin.transformationmodule.persistence.VariableStorage.writeTimeSeriesArrays(VariableStorage.java:776)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.startRunner(SingleTransformationProcess.java:725)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.runTransformation(SingleTransformationProcess.java:540)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.run(SingleTransformationProcess.java:333)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:135)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:102)
+	at nl.wldelft.fews.system.dispatcher.local.WorkflowPluginActivity.run(WorkflowPluginActivity.java:221)
+	at nl.wldelft.fews.system.workflow.Workflow.run(Workflow.java:129)
+	at nl.wldelft.fews.system.dispatcher.local.TaskRun.run(TaskRun.java:311)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher.runnable(LocalTaskDispatcher.java:85)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher$$Lambda$108/3793396.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-08 12:27:35,626] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 12:27:35,627] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 79%  datastore 0s 20%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 10 (unique=5)  time series written 7 (changed=1)  files 0s 0%  logging 0s 11%  gc 0s 0%  cpu 214%  max mem. 107 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 12:27:35,627] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_11 completed in 0s
+[2016-03-08 12:27:35,628] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 20:27:35 End time: 2016-03-08 20:27:35 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 12:27:35,628] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed with ERRORS ******************
+
+[2016-03-08 12:29:39,141] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 12:29:39,166] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_12, T0 2007-10-04 10:00:00, default forecast length, available memory 883 MB, config revision unknown
+
+[2016-03-08 12:29:39,167] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 12:29:39,168] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 12:29:39,177] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 12:29:39,178] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 12:29:39,207] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 12:29:39,208] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 12:29:39,215] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 12:29:39,216] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 12:29:39,220] ERROR - Workflow.run - TaskRun.PartlyFailed: Workflow RunInterpolationExercise with task run id 1_12 partly failed because activity Hydro_Train_Interpolate_Forecast failed, Plugin 'Hydro_Train_Interpolate_Forecast' failed, message was: 'Exception occurred in transformation with id 'InterpolatePrecipitation' Error while writing time series array to data store: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes"
+ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+WorkflowFiles/RunInterpolationExercise.xml
+nl.wldelft.fews.system.data.DataStoreException: Illegal to write simulated time series from a non forecast workflow
+Set forecast = true for RunInterpolationExercise in RegionConfigFiles/WorkflowDescriptors.xml
+CatchAvg P.catchment (mm) "15 minutes" version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesViewUtils.checkAllTimeSeriesAreWritable(TimeSeriesViewUtils.java:195)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.write(TimeSeriesView.java:2401)
+	at nl.wldelft.fews.system.plugin.transformationmodule.persistence.VariableStorage.writeTimeSeriesArrays(VariableStorage.java:776)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.startRunner(SingleTransformationProcess.java:725)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.runTransformation(SingleTransformationProcess.java:540)
+	at nl.wldelft.fews.system.plugin.transformationmodule.process.SingleTransformationProcess.run(SingleTransformationProcess.java:333)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:135)
+	at nl.wldelft.fews.system.plugin.transformationmodule.TransformationModule.run(TransformationModule.java:102)
+	at nl.wldelft.fews.system.dispatcher.local.WorkflowPluginActivity.run(WorkflowPluginActivity.java:221)
+	at nl.wldelft.fews.system.workflow.Workflow.run(Workflow.java:129)
+	at nl.wldelft.fews.system.dispatcher.local.TaskRun.run(TaskRun.java:311)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher.runnable(LocalTaskDispatcher.java:85)
+	at nl.wldelft.fews.system.dispatcher.local.LocalTaskDispatcher$$Lambda$108/3793396.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-08 12:29:39,222] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 12:29:39,223] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 80%  datastore 0s 8%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 10 (unique=5)  time series written 7 (changed=1)  files 0s 0%  logging 0s 11%  gc 0s 0%  cpu 208%  max mem. 107 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 12:29:39,224] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_12 completed in 0s
+[2016-03-08 12:29:39,225] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 20:29:39 End time: 2016-03-08 20:29:39 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 12:29:39,225] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed with ERRORS ******************
+
+[2016-03-08 12:31:39,944] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+[2016-03-08 12:31:42,709] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 12:31:42,730] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_13, T0 2007-10-04 10:00:00, default forecast length, available memory 883 MB, config revision unknown
+
+[2016-03-08 12:31:42,731] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 12:31:42,732] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 12:31:42,742] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 12:31:42,742] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 12:31:42,768] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 12:31:42,768] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 12:31:42,776] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 12:31:42,776] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 12:31:42,789] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Interpolate_Forecast' completed in 0s
+[2016-03-08 12:31:42,789] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 12:31:42,791] INFO - TaskRun.run - TaskRun.TimeSpent:TransformationModule 0s 82%  datastore 0s 21%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 10 (unique=5)  time series written 8 (changed=1)  files 0s 0%  logging 0s 8%  gc 0s 0%  cpu 145%  max mem. 107 MB  index mem. 45 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 12:31:42,791] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_13 completed in 0s
+[2016-03-08 12:31:42,792] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 20:31:42 End time: 2016-03-08 20:31:42 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 12:31:42,792] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 12:40:04,200] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 12:40:04,281] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: ModuleConfigFiles/Hydro_Train_Interpolate_Forecast.xml
+[2016-03-08 12:40:04,366] ERROR - Filter.getTimeSeriesSets - Config.Error: filter id Hydro_Train parameter id Q.simulated.forecast ModuleInstance with id Hydro_Train_Forecast does not exist; 
+RegionConfigFiles/Filters.xml
+[2016-03-08 12:40:05,441] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 12:40:06,539] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:03:06,823] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 13:03:06,888] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 13:34:46,828] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 13:34:46,989] ERROR - Filter.getTimeSeriesSets - Config.Error: filter id Hydro_Train parameter id Q.simulated.forecast ModuleInstance with id Hydro_Train_Forecast does not exist; 
+RegionConfigFiles/Filters.xml
+[2016-03-08 13:34:48,017] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:34:49,114] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:35:52,835] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 13:35:53,842] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:35:54,923] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:35:54,947] ERROR - FewsExplorer.loadTimeSeriesInfos - It is required to specify the relative start time in the time series sets when you are not in a general adapter run after exporting a state
+par=Catchment Average Precipitation (P.catchment);loc=Catch Average (CatchAvg);mod=Hydro_Train_Interpolate_Forecast;simulated forecasting;never
+nl.wldelft.fews.system.data.DataStoreException: It is required to specify the relative start time in the time series sets when you are not in a general adapter run after exporting a state
+par=Catchment Average Precipitation (P.catchment);loc=Catch Average (CatchAvg);mod=Hydro_Train_Interpolate_Forecast;simulated forecasting;never version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesViewUtils.checkStartIsFilledIn(TimeSeriesViewUtils.java:870)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.getViewPeriod(TimeSeriesHeaderFactory.java:811)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.privateCreateTimeSeriesHeader(TimeSeriesHeaderFactory.java:579)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.privateCreateTimeSeriesHeaders(TimeSeriesHeaderFactory.java:525)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.privateCreateTimeSeriesHeaders(TimeSeriesHeaderFactory.java:843)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.createTimeSeriesHeaders(TimeSeriesHeaderFactory.java:446)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.createTimeSeriesHeaders(TimeSeriesHeaderFactory.java:321)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.createTimeSeriesHeaders(TimeSeriesHeaderFactory.java:311)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.createTimeSeriesHeaders(TimeSeriesView.java:1583)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.readInfos(TimeSeriesView.java:2298)
+	at nl.wldelft.fews.gui.explorer.FewsExplorer.loadTimeSeriesInfos(FewsExplorer.java:2071)
+	at nl.wldelft.fews.gui.explorer.FewsExplorer.loadTimeSeriesInfosRunnable(FewsExplorer.java:1031)
+	at nl.wldelft.fews.gui.explorer.FewsExplorer$$Lambda$147/4340937.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-08 13:40:07,694] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/WorkflowDescriptors.xml
+[2016-03-08 13:40:08,022] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 13:40:08,038] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/ModuleInstanceDescriptors.xml
+[2016-03-08 13:40:08,046] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: WorkflowFiles/RunInterpolationExercise.xml
+[2016-03-08 13:40:08,968] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:40:10,035] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:40:10,071] ERROR - FewsExplorer.loadTimeSeriesInfos - It is required to specify the relative start time in the time series sets when you are not in a general adapter run after exporting a state
+par=Catchment Average Precipitation (P.catchment);loc=Catch Average (CatchAvg);mod=Hydro_Train_Interpolate_Forecast;simulated forecasting;never
+nl.wldelft.fews.system.data.DataStoreException: It is required to specify the relative start time in the time series sets when you are not in a general adapter run after exporting a state
+par=Catchment Average Precipitation (P.catchment);loc=Catch Average (CatchAvg);mod=Hydro_Train_Interpolate_Forecast;simulated forecasting;never version: 2015.02, build: 59429 (patched from 57990) Mar1, type: stable, jre: 1.8.0_45, os:Windows 8, user:Ryan Spies, mx: 1037m, db: Firebird, region: FEWS_Config_Basic_SA
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesViewUtils.checkStartIsFilledIn(TimeSeriesViewUtils.java:870)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.getViewPeriod(TimeSeriesHeaderFactory.java:811)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.privateCreateTimeSeriesHeader(TimeSeriesHeaderFactory.java:579)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.privateCreateTimeSeriesHeaders(TimeSeriesHeaderFactory.java:525)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.privateCreateTimeSeriesHeaders(TimeSeriesHeaderFactory.java:843)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.createTimeSeriesHeaders(TimeSeriesHeaderFactory.java:446)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.createTimeSeriesHeaders(TimeSeriesHeaderFactory.java:321)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesHeaderFactory.createTimeSeriesHeaders(TimeSeriesHeaderFactory.java:311)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.createTimeSeriesHeaders(TimeSeriesView.java:1583)
+	at nl.wldelft.fews.system.data.timeseries.TimeSeriesView.readInfos(TimeSeriesView.java:2298)
+	at nl.wldelft.fews.gui.explorer.FewsExplorer.loadTimeSeriesInfos(FewsExplorer.java:2071)
+	at nl.wldelft.fews.gui.explorer.FewsExplorer.loadTimeSeriesInfosRunnable(FewsExplorer.java:1031)
+	at nl.wldelft.fews.gui.explorer.FewsExplorer$$Lambda$147/4340937.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-08 13:43:23,576] INFO - ConfigFiles.refreshDefaults - Config.Info: New default file found: RegionConfigFiles/Filters.xml
+[2016-03-08 13:43:24,633] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:43:25,719] INFO - FewsExplorer.applyLayout - Retrieving configuration from system resources.
+[2016-03-08 13:43:48,050] INFO - FewsExplorerEnvironment.acknowledgeAll - Start acknowledging log messages
+[2016-03-08 13:43:48,064] INFO - FewsExplorerEnvironment.acknowledgeAll - All log messages acknowledged for last 2d
+[2016-03-08 13:43:49,607] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 13:43:49,844] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_14, T0 2007-10-04 10:00:00, default forecast length, available memory 856 MB, config revision unknown
+
+[2016-03-08 13:43:49,845] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 13:43:49,845] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 13:43:49,855] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 13:43:49,856] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 13:43:49,892] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 13:43:49,893] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 13:43:49,906] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 13:43:49,907] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 13:43:49,912] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Interpolate_Forecast' completed in 0s
+[2016-03-08 13:43:49,913] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Forecast
+[2016-03-08 13:43:50,539] INFO - GeneralAdapter.init - General Adapter initialized for task - RunInterpolationExercise T0=Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 13:43:50,627] INFO - WarmStates.exportState - Unexpected cold state exported. No current runs available for warm state  Hydro_Train_Historical
+[2016-03-08 13:43:50,814] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PreCommonAdapter
+[2016-03-08 13:43:51,168] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Preprocessor run Tue Mar 08 21:43:50 GMT 2016
+[2016-03-08 13:43:51,169] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Preprocessor run Tue Mar 08 21:43:51 GMT 2016
+[2016-03-08 13:43:51,171] INFO - ExecuteExecutableActivity.run - GA Execution Started D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe
+[2016-03-08 13:43:51,761] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PostCommonAdapter
+[2016-03-08 13:43:51,917] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Postprocessor run Tue Mar 08 21:43:51 GMT 2016
+[2016-03-08 13:43:51,918] INFO - ExecuteActivity.processDiagnosticFile - Reading Module Logs Messages
+[2016-03-08 13:43:51,919] INFO - ExecuteActivity.processDiagnosticFile - Started run [2016-03-08 13:43:51]
+[2016-03-08 13:43:51,919] INFO - ExecuteActivity.processDiagnosticFile - Completed run succesfully [2016-03-08 13:43:51]
+[2016-03-08 13:43:51,920] INFO - ExecuteActivity.processDiagnosticFile - Finished reading Module Logs Messages
+[2016-03-08 13:43:51,921] INFO - ExecuteActivity.processDiagnosticFile - Writing State Xml File - states.xml
+[2016-03-08 13:43:51,921] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Postprocessor run Tue Mar 08 21:43:51 GMT 2016
+[2016-03-08 13:43:51,946] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Forecast' completed in 2s
+[2016-03-08 13:43:51,947] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 2s
+[2016-03-08 13:43:52,106] INFO - TaskRun.run - TaskRun.TimeSpent:GeneralAdapter (without executables) 1s 39%  TransformationModule 0s 3%  D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe 1s 23%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PreCommonAdapter.class 0s 13%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PostCommonAdapter.class 0s 6%  datastore 1s 22%  cache files 0 B   database 0s 0% (1 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 11 (unique=6)  time series written 9 (changed=3)  files 0s 6%  logging 0s 1%  gc 0s 0%  cpu 94%  max mem. 134 MB  index mem. 46 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 13:43:52,107] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_14 completed in 2s
+[2016-03-08 13:43:52,107] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 21:43:49 End time: 2016-03-08 21:43:52 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 13:43:52,108] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 13:44:23,076] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 13:44:23,140] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 13:45:31,384] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 13:45:31,403] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 13:47:30,418] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 13:47:30,461] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_15, T0 2007-10-04 10:00:00, default forecast length, available memory 900 MB, config revision unknown
+
+[2016-03-08 13:47:30,461] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 13:47:30,462] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 13:47:30,475] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 13:47:30,476] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 13:47:30,506] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 13:47:30,507] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 13:47:30,516] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 13:47:30,517] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 13:47:30,517] DEBUG - WorkflowPluginActivity.run - Memory usage 90 MB
+[2016-03-08 13:47:30,518] DEBUG - TransformationModule.loadConfiguration - Starting unmarshalling of configuration xml
+[2016-03-08 13:47:30,518] DEBUG - TransformationModule.loadConfiguration - Configuration xml is successfully loaded
+[2016-03-08 13:47:30,519] DEBUG - TransformationModule.createProcessQueue - Start creation of the process queue 
+[2016-03-08 13:47:30,520] DEBUG - ProcessQueue.createProcessQueue - Added transformation with id 'InterpolatePrecipitation' to queue.
+[2016-03-08 13:47:30,521] DEBUG - TransformationModule.createProcessQueue - Process queue is successfully created with 1 processes, start processing
+[2016-03-08 13:47:30,521] DEBUG - TransformationModule.createProcessQueue - Process queue is created, queue contains:1 processes
+[2016-03-08 13:47:30,521] DEBUG - TransformationModule.run - Start creation of the variable storage
+[2016-03-08 13:47:30,522] DEBUG - TransformationModule.run - Memory usage 90 MB
+[2016-03-08 13:47:30,522] DEBUG - SingleTransformationProcess.run - Started transformation with id 'InterpolatePrecipitation'.
+[2016-03-08 13:47:30,523] DEBUG - SingleTransformationProcess.run - Transformation is valid from: always valid
+[2016-03-08 13:47:30,523] DEBUG - VariableStorage.retrieveTimeSeriesSet - retrieving time series set for embedded time series set
+[2016-03-08 13:47:30,524] DEBUG - VariableStorage.retrieveOutputTimeSeriesHeaders - retrieved time series set: par=Catchment Average Precipitation (P.catchment);loc=Catch Average (CatchAvg);mod=Hydro_Train_Interpolate_Forecast;simulated forecasting;never
+[2016-03-08 13:47:30,525] DEBUG - VariableStorage.createTimeSeriesSetFromComplexType - Time series set: par=Catchment Average Precipitation (P.catchment);loc=Catch Average (CatchAvg);mod=ImportTelemetry;external historical;-2 day to 1 day, 3 day is created
+[2016-03-08 13:47:30,526] DEBUG - SingleTransformationProcess.retrieveLimitVariableTimeSeriesArrays - No limit variable configured.
+[2016-03-08 13:47:30,526] DEBUG - SingleTransformationProcess.getOutputFlag - No output flag configured
+[2016-03-08 13:47:30,527] DEBUG - TimeSeriesView.privateRead - read time series for par=Catchment Average Precipitation (P.catchment);loc=Catch Average (CatchAvg);mod=ImportTelemetry;external historical;-2 day to 1 day, 3 day
+[2016-03-08 13:47:30,528] DEBUG - SingleTransformationProcess.runTransformation - Transformation will run for period:Tue Oct 02 10:00:00 GMT 2007 - Fri Oct 05 10:00:00 GMT 2007
+[2016-03-08 13:47:30,529] DEBUG - BackwardCompatibilityTransformationRunner.runTransformation - Starting initialization of function:InterpolationSerialDefaultFunction
+[2016-03-08 13:47:30,530] DEBUG - FillDefaultValueInterpolator.<init> - Using Default Value = 0.0 & Gap Length = 2147483647
+[2016-03-08 13:47:30,531] DEBUG - BackwardCompatibilityTransformationRunner.runTransformation - Start calculation
+[2016-03-08 13:47:30,531] DEBUG - VariableStorage.writeTimeSeriesArrays - Checking external forecast time of output time series after transformation.
+[2016-03-08 13:47:30,532] DEBUG - VariableStorage.writeTimeSeriesArrays - Output time series 'size = 193:193 none missing:CatchAvg P.catchment (mm) "15 minutes":2007/10/2 10:00 to 10/4 10:00 GMT', 'CatchAvg P.catchment (mm) "15 minutes"'
+ type = simulated forecasting
+ period = 2007/10/2 10:00 to 10/4 10:00 GMT
+ externalForecastTime = null
+[2016-03-08 13:47:30,534] DEBUG - SingleTransformationProcess.run - End of transformation with id 'InterpolatePrecipitation'.
+[2016-03-08 13:47:30,534] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Interpolate_Forecast' completed in 0s
+[2016-03-08 13:47:30,535] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Forecast
+[2016-03-08 13:47:30,537] INFO - GeneralAdapter.init - General Adapter initialized for task - RunInterpolationExercise T0=Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 13:47:30,578] INFO - WarmStates.exportState - Unexpected cold state exported. No current runs available for warm state  Hydro_Train_Historical
+[2016-03-08 13:47:30,614] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PreCommonAdapter
+[2016-03-08 13:47:30,723] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Preprocessor run Tue Mar 08 21:47:30 GMT 2016
+[2016-03-08 13:47:30,724] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Preprocessor run Tue Mar 08 21:47:30 GMT 2016
+[2016-03-08 13:47:30,726] INFO - ExecuteExecutableActivity.run - GA Execution Started D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe
+[2016-03-08 13:47:30,929] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PostCommonAdapter
+[2016-03-08 13:47:31,090] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Postprocessor run Tue Mar 08 21:47:30 GMT 2016
+[2016-03-08 13:47:31,091] INFO - ExecuteActivity.processDiagnosticFile - Reading Module Logs Messages
+[2016-03-08 13:47:31,092] INFO - ExecuteActivity.processDiagnosticFile - Started run [2016-03-08 13:47:30]
+[2016-03-08 13:47:31,093] INFO - ExecuteActivity.processDiagnosticFile - Completed run succesfully [2016-03-08 13:47:30]
+[2016-03-08 13:47:31,093] INFO - ExecuteActivity.processDiagnosticFile - Finished reading Module Logs Messages
+[2016-03-08 13:47:31,094] INFO - ExecuteActivity.processDiagnosticFile - Writing State Xml File - states.xml
+[2016-03-08 13:47:31,094] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Postprocessor run Tue Mar 08 21:47:31 GMT 2016
+[2016-03-08 13:47:31,126] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Forecast' completed in 0s
+[2016-03-08 13:47:31,127] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 13:47:31,150] INFO - TaskRun.run - TaskRun.TimeSpent:GeneralAdapter (without executables) 0s 18%  TransformationModule 0s 10%  D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe 0s 29%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PostCommonAdapter.class 0s 23%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PreCommonAdapter.class 0s 15%  datastore 0s 1%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 11 (unique=6)  time series written 9 (changed=3)  files 0s 21%  logging 0s 4%  gc 0s 0%  cpu 124%  max mem. 90 MB  index mem. 46 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 13:47:31,151] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_15 completed in 0s
+[2016-03-08 13:47:31,151] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 21:47:30 End time: 2016-03-08 21:47:31 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 13:47:31,152] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 13:49:38,189] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 13:49:38,209] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 13:51:51,427] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 13:51:51,446] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 13:52:34,614] INFO - ManualForecastDialog.dispatchTasks - ManualForecast.Started: Manual forecast <10-04-2007 10:00:00 RunInterpolationExercise> has been sent to the task scheduler
+[2016-03-08 13:52:34,639] INFO - TaskRun.logTaskStartedMessage - TaskRun.Started: Starting Task RunInterpolationExercise with ID 1_16, T0 2007-10-04 10:00:00, default forecast length, available memory 920 MB, config revision unknown
+
+[2016-03-08 13:52:34,639] INFO - Workflow.run - Workflow.ActivityStarted: Workflow RunInterpolationExercise
+[2016-03-08 13:52:34,640] INFO - WorkflowPluginActivity.run - Started Activity InterpolateExample
+[2016-03-08 13:52:34,650] INFO - WorkflowPluginActivity.run - Completed Activity 'InterpolateExample' completed in 0s
+[2016-03-08 13:52:34,651] INFO - WorkflowPluginActivity.run - Started Activity LevelToFlow
+[2016-03-08 13:52:34,683] INFO - WorkflowPluginActivity.run - Completed Activity 'LevelToFlow' completed in 0s
+[2016-03-08 13:52:34,683] INFO - WorkflowPluginActivity.run - Started Activity CatchmentAveragePrecipitation
+[2016-03-08 13:52:34,696] INFO - WorkflowPluginActivity.run - Completed Activity 'CatchmentAveragePrecipitation' completed in 0s
+[2016-03-08 13:52:34,696] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Interpolate_Forecast
+[2016-03-08 13:52:34,701] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Interpolate_Forecast' completed in 0s
+[2016-03-08 13:52:34,702] INFO - WorkflowPluginActivity.run - Started Activity Hydro_Train_Forecast
+[2016-03-08 13:52:34,704] INFO - GeneralAdapter.init - General Adapter initialized for task - RunInterpolationExercise T0=Thu Oct 04 10:00:00 GMT 2007
+[2016-03-08 13:52:34,743] INFO - WarmStates.exportState - Unexpected cold state exported. No current runs available for warm state  Hydro_Train_Historical
+[2016-03-08 13:52:34,778] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PreCommonAdapter
+[2016-03-08 13:52:34,889] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Preprocessor run Tue Mar 08 21:52:34 GMT 2016
+[2016-03-08 13:52:34,890] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Preprocessor run Tue Mar 08 21:52:34 GMT 2016
+[2016-03-08 13:52:34,892] INFO - ExecuteExecutableActivity.run - GA Execution Started D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe
+[2016-03-08 13:52:35,087] INFO - ExecuteJavaActivity.run - GA Execution Started nl.wldelft.fews.adapter.common.PostCommonAdapter
+[2016-03-08 13:52:35,244] INFO - ExecuteActivity.processDiagnosticFile - INFO Started Common Adapter Postprocessor run Tue Mar 08 21:52:35 GMT 2016
+[2016-03-08 13:52:35,246] INFO - ExecuteActivity.processDiagnosticFile - Reading Module Logs Messages
+[2016-03-08 13:52:35,247] INFO - ExecuteActivity.processDiagnosticFile - Started run [2016-03-08 13:52:35]
+[2016-03-08 13:52:35,247] INFO - ExecuteActivity.processDiagnosticFile - Completed run succesfully [2016-03-08 13:52:35]
+[2016-03-08 13:52:35,248] INFO - ExecuteActivity.processDiagnosticFile - Finished reading Module Logs Messages
+[2016-03-08 13:52:35,249] INFO - ExecuteActivity.processDiagnosticFile - Writing State Xml File - states.xml
+[2016-03-08 13:52:35,249] INFO - ExecuteActivity.processDiagnosticFile - INFO Completed Common Adapter Postprocessor run Tue Mar 08 21:52:35 GMT 2016
+[2016-03-08 13:52:35,281] INFO - WorkflowPluginActivity.run - Completed Activity 'Hydro_Train_Forecast' completed in 0s
+[2016-03-08 13:52:35,281] INFO - Workflow.run - Workflow.ActivityCompleted: Workflow RunInterpolationExercise completed in 0s
+[2016-03-08 13:52:35,302] INFO - TaskRun.run - TaskRun.TimeSpent:GeneralAdapter (without executables) 0s 19%  TransformationModule 0s 9%  D:\Software\CHPS_local\FEWS_config_training\Config_Basic\Application\FEWS_Config_Basic_SA\Modules\unithg\bin\gammamodel.exe 0s 29%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PostCommonAdapter.class 0s 23%  file:/D:/Software/CHPS_local/FEWS_config_training/Config_Basic/Application/bin/Adapters_Common.jar!/nl/wldelft/fews/adapter/common/PreCommonAdapter.class 0s 16%  datastore 0s 1%  cache files 0 B   database 0s 0% (0 ms/query,0 B,  0 B/s, 1 queries, 0 rows)  reloaded 0 B  time series read 11 (unique=6)  time series written 9 (changed=3)  files 0s 28%  logging 0s 2%  gc 0s 0%  cpu 125%  max mem. 70 MB  index mem. 46 kB  db con. acquire time 0s 0%  lock. acquire time 0s 0%  
+[2016-03-08 13:52:35,302] INFO - TaskRun.logTaskFinishedMessage - TaskRun.Completed: Task RunInterpolationExercise with ID 1_16 completed in 0s
+[2016-03-08 13:52:35,303] INFO - TaskRun.logTaskFinishedMessage - Start time: 2016-03-08 21:52:34 End time: 2016-03-08 21:52:35 T0: 2007-10-04 10:00:00 User Id:Ryan Spies
+[2016-03-08 13:52:35,303] INFO - TaskRun.run -                 ******************      Workflow RunInterpolationExercise Completed    ******************
+
+[2016-03-08 13:52:42,752] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree ....
+[2016-03-08 13:52:42,782] INFO - WorkflowNavigatorTreePanel.load - Loading  Workflow Tree finished.
+[2016-03-08 13:58:30,080] INFO - FewsExplorerEnvironment.exit - FewsExplorer: exiting ... 
+[2016-03-08 13:58:30,093] INFO - AbstractFewsSession.log - Session.Closed: Stand-alone system
+[2016-03-08 13:58:30,191] INFO - FewsExplorerEnvironment.stopFewsPiService - Stopping FewsPiService on port -1.
+[2016-03-08 13:58:30,409] INFO - LogEntriesTableLogAppender.dispose - Pending log messages flushed to database

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by ICT (Stichting Deltares) -->
+<transformationModule version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/transformationModule.xsd">
+	<!-- input variables -->
+	<variable>
+		<variableId>X1</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>P.obs</parameterId>
+			<locationId>Raingauge</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-96" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<variable>
+		<variableId>X2</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>P.obs</parameterId>
+			<locationId>Meteostation</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-96" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+		</timeSeriesSet>
+	</variable>
+	<!-- output variables -->
+	<variable>
+		<variableId>X3</variableId>
+		<timeSeriesSet>
+			<moduleInstanceId>ImportTelemetry</moduleInstanceId>
+			<valueType>scalar</valueType>
+			<parameterId>P.catchment</parameterId>
+			<locationId>CatchAvg</locationId>
+			<timeSeriesType>external historical</timeSeriesType>
+			<timeStep unit="minute" multiplier="15"/>
+			<relativeViewPeriod unit="hour" start="-96" end="0"/>
+			<readWriteMode>read only</readWriteMode>
+			<synchLevel>1</synchLevel>
+		</timeSeriesSet>
+	</variable>
+	<!-- transformations -->
+	<transformation id="weighted">
+		<interpolationSpatial>
+			<weighted>
+				<weightedInputVariable>
+					<inputVariable>
+						<variableId>X1</variableId>
+					</inputVariable>
+					<weight>0.666</weight>
+				</weightedInputVariable>
+				<weightedInputVariable>
+					<inputVariable>
+						<variableId>X2</variableId>
+					</inputVariable>
+					<weight>0.334</weight>
+				</weightedInputVariable>
+				<outputVariable>
+					<variableId>X3</variableId>
+				</outputVariable>
+			</weighted>
+		</interpolationSpatial>
+	</transformation>
+</transformationModule>

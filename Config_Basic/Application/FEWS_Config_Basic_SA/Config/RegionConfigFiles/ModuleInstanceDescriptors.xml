@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleInstanceDescriptors xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/moduleInstanceDescriptors.xsd" version="1.0">
+	<!-- Import modules-->
+	<moduleInstanceDescriptor id="ImportTelemetry">
+		<description>Imports telemetry XML data for midlands</description>
+	</moduleInstanceDescriptor>
+	<moduleInstanceDescriptor id="ImportNimrod">
+		<description>Imports Nimrod Actuals</description>
+	</moduleInstanceDescriptor>
+	<!--Thresholds-->
+	<moduleInstanceDescriptor id="Thresholds">
+		<description>Thresholds</description>
+	</moduleInstanceDescriptor>
+	<!--Example transformation module instance-->
+	<moduleInstanceDescriptor id="LevelToFlow">
+		<description>Level to flow conversion (H.obs -> Q.rated)</description>
+	</moduleInstanceDescriptor>
+	<moduleInstanceDescriptor id="CatchAverage">
+		<description>Catchment average P, T and ET</description>
+	</moduleInstanceDescriptor>
+	<moduleInstanceDescriptor id="InterpolateExample">
+		<description>Interpolate Missing Data</description>
+	</moduleInstanceDescriptor>
+	<!-- General Adapter modules-->
+	<moduleInstanceDescriptor id="Hydro_Train_Historical">
+		<description>Hydro_Train_Historical</description>
+	</moduleInstanceDescriptor>
+	<moduleInstanceDescriptor id="CatchmentAveragePrecipitation">
+		<description>Calc Catchment Avg Precip</description>
+	</moduleInstanceDescriptor>
+	<moduleInstanceDescriptor id="Hydro_Train_Interpolate_Forecast">
+		<description>Fill Missing Catchment Avg Precip</description>
+	</moduleInstanceDescriptor>
+	<moduleInstanceDescriptor id="Hydro_Train_Forecast">
+		<description>Hydro Train Forecast</description>
+	</moduleInstanceDescriptor>
+</moduleInstanceDescriptors>

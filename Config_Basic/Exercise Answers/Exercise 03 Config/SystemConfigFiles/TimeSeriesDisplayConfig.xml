@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesDisplay xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/timeSeriesDisplay.xsd" version="1.0">
+	<defaultViewPeriod unit="hour" start="-24" end="48"/>
+	<timeMarkersDisplayConfig>
+		<timeMarkerDisplayOptions marker="systemTime">
+			<color>green</color>
+			<lineStyle>solid</lineStyle>
+			<label>System Time</label>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="timeZero">
+			<color>gray</color>
+			<lineStyle>dotted</lineStyle>
+			<label>Time Zero</label>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="displayTime">
+			<color>red</color>
+			<lineStyle>solid</lineStyle>
+			<label>Display Time</label>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="threshold">
+			<color>orange</color>
+			<lineStyle>dashed</lineStyle>
+			<label>Threshold</label>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="forecastConfidence1">
+			<color>dark orange</color>
+			<lineStyle>dashed</lineStyle>
+			<label>Forecast Confidence 1</label>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="forecastConfidence2">
+			<color>dark orange2</color>
+			<lineStyle>dashed</lineStyle>
+			<label>Forecast Confidence 2</label>
+		</timeMarkerDisplayOptions>
+		<timeMarkerDisplayOptions marker="forecastConfidence3">
+			<color>dark orange4</color>
+			<lineStyle>dashed</lineStyle>
+			<label>Forecast Confidence 3</label>
+		</timeMarkerDisplayOptions>
+	</timeMarkersDisplayConfig>
+	<parametersDisplayConfig>
+		<parameterDisplayOptions id="Q.obs">
+			<preferredColor>blue violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>x</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.rated">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.simulated">
+			<preferredColor>dark olive green4</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.simulated.historical">
+			<preferredColor>medium sea green</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.simulated.forecast">
+			<preferredColor>lime green</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.updated">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.updated.historical">
+			<preferredColor>sandy brown</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.updated.forecast">
+			<preferredColor>dark orange1</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.generated">
+			<preferredColor>sky blue1</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.merged">
+			<preferredColor>navy</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Q.profile">
+			<preferredColor>sky blue4</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.obs">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.obs.upstream">
+			<preferredColor>royal blue</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.obs.downstream">
+			<preferredColor>royal blue2</preferredColor>
+			<lineStyle>dashed</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.simulated">
+			<preferredColor>dark olive green4</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.simulated.historical">
+			<preferredColor>medium sea green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.simulated.forecast">
+			<preferredColor>lime green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.rated">
+			<preferredColor>dark olive green4</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.rated.historical">
+			<preferredColor>medium sea green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.rated.forecast">
+			<preferredColor>lime green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.astronomical">
+			<preferredColor>sea green</preferredColor>
+			<lineStyle>dotted</lineStyle>
+			<markerStyle>+</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.updated">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.updated.historical">
+			<preferredColor>sandy brown</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.updated.forecast">
+			<preferredColor>dark orange1</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.obs.surge">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.simulated.surge">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.merged.surge">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.merged">
+			<preferredColor>olive drab</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.tidal">
+			<preferredColor>sky blue2</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="H.profile">
+			<preferredColor>sky blue4</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.obs">
+			<preferredColor>black</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+			<min>0</min>
+			<max>10</max>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.catchment">
+			<preferredColor>turquoise</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.radar.actual">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.radar.forecast">
+			<preferredColor>yellow green</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.nwp.forecast">
+			<preferredColor>sandy brown</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.synoptic.forecast">
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.snowmelt.merged">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.user.forecast">
+			<preferredColor>light steel blue</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="P.backup">
+			<preferredColor>red</preferredColor>
+			<lineStyle>bar</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.catchment">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.obs">
+			<preferredColor>deep pink</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+			<min>-5</min>
+			<max>30</max>
+			<precision>2</precision>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.obs.wetbulb">
+			<preferredColor>tomato3</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.obs.max">
+			<preferredColor>red</preferredColor>
+			<lineStyle>none</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.obs.min">
+			<preferredColor>red</preferredColor>
+			<lineStyle>none</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.synoptic.forecast.max">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.synoptic.forecast.min">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.synoptic.forecast">
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.synoptic.drybulb">
+			<preferredColor>sienna</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.user.forecast">
+			<preferredColor>light steel blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.simulated.drybulb">
+			<preferredColor>purple</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.historical">
+			<preferredColor>purple</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.forecast">
+			<preferredColor>purple</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="T.backup">
+			<preferredColor>purple</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="E.metoffice">
+			<preferredColor>dark green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="E.simulated">
+			<preferredColor>dark green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="E.simulated.merged">
+			<preferredColor>dark green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="E.profile">
+			<preferredColor>dark green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="E.backup">
+			<preferredColor>dark green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Netrad.obs">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Sol.obs">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.obs.depth">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.obs.waterequivalent">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.simulated.depth">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.simulated.waterequivalent">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.simulated.dry">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.simulated.density">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.obs.weight">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.obs.relativedensity">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.simulated.relativedensity">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Snow.simulated.correction">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.obs.speed">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.obs.catchment.speed">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.forecast.speed">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.forecast.catchment.speed">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.backup">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.obs.force">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.forecast.force">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>none</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.merged.force">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.obs.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.forecast.dir">
+			<preferredColor>green4</preferredColor>
+			<lineStyle>none</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wind.merged.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.swell.height">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.wind.height">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.total.height">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.swell.height">
+			<preferredColor>sea green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.wind.height">
+			<preferredColor>slate blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.total.height">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.swell.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.wind.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.total.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.swell.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.wind.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.total.dir">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.swell.period">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.wind.period">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.obs.total.period">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.swell.period">
+			<preferredColor>sea green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.wind.period">
+			<preferredColor>slate blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Wave.forecast.total.period">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>none</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="GW.obs">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="GW.simulated">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="GW.updated">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Structure.obs.height">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Structure.simulated.height">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Structure.obs.angle">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Structure.simulated.angle">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Pump.obs.status">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Pump.simulated.status">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Lookup.index">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>none</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="SMD.simulated">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Reservoir.storage">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Reservoir.release">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Floodplain.storage">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>square</markerStyle>
+			<markerSize>3</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>1</max>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.02">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.02">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>1</max>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.02">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.06">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.06">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>1</max>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.06">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.12">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.12">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>1</max>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.12">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.18">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.18">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>1</max>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.18">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.24">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.24">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+			<max>1</max>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.24">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.00-03">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.03-06">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.00-06">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.06-12">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.12-18">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.18-24">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.24-30">
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.30-36">
+			<preferredColor>turquoise</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.00-03">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.03-06">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.00-06">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.06-12">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.12-18">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.18-24">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.24-30">
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSF.30-36">
+			<preferredColor>turquoise</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+			<min>1</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.00-03">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.03-06">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.00-06">
+			<preferredColor>orange</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.06-12">
+			<preferredColor>violet</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.12-18">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.18-24">
+			<preferredColor>yellow</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.24-30">
+			<preferredColor>magenta</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.30-36">
+			<preferredColor>turquoise</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangleup</markerStyle>
+			<markerSize>6</markerSize>
+			<min>0</min>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.tide1">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.tide2">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.bias.tide3">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>diamond</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.tide1">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.tide2">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.R2.tide3">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>circle</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.tide1">
+			<preferredColor>green</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.tide2">
+			<preferredColor>blue</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+		<parameterDisplayOptions id="Perf.RMSE.tide3">
+			<preferredColor>red</preferredColor>
+			<lineStyle>solid</lineStyle>
+			<markerStyle>triangledown</markerStyle>
+			<markerSize>6</markerSize>
+		</parameterDisplayOptions>
+	</parametersDisplayConfig>
+</timeSeriesDisplay>

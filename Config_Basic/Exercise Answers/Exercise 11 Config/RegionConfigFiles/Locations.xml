@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/locations.xsd" version="1.1">
+	<geoDatum>WGS 1984</geoDatum>
+	<!--World Cities-->
+	<location id="Amsterdam" name="Amsterdam">
+		<description>City</description>
+		<shortName>Amsterdam</shortName>
+		<x>4.81</x>
+		<y>52.36</y>
+	</location>
+	<location id="Amsterdam_hyd" name="Amsterdam">
+		<description>City</description>
+		<shortName>Amsterdam</shortName>
+		<x>4.81</x>
+		<y>52.36</y>
+	</location>
+	<location id="Delft_hyd" name="Delft">
+		<description>City</description>
+		<shortName>Delft</shortName>
+		<x>4.37</x>
+		<y>51.83</y>
+	</location>
+	<location id="Delft" name="Delft">
+		<description>City</description>
+		<shortName>Delft</shortName>
+		<x>4.37</x>
+		<y>51.83</y>
+	</location>
+	<!--Spatial grids-->
+	<location id="NimrodNWP" name="Nimrod NWP">
+		<shortName>Nimrod NWP</shortName>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</location>
+	<location id="GFS" name="GFS">
+		<shortName>GFS</shortName>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</location>
+	<!--Training-->
+	<location id="Hydro1" name="Hydro Gauge 1">
+		<description>Training Hydro 1</description>
+		<shortName>Hydro1</shortName>
+		<x>-4.61</x>
+		<y>54.17</y>
+		<z>0</z>
+	</location>
+	<location id="Hydro2" name="Hydro Gauge 2">
+		<description>Training Hydro 2</description>
+		<shortName>Hydro2</shortName>
+		<x>-4.46</x>
+		<y>54.31</y>
+		<z>25</z>
+	</location>
+		<location id="CatchAvg" name="Catch Average">
+		<description>Catch Average</description>
+		<shortName>Catch Average</shortName>
+		<x>-4.47</x>
+		<y>54.22</y>
+	</location>
+</locations>

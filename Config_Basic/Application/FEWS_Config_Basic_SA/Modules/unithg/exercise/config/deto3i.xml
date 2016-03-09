@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commonAdapter xmlns="http://www.wldelft.nl/fews" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews http://fews.wldelft.nl/schemas/version1.0/commonAdapter.xsd">
+	<general>
+		<workDir>work</workDir>
+		<importDir>input</importDir>
+		<exportDir>output</exportDir>
+		<stateDir>states</stateDir>		
+		<diagnosticFile>diag.xml</diagnosticFile>
+		<missingValue>-999.999</missingValue>
+	</general>
+	<activities>
+		<preAdapterActivities>
+			<dateFormat>yyyy-MM-dd HH:mm:ss</dateFormat>
+			<input>inputs.xml</input>
+			<output>unithg_in.tsd</output>
+			<timeSeries>
+				<mapping parameterId="INFW" locationId="CatchAvg" column="1"/>
+			</timeSeries>
+		</preAdapterActivities>
+		<postAdapterActivities>
+			<dateFormat>yyyy-MM-dd HH:mm:ss</dateFormat>
+			<input>unithg_out.tsd</input>
+			<output>outputs.xml</output>
+			<timeSeries>
+				<mapping parameterId="SQIN" locationId="Hydro2" column="1"/>
+			</timeSeries>
+			<moduleLogFile>model.log</moduleLogFile>
+			<stateFile>states.xml</stateFile>			
+		</postAdapterActivities>
+	</activities>
+</commonAdapter>
